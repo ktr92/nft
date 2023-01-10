@@ -1,0 +1,1 @@
+.zoom-box{position:relative}.zoom-box img{vertical-align:bottom}.zoom-box .zoom-selector{background-image:url(images/selector.png);background-repeat:repeat;cursor:crosshair;display:none;position:absolute}.zoom-box .viewer-box{border:1px solid #efedf0;display:none;overflow:hidden;position:absolute}.zoom-box .viewer-box>img{left:0;position:absolute;top:0}

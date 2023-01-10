@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Klein';
+    src: url('../fonts/Klein-Light.woff2') format('woff2'),
+        url('../fonts/Klein-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klein';
+    src: url('../fonts/Klein-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Klein-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klein';
+    src: url('../fonts/Klein-Thin.woff2') format('woff2'),
+        url('../fonts/Klein-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klein';
+    src: url('../fonts/Klein-Bold.woff2') format('woff2'),
+        url('../fonts/Klein-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klein';
+    src: url('../fonts/Klein-Regular.woff2') format('woff2'),
+        url('../fonts/Klein-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klein Book';
+    src: url('../fonts/Klein-Book.woff2') format('woff2'),
+        url('../fonts/Klein-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klein';
+    src: url('../fonts/Klein-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Klein-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klein';
+    src: url('../fonts/Klein-Italic.woff2') format('woff2'),
+        url('../fonts/Klein-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klein';
+    src: url('../fonts/Klein-Black.woff2') format('woff2'),
+        url('../fonts/Klein-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klein';
+    src: url('../fonts/Klein-Medium.woff2') format('woff2'),
+        url('../fonts/Klein-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import './partials/classes.scss';
+@import './modal.scss';
+/* @import './selectbox.scss'; */
+body {
+		min-width: 16.666666666666664vw;
+		font-family: 'Klein';
+		font-style: normal;
+		font-weight: normal; 
+		@include clear;
+		scroll-behavior: smooth;
+		color: $main;
+		overflow-x: hidden;
+		width: 100%;
+	
+}
+* {
+		font-family: 'Klein';
+		font-style: normal;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		outline: none !important;
+		line-height: 1;
+}
+/* main {
+		overflow: hidden;
+}
+*/
+a {
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		color: #04A3E9;
+		text-decoration: none;
+}
+a:hover, a:focus {
+		text-decoration: none;
+}
+img {
+		max-width: 100%;
+		max-height: 100%;
+		width: initial;
+		height: initial;
+}
+
+
+
+@media (min-width: 1024px) {
+		.onlyMobile {
+				display: none !important;
+	 }
+}
+@include medium-screen {
+		.onlyMobile {
+				display: initial;
+	 }
+		.onlyDesktop {
+				display: none !important;
+	 }
+}
+.container {
+		@include container;
+}
+
+.logo {
+	width: 8.333333333333332vw;
+}
+
+.landlayout {
+	height: 100vh;
+	.container {
+		height: 100%;
+	}
+}
+.landlayout__wrapper {
+	height: 100%;
+}
+.landlayout__main {
+	max-width: 23.072916666666668vw;
+	height: 100%;
+	padding: 4.6875vw 0;
+
+}
+.landlayout__content {
+}
+
+.fd-columns {
+}
+.content-between {
+}
+.landlayout__header {
+}
+.logo {
+}
+.titleblock {
+}
+.titleblock__title {
+	font-style: normal;
+font-weight: 700;
+font-size: 3.5416666666666665vw;
+line-height: 100%;
+/* or 68px */
+margin-bottom: 1.9270833333333335vw;
+
+color: #212531;
+}
+.titleblock__default {
+	color: #212531;
+}
+.titleblock__green {
+	color: rgba(48, 202, 76, 1);
+}
+.titleblock__description {
+	font-style: normal;
+font-weight: 400;
+font-size: 1.0416666666666665vw;
+line-height: 1.3541666666666667vw;
+
+color: $main7;
+}
+.landlayout__footer {
+}
+.socials {
+}
+.socials__items {
+	display: flex;
+
+}
+.socials__item {
+	margin-right: 8px;
+	&:last-child {
+		margin-right: 0;
+	}
+	a {
+		width: 2.1875vw;
+height: 2.1875vw;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #212531;
+	}
+}
+.landlayout__image {
+	position: relative;
+	right: -6.25vw;
+	max-height: 100%;
+}
+
+
+@include medium-screen {
+
+}
