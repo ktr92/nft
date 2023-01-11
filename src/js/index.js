@@ -1,48 +1,29 @@
 function initFE() {
-   
+    closeByClickOutside('.dropdownblock', '.accountmenu')
 }
 
-function resizepage() {
-    console.log(1)
-    var $el = $(".container");
-    var elHeight = $el.outerHeight();
-    var elWidth = $el.outerWidth();
-
-    var $wrapper = $(".resizable");
-
-    $wrapper.resizable({
-        resize: doResize
-    });
-
-    function doResize(event, ui) {
-    
-    var scale, origin;
-        
-    scale = Math.min(
-        ui.size.width / elWidth,    
-        ui.size.height / elHeight
-    );
-
-    console.log(scale)
-    
-    $el.css({
-        transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
+function closeByClickOutside(element, button) {
+    $(document).click(function(event) {
+        if (!$(event.target).closest(`${element},${button}`).length) {
+            $(button).removeClass('active')
+            $(element).removeClass('active')
+        }
     });
     
-    }
-
-    var starterData = { 
-    size: {
-        width: $wrapper.width(),
-        height: $wrapper.height()
-    }
-    }
-    doResize(null, starterData);
-   
-}
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            $(button).removeClass('active')
+            $(element).removeClass('active')
+        }
+    });
+  }
 
 
 $(document).ready(function() {
+    $('.accountmenu').on('click', function(e) {
+        e.preventDefault()
+        $(this).find('.dropdownblock').toggleClass('active')
+    })
 });
 
 window.addEventListener('load', function () {

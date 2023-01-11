@@ -2,14 +2,14 @@
 
 @function get-vw-large($font){
 	$vw-viewport-large: 1920;
-	$vw-context: $vw-viewport * 0.01 * 1px;
+	$vw-context: $vw-viewport-large * 0.01 * 1px;
 	@return $font / $vw-context * 1vw;
 	@return $font;
   }
   
   
   @function get-vw-medium($font){
-	$vw-viewport-medium: 834;
+	$vw-viewport-medium: 600;
 	$vw-context: $vw-viewport-medium * 0.01 * 1px;
 	@return $font / $vw-context * 1vw;
 	@return $font;
@@ -58,7 +58,7 @@
 
 
 @mixin small-screen() {
-  @media only screen and (max-width: 834px) {
+  @media only screen and (max-width: 600px) {
     @content;
   }
 }

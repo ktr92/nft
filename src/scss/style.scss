@@ -222,7 +222,7 @@ color: $main7;
 
 }
 .socials__item {
-	margin-right: 8px;
+	margin-right: get-vw-large(8px);
 	img {
 		width: 1.1458333333333333vw;
 	}
@@ -260,7 +260,7 @@ background: #212531;
 .siteheader {
 }
 .siteheader__main {
-	padding: 35px 0;
+	padding:  get-vw-large(35px) 0;
 }
 .flex {
 }
@@ -274,7 +274,7 @@ background: #212531;
 
 }
 .flex .iconlink {
-	margin-right: 4px;
+	margin-right:  get-vw-large(4px);
 	&:last-child {
 		margin-right: 0;
 	}
@@ -288,8 +288,8 @@ background: #212531;
 }
 
 .iconlink__img {
-	width: 46px;
-	height: 46px;
+	width:  get-vw-large(46px);
+	height:  get-vw-large(46px);
 	border: 2px solid rgba(33, 37, 49, 0.1);
 	border-radius: 50%;
 	display: flex;
@@ -306,11 +306,11 @@ background: #212531;
 	}
 }
 .iconlink__text {
-	margin-left: 16px;
+	margin-left:  get-vw-large(16px);
 	font-style: normal;
 font-weight: 700;
-font-size: 16px;
-line-height: 21px;
+font-size:  get-vw-large(16px);
+line-height:  get-vw-large(21px);
 /* identical to box height */
 
 
@@ -330,12 +330,12 @@ color: #212531;
 	color: $green;
 	font-style: normal;
 font-weight: 700;
-font-size: 16px;
-line-height: 21px;
+font-size:  get-vw-large(16px);
+line-height:  get-vw-large(21px);
 
 }
 .logo_default {
-	width: 201px;
+	width:  get-vw-large(201px);
 }
 .accountmenu {
 }
@@ -347,11 +347,11 @@ line-height: 21px;
 .accountmenu__img {
 }
 .accountmenu__name {
-	margin-left: 11px;
+	margin-left:  get-vw-large(11px);
 	font-style: normal;
 font-weight: 700;
-font-size: 16px;
-line-height: 21px;
+font-size:  get-vw-large(16px);
+line-height:  get-vw-large(21px);
 /* identical to box height */
 
 
@@ -362,17 +362,17 @@ color: #212531;
 }
 
 .siteheader__links + .accountmenu {
-	margin-left: 46px;
+	margin-left:  get-vw-large(46px);
 }
 .iconlink__count {
-	width: 16px;
-height: 16px;
+	width:  get-vw-large(16px);
+height:  get-vw-large(16px);
 border-radius: 50%;
 background: #F8444F;
 font-style: normal;
 font-weight: 700;
-font-size: 12px;
-line-height: 16px;
+font-size:  get-vw-large(12px);
+line-height:  get-vw-large(16px);
 /* identical to box height */
 top: 0;
 right: 0;
@@ -400,7 +400,7 @@ text-align: center;
 		color: transparent;
 		text-decoration: none;
 		
-		border-bottom: 0.3125vw solid transparent;
+		
 		margin-right: 5vw;
 		transition: all 0.3s ease;
 		&:last-child {
@@ -408,6 +408,7 @@ text-align: center;
 		}
 
 		a {
+			border-bottom: 0.3125vw solid transparent;
 			color: $main;
 			display: block;
 			font-style: normal;
@@ -427,7 +428,61 @@ text-align: center;
 	}
 }
 
+.accountmenu {
+	position: relative;
+}
+.accountmenu__menu {
+	right: 0;
+	
+}
 
+/* .accountmenu:hover {
+	.accountmenu__menu {
+		display: block;
+	}
+} */
+
+.dropdownblock {
+	position: absolute;
+	top: calc(100% + get-vw-large(20px));
+	min-width: get-vw-large(252px);
+	display: none;
+
+}
+.dropdownblock.active {
+	display: block;
+}
+.dropdownblock__wrapper {
+	background: #FFFFFF;
+	box-shadow: 5px 5px 60px rgba(36, 40, 43, 0.1);
+	border-radius: get-vw-large(6px);
+	padding: get-vw-large(29px) get-vw-large(38px);
+
+}
+.dropdownblock__links {
+	ul {
+		@include clear;
+		li {
+			margin-bottom: get-vw-large(29px);
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				font-style: normal;
+				font-weight: 700;
+				font-size: get-vw-large(16px);
+				line-height: get-vw-large(21px);
+				/* identical to box height */
+				color: #212531;
+			}
+		}
+	}
+}
+
+.signout a {
+	color: $main4 !important;
+}
 
 
 
@@ -465,14 +520,37 @@ text-align: center;
 		margin-bottom: get-vw-medium(31px);
 	}
 
-	.landlayout__image {
+	/* .landlayout__image {
 		width: get-vw-medium(534px);
 		right: get-vw-medium(-205px);
-		/* left: get-vw-medium(300px); */
-	}
+	} */
 
-	.landlayout__img {
+	/* .landlayout__img {
 		height: 76vh;
+	} */
+
+	.landlayout__image {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: get-vw-medium(862px);
+		overflow-x: hidden;
+		overflow-y: visible;
+		min-height: 862px;
+	}
+	
+	.landlayout__img {
+		height: initial;
+		height: initial;
+		z-index: -1;
+		width: 535px;
+		right: -330px;
+		/* left: get-vw-medium(300px); */
+		position: absolute;
+		bottom: 0;
+		width: get-vw-medium(534px);
+		right: get-vw-medium(-205px);
 	}
 
 }
@@ -535,7 +613,9 @@ line-height: get-vw-small(16px);
 		bottom: 0;
 		right: 0;
 		height: get-vw-small(464px);
-		overflow: hidden;
+		overflow-x: hidden;
+		overflow-y: visible;
+		min-height: 466px;
 	}
 	
 	.landlayout__img {
