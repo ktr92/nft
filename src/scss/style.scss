@@ -442,21 +442,26 @@ text-align: center;
 	}
 } */
 
+.siteheader__right {
+	position: relative;
+}
+
 .dropdownblock {
 	position: absolute;
-	top: calc(100% + get-vw-large(20px));
+	top: calc(100% + get-vw-large(33px));
 	min-width: get-vw-large(252px);
 	display: none;
 
 }
 .dropdownblock.active {
 	display: block;
+	z-index: 3;
 }
 .dropdownblock__wrapper {
 	background: #FFFFFF;
 	box-shadow: 5px 5px 60px rgba(36, 40, 43, 0.1);
 	border-radius: get-vw-large(6px);
-	padding: get-vw-large(29px) get-vw-large(38px);
+	padding: get-vw-large(29px) get-vw-large(30px);
 
 }
 .dropdownblock__links {
@@ -485,6 +490,104 @@ text-align: center;
 }
 
 
+.messageblock {
+	min-width: 512px;
+	right: 0;
+	top: calc(100% + 20px);
+}
+.messageblock__wrapper {
+}
+.messageblock__items {
+	max-height: 326px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-right: 10px;
+}
+.messageblock__item {
+	margin-bottom: 34px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.messageblock__status {
+	min-width: 6px;
+	min-height: 6px;
+margin-right: 8px;
+background: rgba(33, 37, 49, 0.2);
+border-radius: 50%;
+}
+.messageblock__item_unread {
+	.messageblock__status {
+	
+		background: #30CA4C;
+	}
+}
+.messageblock__image {
+}
+.messageblock__img {
+	width: 46px;
+	height: 46px;
+	margin-right: 21px;
+	border-radius: 555px;
+	overflow: hidden;
+	position: relative;
+
+	img {
+		position: absolute;
+		left: -9999px;
+		right: -9999px;
+		bottom: -9999px;
+		top: -9999px;
+		margin: auto;
+		height: 100%;
+		max-width: initial;
+	}
+
+}
+.messageblock__content {
+}
+.messageblock__text {
+	font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+/* or 16px */
+margin-bottom: 10px;
+
+color: #212531;
+}
+.messageblock__params {
+}
+.messageblock__info {
+	font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+
+color: rgba(33, 37, 49, 0.5);
+
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	background: #EAECF0;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #30CA4C;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #ccc;
+}
 
 @include medium-screen {
 	.titleblock__title {

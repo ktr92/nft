@@ -1,5 +1,6 @@
 function initFE() {
-    closeByClickOutside('.dropdownblock', '.accountmenu')
+    closeByClickOutside('[data-toggle="accountmenu"]', '[data-toggleclick="accountmenu"]')
+    closeByClickOutside('[data-toggle="messageblock"]', '[data-toggleclick="messageblock"]')
 }
 
 function closeByClickOutside(element, button) {
@@ -20,9 +21,10 @@ function closeByClickOutside(element, button) {
 
 
 $(document).ready(function() {
-    $('.accountmenu').on('click', function(e) {
+    $('[data-toggleclick]').on('click', function(e) {
         e.preventDefault()
-        $(this).find('.dropdownblock').toggleClass('active')
+        let dropdown = $(this).data('toggleclick')
+        $(`[data-toggle=${dropdown}]`).toggleClass('active')
     })
 });
 
