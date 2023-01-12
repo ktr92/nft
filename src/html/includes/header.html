@@ -127,7 +127,12 @@
             </div>
           </div>
 
-          <div class="burgermenu"><img src="img/burger.svg" alt=""></div>
+          <div class="burgermenu onlyMobile">
+            <div class="menubutton" data-menutoggle="mobilemenu">
+              <img src="img/burger.svg" alt="" class="menubutton__open">
+              <img src="img/closemenu.svg" alt="" class="menubutton__close">
+            </div>
+          </div>
 
           <div class="accountmenu" data-toggleclick="accountmenu">
             <div class="accountmenu__wrapper flex items-center">
@@ -189,8 +194,65 @@
      </div>
   </div>
 
-  <div class="mobilemenu">
-    <div class="mobilemenu__wrapper"></div>
+  <div class="mobilemenu" data-menu="mobilemenu">
+    <div class="mobilemenu__wrapper">
+      <div class="mobilemenu__block">
+        <div class="mobilemenu__menu">
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/User.svg" alt=""></span>
+              <span class='mobilemenu__name'>My Profile</span>
+              </a>    
+            </div>
+          </div>
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/Crown.svg" alt=""></span>
+              <span class='mobilemenu__name'>Leaderboard</span>
+              </a>    
+            </div>
+          </div>
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/Bookmark.svg" alt=""></span>
+              <span class='mobilemenu__name'>Bookmark</span>
+              </a>    
+            </div>
+          </div>
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/Commercial.svg" alt=""></span>
+              <span class='mobilemenu__name'>Feed</span>
+              </a>    
+            </div>
+          </div>
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/Notification.svg" alt=""></span>
+              <span class='mobilemenu__name'>Notifications <span class="mobilemenu__count">5</span></span>
+              </a>    
+            </div>
+          </div>
+        </div>
+        <!-- /.mobilemenu__menu -->
+      </div>
+      <!-- /.mobilemenu__block -->
+      <div class="mobilemenu__footer">
+        <div class="mobilemenu__item  mobilemenu__signout mb-0">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/Logout.svg" alt=""></span>
+            <span class='mobilemenu__name'>Sign Out</span>
+            </a>    
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </header>
