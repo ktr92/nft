@@ -111,3 +111,29 @@
   }  
 }
 
+@mixin imageblock ($fill: width) {
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  img:not([role='presentation']) {
+    position: absolute;
+    
+    left: -9999px;
+    right: -9999px;
+    top: -9999px;
+    bottom: -9999px;
+    margin: auto;
+
+    @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    }
+  }  
+}
