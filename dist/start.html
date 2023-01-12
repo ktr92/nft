@@ -160,13 +160,17 @@
               </div>
             </div>
           </div>
+
+          <div class="burgermenu"><img src="img/burger.svg" alt=""></div>
+
           <div class="accountmenu" data-toggleclick="accountmenu">
             <div class="accountmenu__wrapper flex items-center">
               <div class="accountmenu__icon">
                 <div class="accountmenu__img"><img src="img/Avatar.svg" alt=""></div>
               </div>
               <div class="accountmenu__name">
-                Andrew M.
+                <span>Andrew M.</span>
+                <img src="img/ChevronDown.svg" alt="">               
               </div>
             </div>
             <div class="accountmenu__menu dropdownblock" data-toggle="accountmenu">
@@ -193,7 +197,8 @@
      <div class="siteheader__menu">
       <div class="container">
         <div class="mainmenu">
-          <div class="mainmenu__menu">
+          <div class="mainmenu__menu"  data-scrollblock="mainmenu">
+           
             <ul class="">
               <li class="active"><a href="">All</a></li>
               <li><a href="">NFTs</a></li>
@@ -203,13 +208,25 @@
               <li><a href="">Whitelists</a></li>
               <li><a href="">Nodes</a></li>
               <li><a href="">Other</a></li>
-              <li class="mainmenu__search"><a href="#"><img src="img/Search.svg" alt=""></a></li>
+              <li class="mainmenu__search onlyDesktop"><a href="#"><img src="img/Search.svg" alt=""></a></li>
             </ul>
           </div>
+
+          <div class="arrowmenu onlyMobile" data-scroll="mainmenu">
+            <img src="img/ChevronRight.svg" alt="">
+          </div>
+          <div class="mainmenu__search onlyMobile"><a href="#"><img src="img/Search.svg" alt=""></a></div>
         </div>
       </div>
+
+
      </div>
   </div>
+
+  <div class="mobilemenu">
+    <div class="mobilemenu__wrapper"></div>
+  </div>
+
 </header>
 <!-- /#header.header -->
 <style>

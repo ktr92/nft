@@ -9,7 +9,7 @@
   
   
   @function get-vw-medium($font){
-	$vw-viewport-medium: 600;
+	$vw-viewport-medium: 834;
 	$vw-context: $vw-viewport-medium * 0.01 * 1px;
 	@return $font / $vw-context * 1vw;
 	@return $font;
@@ -67,14 +67,15 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  padding-right: 14px;
+  padding-right:  get-vw-large(14px);
   &:after {
     content: url($icon);
     display: inline-block;
     vertical-align: middle;
-    margin-left: 6px;
+    margin-left: get-vw-large(6px);
     position: absolute;
     right: 0;
+    width:  get-vw-large(8px);
     top: 50%;
     transform: translate(0, -50%);
   }
