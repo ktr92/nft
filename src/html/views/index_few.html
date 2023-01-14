@@ -3,7 +3,213 @@
   author: ""
   }; %>
 <%= _.template(require('../includes/head.html').default)(data) %>
-<%= _.template(require('../includes/header.html').default)(data) %>
+
+<div class="jsbackdrop "></div>
+
+<header id="header" class="siteheader">
+  <div class="siteheader__main">
+  <div class="container">
+     <div class="flex content-between items-center">
+      <div class="siteheader__left">
+        <div class="iconlink">
+          <a href="#" class="iconlink__link">
+            <span class="iconlink__content flex items-center">
+              <span class="iconlink__icon">
+                <span class="iconlink__img">
+                  <img src="img/Crown.svg" alt="">
+                </span>
+              </span>
+              <span class="iconlink__text">Leaderboard</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="siteheader__center">
+        <div class="logo logo_default"><a href="/"><img src="img/Leak.me_1.svg" alt=""></a></div>
+      </div>
+      <div class="siteheader__right flex">
+        
+        <div class="accountblock accountblock_unauthored">
+            <a href="" class="accountblock__link">Sign In</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+     <div class="siteheader__menu"  data-toggleactive="headersearch">
+      <div class="container">
+        <div class="mainmenu">
+          <div class="mainmenu__menu"  data-scrollblock="mainmenu">            
+            <ul class="">
+              <li class="active"><a href="">All</a></li>
+              <li><a href="">NFTs</a></li>
+              <li><a href="">Tokens</a></li>
+              <li><a href="">Mints</a></li>
+              <li><a href="">Airdrops</a></li>
+              <li><a href="">Whitelists</a></li>
+              <li><a href="">Nodes</a></li>
+              <li><a href="">Other</a></li>
+              <li class="mainmenu__search onlyDesktop">
+                <a href="#" data-toggleclick="headersearch"><img src="img/Search.svg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="headersearch" data-toggle="headersearch" data-togglewrapper="suggestions">
+            <form action="">
+              <div class="headersearch__wrapper">
+                <input type="text" placeholder="Поиск" oninput="showSuggestions(this)">
+                <a href="#" data-toggleclick="headersearch" class="headersearch__close">
+                  <img src="img/closesearch.svg" alt="">
+                </a>
+                <button type="submit" class="headersearch__button">
+                  <img src="img/Search.svg" alt="">
+                </button>
+              </div>
+              <div class="suggestions" data-toggle="suggestions">
+                <div class="suggestions__wrapper">
+                  <div class="suggestions__blocks">
+                    <div class="suggestions__block">
+                      <div class="suggestions__title">Cryptocurrencies</div>
+                      <div class="suggestions__items">
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/Forefront.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">Forefront (FF)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FFA.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">FFA.Games (FFA)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FiFaSport.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">FiFaSport (FFS)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FairyForest.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">Fairy Forest (FFN)</div>
+                        </a>
+                      </div>
+                    </div><!-- /.suggestions__block -->
+
+                    <div class="suggestions__block">
+                      <div class="suggestions__title">NFT</div>
+                      <div class="suggestions__items">
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/Forefront2.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">Forefront (FF)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FFA.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">FFA.Games (FFA)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FiFaSport.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">FiFaSport (FFS)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FairyForest.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">Fairy Forest (FFN)</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </form>
+          </div>
+
+          <div class="arrowmenu onlyMobile" data-scroll="mainmenu">
+            <img src="img/ChevronRight.svg" alt="">
+          </div>
+          <div class="mainmenu__search onlyMobile" data-toggleclick="headersearch"><a href="#"><img src="img/Search.svg" alt=""></a></div>
+        </div>
+      </div>
+
+
+     </div>
+  </div>
+
+  <div class="mobilemenu" data-menu="mobilemenu">
+    <div class="mobilemenu__wrapper">
+      <div class="mobilemenu__block">
+        <div class="mobilemenu__menu">
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/User.svg" alt=""></span>
+              <span class='mobilemenu__name'>My Profile</span>
+              </a>    
+            </div>
+          </div>
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/Crown.svg" alt=""></span>
+              <span class='mobilemenu__name'>Leaderboard</span>
+              </a>    
+            </div>
+          </div>
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/Bookmark.svg" alt=""></span>
+              <span class='mobilemenu__name'>Bookmark</span>
+              </a>    
+            </div>
+          </div>
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/Commercial.svg" alt=""></span>
+              <span class='mobilemenu__name'>Feed</span>
+              </a>    
+            </div>
+          </div>
+          <div class="mobilemenu__item  ">
+            <div class="mobilemenu__content">
+              <a href='#' class="mobilemenu__link">
+              <span class='mobilemenu__icon'><img src="img/Notification.svg" alt=""></span>
+              <span class='mobilemenu__name'>Notifications <span class="mobilemenu__count">5</span></span>
+              </a>    
+            </div>
+          </div>
+        </div>
+        <!-- /.mobilemenu__menu -->
+      </div>
+      <!-- /.mobilemenu__block -->
+      <div class="mobilemenu__footer">
+        <div class="mobilemenu__item  mobilemenu__signout mb-0">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/Logout.svg" alt=""></span>
+            <span class='mobilemenu__name'>Sign Out</span>
+            </a>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+<!-- /#header.header -->
 <main>
   <div class="topcontent">
     <div class="container">
@@ -358,7 +564,7 @@
                       <div class="cardcontent__param">29.12.2020</div>
                       <div class="cardcontent__param">Duration: 29 days</div>
                     </div>
-                    <div class="cardcontent__text">Vivamus sodales tortor et felis blandit tincidunt. Nullam sit amet elementum nisi. Fusce vitae libero elit. Ut leo</div>
+                    <div class="cardcontent__text">Vivamus </div>
                     <div class="cardcontent__buttons flex items-center content-between">
                       <div class="cardcontent__rate flex items-center">
                         <div class="cardcontent__button cardcontent__like">
@@ -673,7 +879,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="cardcontent__text">Vivamus sodales tortor et felis blandit tincidunt. Nullam sit amet elementum nisi. Fusce vitae libero elit. Ut leo</div>
+                    <div class="cardcontent__text">Vivamus sodales</div>
                     <div class="cardcontent__buttons flex items-center content-between">
                       <div class="cardcontent__rate flex items-center">
                         <div class="cardcontent__button cardcontent__like">

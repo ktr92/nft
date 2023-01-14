@@ -165,11 +165,10 @@
   </div>
 </div>
 
-     <div class="siteheader__menu">
+     <div class="siteheader__menu"  data-toggleactive="headersearch">
       <div class="container">
         <div class="mainmenu">
-          <div class="mainmenu__menu"  data-scrollblock="mainmenu">
-           
+          <div class="mainmenu__menu"  data-scrollblock="mainmenu">            
             <ul class="">
               <li class="active"><a href="">All</a></li>
               <li><a href="">NFTs</a></li>
@@ -179,14 +178,95 @@
               <li><a href="">Whitelists</a></li>
               <li><a href="">Nodes</a></li>
               <li><a href="">Other</a></li>
-              <li class="mainmenu__search onlyDesktop"><a href="#"><img src="img/Search.svg" alt=""></a></li>
+              <li class="mainmenu__search onlyDesktop">
+                <a href="#" data-toggleclick="headersearch"><img src="img/Search.svg" alt=""></a>
+              </li>
             </ul>
+          </div>
+
+          <div class="headersearch" data-toggle="headersearch" data-togglewrapper="suggestions">
+            <form action="">
+              <div class="headersearch__wrapper">
+                <input type="text" placeholder="Поиск" oninput="showSuggestions(this)">
+                <a href="#" data-toggleclick="headersearch" class="headersearch__close">
+                  <img src="img/closesearch.svg" alt="">
+                </a>
+                <button type="submit" class="headersearch__button">
+                  <img src="img/Search.svg" alt="">
+                </button>
+              </div>
+              <div class="suggestions" data-toggle="suggestions">
+                <div class="suggestions__wrapper">
+                  <div class="suggestions__blocks">
+                    <div class="suggestions__block">
+                      <div class="suggestions__title">Cryptocurrencies</div>
+                      <div class="suggestions__items">
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/Forefront.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">Forefront (FF)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FFA.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">FFA.Games (FFA)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FiFaSport.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">FiFaSport (FFS)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FairyForest.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">Fairy Forest (FFN)</div>
+                        </a>
+                      </div>
+                    </div><!-- /.suggestions__block -->
+
+                    <div class="suggestions__block">
+                      <div class="suggestions__title">NFT</div>
+                      <div class="suggestions__items">
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/Forefront2.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">Forefront (FF)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FFA.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">FFA.Games (FFA)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FiFaSport.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">FiFaSport (FFS)</div>
+                        </a>
+                        <a href="#" class="suggestions__item">
+                          <div class="suggestions__icon">
+                            <div class="suggestions__img"><img src="img/FairyForest.png" alt=""></div>
+                          </div>
+                          <div class="suggestions__name">Fairy Forest (FFN)</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </form>
           </div>
 
           <div class="arrowmenu onlyMobile" data-scroll="mainmenu">
             <img src="img/ChevronRight.svg" alt="">
           </div>
-          <div class="mainmenu__search onlyMobile"><a href="#"><img src="img/Search.svg" alt=""></a></div>
+          <div class="mainmenu__search onlyMobile" data-toggleclick="headersearch"><a href="#"><img src="img/Search.svg" alt=""></a></div>
         </div>
       </div>
 

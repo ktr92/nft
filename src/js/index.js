@@ -4,6 +4,18 @@ function initFE() {
     closeByClickOutside('.fdropdown__menu', '.fdropdown__button')
 }
 
+function showSuggestions(e) {
+    if (e.value.length > 0) {
+        $(e).closest('[data-togglewrapper]').find('[data-toggle="suggestions"]').addClass('active')
+        $(e).closest('[data-togglewrapper]').addClass('sugg')
+    }
+    else {
+       
+        $(e).closest('[data-togglewrapper]').find('[data-toggle="suggestions"]').removeClass('active')
+        $(e).closest('[data-togglewrapper]').removeClass('sugg')
+    }
+}
+
 function closeByClickOutside(element, button) {
     $(document).click(function(event) {
         if (!$(event.target).closest(`${element},${button}`).length) {
@@ -29,6 +41,7 @@ $(document).ready(function() {
         $('[data-toggle].active').not($(`[data-toggle=${dropdown}]`)).removeClass('active')
         $('[data-toggleclick].active').not($(`[data-toggleclick=${dropdown}]`)).removeClass('active')
         $(`[data-toggle=${dropdown}]`).toggleClass('active')
+        $(`[data-toggleactive=${dropdown}]`).toggleClass('active')
     })
 
     $('[data-scroll]').click(function(e) {
