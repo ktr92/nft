@@ -45,7 +45,21 @@ $( window ).resize(function() {
     resizeEvents()
 })
 $(document).ready(function() {
-    resizeEvents()
+    resizeEvents();
+
+    (function($) {
+        $(function() {
+      
+            $('[data-tabsheader="tabsheader"]').on('click', 'li:not(.active)', function() {
+                $(this)
+                    .addClass('active').siblings().removeClass('active')
+                    .closest('[data-tabswrapper="tabswrapper"]').find('[data-tabscontent]').removeClass('active').eq($(this).index()).addClass('active');
+            });
+      
+        });
+      })(jQuery);
+
+
     $('[data-toggleclick]').on('click', function(e) {
         $(this).toggleClass('active')
         e.preventDefault()
