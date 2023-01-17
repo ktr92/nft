@@ -2,6 +2,8 @@ function initFE() {
     closeByClickOutside('[data-toggle="accountmenu"]', '[data-toggleclick="accountmenu"]')
     closeByClickOutside('[data-toggle="messageblock"]', '[data-toggleclick="messageblock"]')
     closeByClickOutside('.fdropdown__menu', '.fdropdown__button')
+    closeByClickOutside('.headersearch', '[data-toggleclick="headersearch"]')
+    closeByClickOutside('.suggestions', '.searchinput')
 }
 
 function showSuggestions(e) {
@@ -16,7 +18,7 @@ function showSuggestions(e) {
     }
 }
 
-function closeByClickOutside(element, button) {
+function closeByClickOutside(element, button, callback) {
     $(document).click(function(event) {
         if (!$(event.target).closest(`${element},${button}`).length) {
             $(button).removeClass('active')
@@ -30,10 +32,20 @@ function closeByClickOutside(element, button) {
             $(element).removeClass('active')
         }
     });
+
+    if (callback instanceof Function) { callback(); }
   }
 
 
+function resizeEvents() {
+    $('.siteheader__left').css('min-width', $('.siteheader__right').width())
+}
+
+$( window ).resize(function() {
+    resizeEvents()
+})
 $(document).ready(function() {
+    resizeEvents()
     $('[data-toggleclick]').on('click', function(e) {
         $(this).toggleClass('active')
         e.preventDefault()
@@ -58,12 +70,14 @@ $(document).ready(function() {
         $(`[data-menu=${menu}]`).toggleClass('active')
         $(this).toggleClass('active')
         $('.jsbackdrop').toggleClass('active')
+        $('body').toggleClass('block')
   
     })
     $('.jsbackdrop').on('click', function(e) {
         $(this).removeClass('active')
         $('[data-menu]').removeClass('active')
         $('[data-menutoggle]').removeClass('active')
+        $('body').removeClass('block')
   
     })
 });

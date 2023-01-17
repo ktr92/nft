@@ -70,12 +70,14 @@ $(document).ready(function() {
         $(`[data-menu=${menu}]`).toggleClass('active')
         $(this).toggleClass('active')
         $('.jsbackdrop').toggleClass('active')
+        $('body').toggleClass('block')
   
     })
     $('.jsbackdrop').on('click', function(e) {
         $(this).removeClass('active')
         $('[data-menu]').removeClass('active')
         $('[data-menutoggle]').removeClass('active')
+        $('body').removeClass('block')
   
     })
 });

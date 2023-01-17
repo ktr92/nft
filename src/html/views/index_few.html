@@ -217,16 +217,81 @@
         <div class="pagetitle__title">If it’s only about money we are hopeless.</div>
         <div class="pagetitle__subtitle">If it’s about people we are hopefull.</div>
       </div>
-      <div class="pagesearch">
+      <div class="pagesearch"  data-togglewrapper="suggestions">
         <div class="pagesearch__form">
           <form action="">
             <div class="pagesearch__input">
               <div class="searchinput">
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search" oninput="showSuggestions(this)">
                 <button type="submit" class="btn btn_main">Search</button>
               </div>
             </div>
           </form>
+        </div>
+        <div class="suggestions" data-toggle="suggestions">
+          <div class="suggestions__wrapper">
+            <div class="suggestions__blocks">
+              <div class="suggestions__block">
+                <div class="suggestions__title">Cryptocurrencies</div>
+                <div class="suggestions__items">
+                  <a href="#" class="suggestions__item">
+                    <div class="suggestions__icon">
+                      <div class="suggestions__img"><img src="img/Forefront.png" alt=""></div>
+                    </div>
+                    <div class="suggestions__name">Forefront (FF)</div>
+                  </a>
+                  <a href="#" class="suggestions__item">
+                    <div class="suggestions__icon">
+                      <div class="suggestions__img"><img src="img/FFA.png" alt=""></div>
+                    </div>
+                    <div class="suggestions__name">FFA.Games (FFA)</div>
+                  </a>
+                  <a href="#" class="suggestions__item">
+                    <div class="suggestions__icon">
+                      <div class="suggestions__img"><img src="img/FiFaSport.png" alt=""></div>
+                    </div>
+                    <div class="suggestions__name">FiFaSport (FFS)</div>
+                  </a>
+                  <a href="#" class="suggestions__item">
+                    <div class="suggestions__icon">
+                      <div class="suggestions__img"><img src="img/FairyForest.png" alt=""></div>
+                    </div>
+                    <div class="suggestions__name">Fairy Forest (FFN)</div>
+                  </a>
+                </div>
+              </div><!-- /.suggestions__block -->
+
+              <div class="suggestions__block">
+                <div class="suggestions__title">NFT</div>
+                <div class="suggestions__items">
+                  <a href="#" class="suggestions__item">
+                    <div class="suggestions__icon">
+                      <div class="suggestions__img"><img src="img/Forefront2.png" alt=""></div>
+                    </div>
+                    <div class="suggestions__name">Forefront (FF)</div>
+                  </a>
+                  <a href="#" class="suggestions__item">
+                    <div class="suggestions__icon">
+                      <div class="suggestions__img"><img src="img/FFA.png" alt=""></div>
+                    </div>
+                    <div class="suggestions__name">FFA.Games (FFA)</div>
+                  </a>
+                  <a href="#" class="suggestions__item">
+                    <div class="suggestions__icon">
+                      <div class="suggestions__img"><img src="img/FiFaSport.png" alt=""></div>
+                    </div>
+                    <div class="suggestions__name">FiFaSport (FFS)</div>
+                  </a>
+                  <a href="#" class="suggestions__item">
+                    <div class="suggestions__icon">
+                      <div class="suggestions__img"><img src="img/FairyForest.png" alt=""></div>
+                    </div>
+                    <div class="suggestions__name">Fairy Forest (FFN)</div>
+                  </a>
+                </div> 
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="filterblock">
@@ -464,6 +529,12 @@
           </div>
         </div>
       </div>
+
+    </div>
+  </div>
+
+<div class="maincontent">
+  <div class="container">
 
       <div class="itemsblock">
         <div class="itemsblock__items flex">
@@ -976,6 +1047,8 @@
           </div>
         </div> -->
       </div>
+    </div>
+  </div>
     </div>
   </div>
 </main>
