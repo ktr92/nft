@@ -35,15 +35,15 @@
                       <div class="cardprofile__name">Victor Ivanov</div>                      
                         <div class="cardprofile__stats flex items-center">
                           <div class="cardstat cardstat_fw">
-                            <div class="cardstat__icon"></div>
+                            <div class="cardstat__icon onlyMobile"></div>
                             <div class="cardstat__text">7 400 followers</div>
                           </div>
                           <div class="cardstat onlyMobile">
-                            <div class="cardstat__icon"></div>
+                            <div class="cardstat__icon onlyMobile"></div>
                             <div class="cardstat__text">518 Shills</div>
                           </div>
                           <div class="cardstat cardstat_green cardstat_bold">
-                            <div class="cardstat__icon"></div>
+                            <div class="cardstat__icon onlyMobile"></div>
                             <div class="cardstat__text">87% Profitable</div>
                           </div>
                         </div>
@@ -172,15 +172,16 @@
         <div class="itemsblock__header">
           <div class="tabs__header" data-tabsheader="tabsheader">
               <ul>
-                <li class="active">
+                <li class="active"  data-tabindex="1">
                   <span class="tabs__title">Open  </span> <span class="tabs__count">26</span>
                 </li>
-                <li>
+                <li data-tabindex="2">
                   <span class="tabs__title">Closed <span class="onlyDesktop">positions</span> </span><span class="tabs__count">4228</span>
                 </li>
+               
               </ul>
             </div>
-          </div>
+      
           <div class="filterblock">
             <div class="filterblock__items flex content-center">
               <div class="filterblock__item">
@@ -263,8 +264,9 @@
             </div>
           </div>
         </div>
+      </div>
         <div class="tabs__main">
-          <div class="tabs__content active" data-tabscontent="tabscontent">
+          <div class="tabs__content active" data-tabscontent="tabscontent"  data-tabindex="1">
         <div class="itemsblock__items flex">
           <div class="itemsblock__item">
             <div class="card">
@@ -1633,7 +1635,7 @@
         </div>
 
       </div>
-      <div class="tabs__content" data-tabscontent="tabscontent">
+      <div class="tabs__content" data-tabscontent="tabscontent"  data-tabindex="2">
         <div class="itemsblock__items flex">
           <div class="itemsblock__item">
             <div class="card">
@@ -1836,6 +1838,7 @@
           </div>
         </div> -->
       </div>
+   
     </div>
 
         
