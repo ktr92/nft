@@ -1,0 +1,119 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> 
+  <style>
+    [data-toggle='modal'] {margin-bottom: 5px;}
+  </style>
+  <main>
+  <div class="container">
+    <br>
+    <br>
+    <a href="#popup_edit" data-toggle='modal' class="btn btn_main"> edit </a>
+    <br>
+    <br>
+  </div>
+</main>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_edit'>
+  <div class="modal-dialog" role="document">
+    <form action="">
+      <div class="modal__wrapper">
+          <div class="modal__header">
+
+            <div class="modal__leftheader">
+              <div class="modal__close" data-dismiss="modal" aria-label="Close">
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M12.1295 0.26706L1.08264 11.5017C0.404747 12.1911 0.404747 13.3089 1.08264 13.9983L12.1295 25.2329L14.5844 22.7364L6.50078 14.5154H23.5742L23.5742 10.9846L6.50078 10.9846L14.5844 2.76365L12.1295 0.26706Z" fill="#3A4659"/>
+                  </svg>
+              </div>
+              <div class="modal__title">Edit profile</div>
+            </div>
+            <div class="modal__button">
+              <button  class="btn btn_main btn_save">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.84505 3.5C4.45493 3.5 3.32422 4.63071 3.32422 6.02083V17.4792C3.32422 18.8693 4.45493 20 5.84505 20H6.07422V13.3542C6.07422 12.4696 6.7938 11.75 7.67839 11.75H15.4701C16.3546 11.75 17.0742 12.4696 17.0742 13.3542V20H17.3034C18.6935 20 19.8242 18.8693 19.8242 17.4792V7.85417C19.8242 7.658 19.7399 7.47096 19.5933 7.34033L15.4683 3.67367C15.4013 3.61408 15.3238 3.57141 15.2409 3.54207V7.39583C15.2409 8.28042 14.5213 9 13.6367 9H8.13672C7.25214 9 6.53255 8.28042 6.53255 7.39583V3.5H5.84505ZM7.90755 3.5V7.39583C7.90755 7.52233 8.01022 7.625 8.13672 7.625H13.6367C13.7632 7.625 13.8659 7.52233 13.8659 7.39583V3.5H7.90755ZM7.67839 13.125C7.55189 13.125 7.44922 13.2277 7.44922 13.3542V20H15.6992V13.3542C15.6992 13.2277 15.5966 13.125 15.4701 13.125H7.67839Z" fill="white"/>
+                  </svg>
+                  
+                <span>Save</span>
+              </button>
+            
+          </div>
+         
+        </div>
+        <div class="modal__body">
+           <div class="modal__form"> 
+           <div class="formblock"> 
+              <div class="formblock__image formAvatar">
+                <label for="fileImage">
+                  <input accept="image/*" type='file' id="fileImage" />
+                  <div class="fileImage__img">
+                    <img id="imgFile" src="img/man.png" alt="" />
+                  </div>
+                  <span class="fileImage__btn">
+                    <img src="img/Camera.svg" alt="">
+                  </span>
+                </label>
+
+                  <script>
+                    const imgInp = document.getElementById('fileImage')
+                    imgInp.onchange = evt => {
+                      const [file] = imgInp.files
+                      if (file) {
+                        document.getElementById('imgFile').src = URL.createObjectURL(file)
+                      }
+                    }
+                  </script>
+              </div>
+
+              <div class="formblock__item">
+                <div class="formblock__title">Name</div>
+                <div class="formblock__input">
+                  <input type="text" value="Victor Ivanov" placeholder="Name" class="input-error">
+                  <small class="inputerror">Username cannot contain characters “@”./,|\’{}[]”</small>
+                </div>
+              </div>
+              <div class="formblock__item">
+                <div class="formblock__title">Username</div>
+                <div class="formblock__input">
+                  <input type="text" value="IVANOV228_SWAG_LIFE_VIP" placeholder="Username">
+                </div>
+              </div>
+              <div class="formblock__item">
+                <div class="formblock__title">Twitter link</div>
+                <div class="formblock__input">
+                  <input type="text" value="twitter.com/xolxllz" placeholder="Twitter link">
+                </div>
+              </div>
+              <div class="formblock__item">
+                <div class="formblock__title">Discord link</div>
+                <div class="formblock__input">
+                  <input type="text" value="@xolxllz" placeholder="Discord link">
+                </div>
+              </div>
+              <div class="formblock__item">
+                <div class="formblock__title">Telergam</div>
+                <div class="formblock__input">
+                  <input type="text" value="xollxlz@gmail.com" placeholder="Telergam">
+                </div>
+              </div>
+              <div class="formblock__item">
+                <div class="formblock__title">Bio</div>
+                <div class="formblock__input">
+                  <span class="formblock__limit">Max: 256 symbols</span>
+                  <textarea name="" id="" rows="8">
+✅ Only profitable recommendations
+🖥 24/7 market monitoring
+💼 NFT, BTC, ETH, TRC, GOLD
+
+Hi, My name is Victor Ivanov, my story is so boring b...
+                  </textarea>
+                </div>
+              </div>
+           </div> 
+        </div>
+        </div>
+      </div>
+  </form>
+  </div>
+</div>
+<%= _.template(require('../includes/footer.html').default)(data) %>
