@@ -34,10 +34,16 @@
                     <div class="cardprofile__info">
                       <div class="cardprofile__name">Victor Ivanov</div>                      
                         <div class="cardprofile__stats flex items-center">
-                          <div class="cardstat">
+                          <div class="cardstat cardstat_fw">
+                            <div class="cardstat__icon"></div>
                             <div class="cardstat__text">7 400 followers</div>
                           </div>
+                          <div class="cardstat onlyMobile">
+                            <div class="cardstat__icon"></div>
+                            <div class="cardstat__text">518 Shills</div>
+                          </div>
                           <div class="cardstat cardstat_green cardstat_bold">
+                            <div class="cardstat__icon"></div>
                             <div class="cardstat__text">87% Profitable</div>
                           </div>
                         </div>
@@ -73,14 +79,33 @@
             </div>
           </div>
           <div class="profileblock__stats">
-            <div class="profilestats">
-              <div class="profilestats__wrapper">
+
+           
+
+            <div class="profilestats"  data-toggleactive="statsview">
+              <div class="onlyMobile statsview" data-toggleclick="statsview">
+                <div class="statsview__content">
+                  <div class="statsview__icon">
+                    <div class="statsview__img"><img src="img/BulletedList.svg" alt=""></div>
+                  </div>
+                  <div class="statsview__text">View stats</div>
+                </div>
+                <div class="statsview__dd"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.13793 0.716563C8.01584 0.594479 7.81814 0.594479 7.69605 0.716563L5.00022 3.4124L2.3046 0.716563C2.18251 0.594479 1.9848 0.594479 1.86272 0.716563L0.508555 2.07073C0.386471 2.19281 0.386471 2.39052 0.508555 2.5126L4.77939 6.78344C4.84022 6.84469 4.92022 6.8751 5.00022 6.8751C5.08022 6.8751 5.16022 6.84469 5.22126 6.78365L9.49209 2.51281C9.61418 2.39073 9.61418 2.19302 9.49209 2.07094L8.13793 0.716563Z" fill="#212531"></path>
+                        </svg></div>
+              </div>
+
+              <div class="profilestats__wrapper" data-toggle="statsview">
                 <div class="profilestats__rows">
                   <div class="profilestats__row">
                     <div class="profilestats__items">
+                      <div class="profilestats__col">
                       <div class="profilestats__item">
                         <div class="profilestats__value">Shills:</div>
                       </div>
+                    </div>
+                    <div class="profilestats__col">
+
                       <div class="profilestats__item">
                         <div class="profilestats__value">5</div>
                         <div class="profilestats__caption">Total</div>
@@ -89,6 +114,8 @@
                         <div class="profilestats__value">10</div>
                         <div class="profilestats__caption">Profitable</div>
                       </div>
+                     
+
                       <div class="profilestats__item">
                         <div class="profilestats__value">467</div>
                         <div class="profilestats__caption">Unprofitable</div>
@@ -97,13 +124,17 @@
                         <div class="profilestats__value green">58%</div>
                         <div class="profilestats__caption">Profitability</div>
                       </div>
+                      </div>
                     </div>
                   </div>
                   <div class="profilestats__row">
                     <div class="profilestats__items">
+                      <div class="profilestats__col">
                       <div class="profilestats__item">
                         <div class="profilestats__value">ROI:</div>
                       </div>
+                    </div>
+                    <div class="profilestats__col">
                       <div class="profilestats__item">
                         <div class="profilestats__value">5%</div>
                         <div class="profilestats__caption">24h</div>
@@ -116,6 +147,7 @@
                         </div>
                         <div class="profilestats__caption">5 days</div>
                       </div>
+                      
                       <div class="profilestats__item">
                         <div class="profilestats__value">5%</div>
                         <div class="profilestats__caption">30 days</div>
@@ -123,6 +155,7 @@
                       <div class="profilestats__item">
                         <div class="profilestats__value green">5%</div>
                         <div class="profilestats__caption">All time</div>
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -140,10 +173,10 @@
           <div class="tabs__header" data-tabsheader="tabsheader">
               <ul>
                 <li class="active">
-                  <span class="tabs__title">Open positions</span> <span class="tabs__count">26</span>
+                  <span class="tabs__title">Open  </span> <span class="tabs__count">26</span>
                 </li>
                 <li>
-                  <span class="tabs__title">Closed positions </span><span class="tabs__count">4228</span>
+                  <span class="tabs__title">Closed <span class="onlyDesktop">positions</span> </span><span class="tabs__count">4228</span>
                 </li>
               </ul>
             </div>
@@ -1773,7 +1806,7 @@
           <!--/ .itemsblock__item -->
      
         </div>
-        <div class="itemsblock__nav">
+       <!--  <div class="itemsblock__nav">
           <div class="paginationblock">
             <div class="pagination">
               <a href="#" class="pagination__arrLeft disabled">
@@ -1801,7 +1834,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
