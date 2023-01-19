@@ -60,7 +60,18 @@ $(document).ready(function() {
       })(jQuery);
 
 
-     
+      document.querySelectorAll('[data-toggle="password"]').forEach(item => {
+        item.addEventListener('click', event => {
+            let inp = item.closest(".inputpassword").querySelector('input')
+            if (inp.type === "password") {
+                inp.type = "text";
+                item.closest(".inputpassword").classList.add("active")
+            } else {
+                inp.type = "password";
+                item.closest(".inputpassword").classList.remove("active")
+            }
+        })
+      }) 
 
 
     $('[data-toggleclick]').on('click', function(e) {

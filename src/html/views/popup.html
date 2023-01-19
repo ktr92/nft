@@ -10,6 +10,15 @@
     <br>
     <br>
     <a href="#popup_edit" data-toggle='modal' class="btn btn_main"> edit </a>
+    <a href="#popup_auth" data-toggle='modal' class="btn btn_main"> Log In </a>
+    <a href="#popup_sign" data-toggle='modal' class="btn btn_main"> Sign Up </a>
+    <a href="#popup_reset" data-toggle='modal' class="btn btn_main"> Password reset </a>
+    <a href="#popup_reset_password" data-toggle='modal' class="btn btn_main"> Password reset 2</a>
+    <a href="#popup_emailsent" data-toggle='modal' class="btn btn_main">Recovery email sent</a>
+    <a href="#popup_emailcheck" data-toggle='modal' class="btn btn_main">Check email</a>
+    <a href="#popup_success" data-toggle='modal' class="btn btn_main">Success</a>
+    <a href="#popup_error" data-toggle='modal' class="btn btn_main">Error</a>
+    <a href="#popup_report" data-toggle='modal' class="btn btn_main">Report</a>
     <br>
     <br>
   </div>
@@ -21,11 +30,11 @@
           <div class="modal__header">
 
             <div class="modal__leftheader">
-              <div class="modal__close" data-dismiss="modal" aria-label="Close">
+              <a href="#" class="modal__back" data-dismiss="modal" aria-label="Close">
                 <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M12.1295 0.26706L1.08264 11.5017C0.404747 12.1911 0.404747 13.3089 1.08264 13.9983L12.1295 25.2329L14.5844 22.7364L6.50078 14.5154H23.5742L23.5742 10.9846L6.50078 10.9846L14.5844 2.76365L12.1295 0.26706Z" fill="#3A4659"/>
                   </svg>
-              </div>
+              </a>
               <div class="modal__title">Edit profile</div>
             </div>
             <div class="modal__button">
@@ -116,4 +125,426 @@ Hi, My name is Victor Ivanov, my story is so boring b...
   </form>
   </div>
 </div>
+
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_auth'>
+  <div class="modal-dialog" role="document">
+    <form action="">
+      <div class="modal-content">
+          <div class="modal-title">Log In</div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__item">
+                  <div class="formblock__title">Email<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <input type="text" value="Victor Ivanov" placeholder="Email" class="input-error">
+                    <small class="inputerror">Email cannot contain characters /,|\’{}[]”</small>
+                  </div>
+                </div>
+                <div class="formblock__item">
+                  <div class="formblock__title">Password<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <div class="inputpassword">
+                      <input type="password"  >
+                      <img src="img/Invisible.svg" alt="" data-toggle="password" class="password_invisible">
+                      <img src="img/Eye2.svg" alt="" data-toggle="password"  class="password_visible">
+                    </div>
+                  </div>
+                  </div>
+               </div>
+               
+              </div><!-- /.formblock__main -->
+              <div class="flex content-between passwordforgot">
+                <div class="check">
+                  <input type="checkbox" id="save" checked="checked" value="Y">
+                  <label for="save">Remember me</a>
+                  </label>
+                </div>  
+                <a href="#">Forgot password?</a>
+              </div>
+              <div class="modal-submit">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Log In</button>
+                  </div>
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="textlogin flex content-center items-center">
+                <div class="textlogin__text">Don't have an account yet?</div>
+                <div class="textlogin__link"><a href=""><img src="img/Edit.svg" alt=""><span>Register now!</span></a></div>
+              </div><!-- /.textlogin -->
+            </div><!-- /.formblock -->
+        </div>
+      </div>
+  </form>
+
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_sign'>
+  <div class="modal-dialog" role="document">
+    <form action="">
+      <div class="modal-content">
+        <div class="modal__leftheader">
+          <a href="#" class="modal__back" data-dismiss="modal" aria-label="Close">
+            <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M12.1295 0.26706L1.08264 11.5017C0.404747 12.1911 0.404747 13.3089 1.08264 13.9983L12.1295 25.2329L14.5844 22.7364L6.50078 14.5154H23.5742L23.5742 10.9846L6.50078 10.9846L14.5844 2.76365L12.1295 0.26706Z" fill="#3A4659"/>
+              </svg>
+          </a>
+        </div>
+          <div class="modal-title">Sign Up</div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__item">
+                  <div class="formblock__title">Username<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <input type="text" value="Victor Ivanov" placeholder="Username" class="input-error">
+                    <small class="inputerror">Username cannot contain characters /,|\’{}[]”</small>
+                  </div>
+                </div>
+                <div class="formblock__item">
+                  <div class="formblock__title">Email<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <input type="text" placeholder="Email">
+                  </div>
+                </div>
+                <div class="formblock__item">
+                  <div class="formblock__title">Password<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <div class="inputpassword">
+                      <input type="password"  >
+                      <img src="img/Invisible.svg" alt="" data-toggle="password" class="password_invisible">
+                      <img src="img/Eye2.svg" alt="" data-toggle="password"  class="password_visible">
+                    </div>
+                  </div>
+                  </div>
+                <div class="formblock__item">
+                  <div class="formblock__title">Once again, please<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <div class="inputpassword">
+                      <input type="password" value="andr182838" >
+                      <img src="img/Invisible.svg" alt="" data-toggle="password" class="password_invisible">
+                      <img src="img/Eye2.svg" alt="" data-toggle="password"  class="password_visible">
+                    </div>
+                  </div>
+                  </div>
+               </div>
+               
+              </div>
+
+              <div class="captchablock"><img src="img/captcha.png" alt=""></div>
+              
+              <div class="modal-submit">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Complete registration</button>
+                  </div>
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              
+            </div><!-- /.formblock -->
+        </div>
+      </div>
+  </form>
+
+  </div>
+</div>
+
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_reset'>
+  <div class="modal-dialog" role="document">
+    <form action="">
+      <div class="modal-content">
+        <div class="modal__leftheader">
+          <a href="#" class="modal__back" data-dismiss="modal" aria-label="Close">
+            <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M12.1295 0.26706L1.08264 11.5017C0.404747 12.1911 0.404747 13.3089 1.08264 13.9983L12.1295 25.2329L14.5844 22.7364L6.50078 14.5154H23.5742L23.5742 10.9846L6.50078 10.9846L14.5844 2.76365L12.1295 0.26706Z" fill="#3A4659"/>
+              </svg>
+          </a>
+        </div>
+          <div class="modal-title">Password reset</div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+            <div class="formblock">
+              <div class="formblock__main">
+                
+                <div class="formblock__item">
+                  <div class="formblock__title">Email<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <input type="text" placeholder="Email">
+                  </div>
+                </div>
+                
+               
+              </div>
+
+              <div class="captchablock"><img src="img/captcha.png" alt=""></div>
+              
+              <div class="modal-submit">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Reset password</button>
+                  </div>
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              
+            </div><!-- /.formblock -->
+        </div>
+      </div>
+  </form>
+
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_reset_password'>
+  <div class="modal-dialog" role="document">
+    <form action="">
+      <div class="modal-content">
+        <div class="modal__leftheader">
+          <a href="#" class="modal__back" data-dismiss="modal" aria-label="Close">
+            <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M12.1295 0.26706L1.08264 11.5017C0.404747 12.1911 0.404747 13.3089 1.08264 13.9983L12.1295 25.2329L14.5844 22.7364L6.50078 14.5154H23.5742L23.5742 10.9846L6.50078 10.9846L14.5844 2.76365L12.1295 0.26706Z" fill="#3A4659"/>
+              </svg>
+          </a>
+        </div>
+          <div class="modal-title">Reset password</div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+            <div class="formblock">
+              <div class="formblock__main">
+                
+                <div class="formblock__item">
+                  <div class="formblock__title">New Password<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <div class="inputpassword">
+                      <input type="password" value="andr182838" >
+                      <img src="img/Invisible.svg" alt="" data-toggle="password" class="password_invisible">
+                      <img src="img/Eye2.svg" alt="" data-toggle="password"  class="password_visible">
+                    </div>
+                  </div>
+                  </div>
+                <div class="formblock__item">
+                  <div class="formblock__title">Once again, please<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <div class="inputpassword">
+                      <input type="password" value="andr182838" >
+                      <img src="img/Invisible.svg" alt="" data-toggle="password" class="password_invisible">
+                      <img src="img/Eye2.svg" alt="" data-toggle="password"  class="password_visible">
+                    </div>
+                  </div>
+                  </div>
+               </div>
+               
+              </div>
+
+              <div class="captchablock"><img src="img/captcha.png" alt=""></div>
+              
+              <div class="modal-submit">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Complete registration</button>
+                  </div>
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              
+            </div><!-- /.formblock -->
+        </div>
+      </div>
+  </form>
+
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_emailsent'>
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modalinfo">
+            <div class="modalinfo__image"><img src="img/send.svg" alt=""></div>
+            <div class="modalinfo__title">Recovery email sent to <br> <span class="green">*****llz@gmail.com</span></div>
+            <div class="modalinfo__text">To reset your password, follow the instructions in&nbsp;the&nbsp;email we’ve sent you.</div>
+          </div>
+          <div class="modalclose">
+            <button href="#" data-dismiss="modal" class="btn btn_main">Ok</button>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_emailcheck'>
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modalinfo">
+            <div class="modalinfo__image"><img src="img/send.svg" alt=""></div>
+            <div class="modalinfo__title">To complete registration, please check your email
+            </div>
+            <div class="modalinfo__text">The instructions should be in your inbox.
+            </div>
+          </div>
+          <div class="modalclose">
+            <button href="#" data-dismiss="modal" class="btn btn_main">Ok</button>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_success'>
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modalinfo">
+            <div class="modalinfo__image"><img src="img/success.svg" alt=""></div>
+            <div class="modalinfo__title">Congratulations, your account has been successfully created!
+            </div>
+           
+          </div>
+          <div class="modalclose">
+            <button href="#" class="btn btn_main">Log In</button>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_error'>
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modalinfo">
+            <div class="modalinfo__image"><img src="img/error.svg" alt=""></div>
+            <div class="modalinfo__title">Congratulations, your account has been successfully created!
+            </div>
+           
+          </div>
+          <div class="modalclose">
+            <button href="#" class="btn btn_main btn_red">Log In</button>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_auth'>
+  <div class="modal-dialog" role="document">
+    <form action="">
+      <div class="modal-content">
+          <div class="modal-title">Log In</div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__item">
+                  <div class="formblock__title">Email<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <input type="text" value="Victor Ivanov" placeholder="Email" class="input-error">
+                    <small class="inputerror">Email cannot contain characters /,|\’{}[]”</small>
+                  </div>
+                </div>
+                <div class="formblock__item">
+                  <div class="formblock__title">Password<span class="red">*</span></div>
+                  <div class="formblock__input">
+                    <div class="inputpassword">
+                      <input type="password"  >
+                      <img src="img/Invisible.svg" alt="" data-toggle="password" class="password_invisible">
+                      <img src="img/Eye2.svg" alt="" data-toggle="password"  class="password_visible">
+                    </div>
+                  </div>
+                  </div>
+               </div>
+               
+              </div><!-- /.formblock__main -->
+              <div class="flex content-between passwordforgot">
+                <div class="check">
+                  <input type="checkbox" id="save" checked="checked" value="Y">
+                  <label for="save">Remember me</a>
+                  </label>
+                </div>  
+                <a href="#">Forgot password?</a>
+              </div>
+              <div class="modal-submit">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Log In</button>
+                  </div>
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="textlogin flex content-center items-center">
+                <div class="textlogin__text">Don't have an account yet?</div>
+                <div class="textlogin__link"><a href=""><img src="img/Edit.svg" alt=""><span>Register now!</span></a></div>
+              </div><!-- /.textlogin -->
+            </div><!-- /.formblock -->
+        </div>
+      </div>
+  </form>
+
+  </div>
+</div>
+
+
 <%= _.template(require('../includes/footer.html').default)(data) %>
