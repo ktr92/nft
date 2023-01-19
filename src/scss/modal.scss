@@ -30,6 +30,8 @@
     width: get-vw-large(534px);
   }
 }
+
+
 .modal {
   z-index: 9999999999;
 }
@@ -126,6 +128,12 @@ button.close {
   border-radius: get-vw-large(12px);
   padding: get-vw-large(60px);
   padding-bottom: get-vw-large(48px);
+}
+
+.modal_large {
+  .modal-content {
+    padding: get-vw-large(50px) get-vw-large(80px) get-vw-large(47px) get-vw-large(80px);
+  }
 }
 
 .modal-body {
@@ -260,7 +268,11 @@ button.close {
   height: get-vw-medium(60px);
   line-height: get-vw-medium(60px);
 }
-
+.modal_large {
+  .modal-content {
+    padding: get-vw-medium(50px) get-vw-medium(80px) get-vw-medium(47px) get-vw-medium(80px);
+  }
+}
 }
 
 @include small-screen {
@@ -330,13 +342,13 @@ button.close {
 }
 
 .modal-title {
-  font-size: get-vw-small(20px);
+  font-size: get-vw-small(18px);
   margin-bottom: get-vw-small(18px);
 }
 
 .modal-content {
   border-radius: get-vw-small(12px);
-  padding: get-vw-small(38px)  get-vw-small(16px);
+  padding: get-vw-small(28px)  get-vw-small(16px);
 }
 
 
@@ -352,5 +364,9 @@ button.close {
 .modal-submit_small {
   margin-top: get-vw-small(30px);
 }
-
+.modal_large {
+  .modal-content {
+    padding: get-vw-small(24px) get-vw-small(16px);
+  }
+}
 }

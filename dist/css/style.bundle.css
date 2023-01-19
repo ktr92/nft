@@ -122,6 +122,9 @@ a {
 .mb-0 {
   margin-bottom: 0 !important; }
 
+.text-left {
+  text-align: left !important; }
+
 @media (max-width: 1023px) {
   .mobile-full {
     width: 100% !important; } }
@@ -226,6 +229,9 @@ button.close {
   padding: 3.125vw;
   padding-bottom: 2.5vw; }
 
+.modal_large .modal-content {
+  padding: 2.60417vw 4.16667vw 2.44792vw 4.16667vw; }
+
 .modal-body {
   padding: 0;
   overflow: visible; }
@@ -308,7 +314,9 @@ button.close {
     margin-top: 3.59712vw; }
   .modal-submit_small .buttonsrow__item_full .btn_main {
     height: 7.19424vw;
-    line-height: 7.19424vw; } }
+    line-height: 7.19424vw; }
+  .modal_large .modal-content {
+    padding: 5.9952vw 9.59233vw 5.63549vw 9.59233vw; } }
 
 @media only screen and (max-width: 600px) {
   .modal-dialog {
@@ -347,17 +355,19 @@ button.close {
     right: 3.125vw;
     font-size: 10.9375vw; }
   .modal-title {
-    font-size: 6.25vw;
+    font-size: 5.625vw;
     margin-bottom: 5.625vw; }
   .modal-content {
     border-radius: 3.75vw;
-    padding: 11.875vw 5vw; }
+    padding: 8.75vw 5vw; }
   button.close {
     font-size: 3.125vw;
     top: 5.625vw;
     right: 6.5625vw; }
   .modal-submit_small {
-    margin-top: 9.375vw; } }
+    margin-top: 9.375vw; }
+  .modal_large .modal-content {
+    padding: 7.5vw 5vw; } }
 
 /* @import './selectbox.scss'; */
 body {
@@ -1017,6 +1027,7 @@ img {
     color: #30CA4C; }
 
 .btn_red {
+  color: #fff;
   background: #F8444F;
   border: 0.10417vw solid #F8444F; }
   .btn_red:hover, .btn_red:focus {
@@ -2328,16 +2339,26 @@ textarea.input-error {
   margin-bottom: 2.5vw; }
 
 .buttonsrow {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 -0.46875vw; }
 
-/* .buttonsrow__item_full {
-  margin-bottom: get-vw-large(8px);
-} */
-.buttonsrow__item_full a {
+.buttonsrow__item {
+  width: 50%;
+  padding: 0 0.46875vw; }
+
+.buttonsrow__item_full {
+  width: 100%; }
+
+.buttonsrow__item a {
   height: 3.125vw;
-  line-height: 3.125vw; }
+  line-height: 2.91667vw;
+  padding: 0;
+  width: 100%;
+  display: block;
+  text-align: center; }
 
-.buttonsrow__item_full a.btn_border {
+.buttonsrow__item a.btn_border {
   height: 3.125vw;
   line-height: 3.125vw; }
 
@@ -2436,6 +2457,13 @@ textarea.input-error {
   width: 100%;
   margin: auto;
   display: block; }
+
+.checkblock {
+  margin-bottom: 1.5625vw; }
+
+.checkblock_red .dcheckbox input[type="checkbox"]:checked + .dcheckbox__text:before {
+  background-color: #F8444F;
+  border-color: #F8444F; }
 
 @media only screen and (max-width: 999px) {
   .captchablock {
@@ -3243,10 +3271,10 @@ textarea.input-error {
   /* .buttonsrow__item_full {
   margin-bottom: get-vw-medium(8px);
 } */
-  .buttonsrow__item_full a {
+  .buttonsrow__item a {
     height: 5.9952vw;
     line-height: 5.9952vw; }
-  .buttonsrow__item_full a.btn_border {
+  .buttonsrow__item a.btn_border {
     height: 5.9952vw;
     line-height: 5.9952vw; }
   .buttonsrow__item_full .btn {
@@ -3287,7 +3315,19 @@ textarea.input-error {
   .modalinfo__text {
     font-size: 1.67866vw; }
   .modalclose .btn {
-    max-width: 27.09832vw; } }
+    max-width: 27.09832vw; }
+  .checkblock {
+    margin-bottom: 3.59712vw; }
+  .buttonsrow {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 -1.07914vw; }
+  .buttonsrow__item {
+    width: 50%;
+    padding: 0 1.07914vw; }
+  .buttonsrow__item a {
+    height: 6.23501vw;
+    line-height: 5.7554vw; } }
 
 @media only screen and (max-width: 600px) {
   .captchablock {
@@ -4250,10 +4290,10 @@ textarea.input-error {
   /* .buttonsrow__item_full {
   margin-bottom: get-vw-small(8px);
 } */
-  .buttonsrow__item_full a {
+  .buttonsrow__item a {
     height: 15.625vw;
     line-height: 15.625vw; }
-  .buttonsrow__item_full a.btn_border {
+  .buttonsrow__item a.btn_border {
     height: 15.625vw;
     line-height: 15.625vw; }
   .buttonsrow__item_full .btn {
@@ -4304,7 +4344,18 @@ textarea.input-error {
     right: 3.125vw; }
     button.close img {
       width: 2.5vw;
-      height: 2.5vw; } }
+      height: 2.5vw; }
+  .checkblock {
+    margin-bottom: 3.125vw; }
+  .buttonsrow {
+    margin: 0; }
+  .buttonsrow__item {
+    width: 199%;
+    padding: 0;
+    margin-bottom: 1.875vw; }
+  .buttonsrow__item a {
+    height: 12.5vw;
+    line-height: 11.25vw; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/
