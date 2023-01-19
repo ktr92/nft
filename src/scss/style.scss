@@ -2578,6 +2578,220 @@ line-height: 100%;
   }
 }
 
+.sliderblock {
+  margin-bottom: 67px;
+}
+.sliderblock__container {
+}
+.sliderblock__slider {
+}
+.sliderblock__slide {
+}
+.sliderblock__card {
+  border-radius: get-vw-modal(20px);
+  overflow: hidden;
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  background: #fff;
+}
+
+.imagecard__logo {
+  margin-bottom: get-vw-modal(84px);
+  margin-left: auto;
+  margin-right: auto;
+  width: get-vw-modal(200px);
+}
+.imagecard__wrapper {
+  width: get-vw-modal(895px);
+/*   min-height: 895px);
+ */  padding: get-vw-modal(46px) get-vw-modal(32px) get-vw-modal(28px) get-vw-modal(32px);
+  background: linear-gradient(
+    to bottom,
+    $green 0%,
+    $green 313px,
+    #fff 313px,
+    #fff 100%
+  );
+}
+.minicard__img {
+  border-radius: 50%;
+  width: get-vw-modal(180px);
+  height: get-vw-modal(180px);
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-bottom: get-vw-modal(14px);
+  @include imageblock();
+}
+.imagecard__content {
+  border: get-vw-modal(6px) solid #FFFFFF;
+  border-radius: get-vw-modal(22px);
+  background: #fff;
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  margin-bottom: get-vw-modal(28px);
+}
+
+
+/* 
+.sliderblock__card {
+
+  .imagecard__wrapper {
+    transform: scale($imagecard_scale);
+    transform-origin: left top;
+  }
+} */
+
+.minicard__header {
+  margin-top: get-vw-modal(-60px);
+}
+.minicard__image {
+}
+.minicard__img {
+}
+.minicard__title {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal(32px);
+line-height: get-vw-modal(41px);
+
+color: #212531;
+margin-bottom: get-vw-modal(30px);
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.minicard__main {
+  background: rgba(243, 245, 248, 1);
+  text-align: center;
+  padding: get-vw-modal(52px);
+  border-radius: 0 0 get-vw-modal(22px) get-vw-modal(22px);
+}
+.minicard__stat {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal(88px);
+line-height: get-vw-modal(114px);
+/* identical to box height */
+margin-bottom: get-vw-modal(26px);
+
+color: #30CA4C;
+}
+.minicard__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.minicard__item {
+  padding-right: get-vw-modal(56px);
+  margin-right: get-vw-modal(56px);
+  text-align: center;
+  border-right: get-vw-modal(3px) solid rgba(33, 37, 49, 0.2);
+
+  &:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+  }
+}
+.minicard__itemtitle {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal(36px);
+line-height: get-vw-modal(47px);
+
+
+text-align: center;
+
+color: #212531;
+margin-bottom: get-vw-modal(9px);
+}
+.minicard__itemtext {
+  font-style: normal;
+  font-weight: 400;
+  font-size: get-vw-modal(20px);
+  line-height: get-vw-modal(26px);
+  /* identical to box height */
+
+  text-align: center;
+
+  color: rgba(33, 37, 49, 0.5);
+}
+.minicard__footer {
+}
+.minicard__params {
+  margin-top: get-vw-modal(39px);
+
+}
+.minicard__param {
+  font-style: normal;
+font-weight: 400;
+font-size: get-vw-modal(20px);
+line-height: get-vw-modal(26px);
+color: rgba(33, 37, 49, 0.5);
+}
+.imagecard__footer {
+  margin-top: get-vw-modal(28px);
+/*   margin-bottom: get-vw-modal(28px);
+ */}
+.imagecard__links {
+}
+.imagecard__link {
+  margin-left: get-vw-modal(24px);
+  &:first-child {
+    margin-left: 0;
+  }
+  .iconlink__text {
+    font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal(20px);
+line-height: get-vw-modal(26px);
+/* identical to box height */
+
+
+color: #30CA4C;
+  }
+
+  .iconlink__img {
+    max-width: get-vw-modal(42px);
+    min-width: get-vw-modal(42px);
+    height: get-vw-modal(42px);
+    border:  get-vw-modal(2px) solid rgba(33, 37, 49, 0.1);
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    img {
+      min-width: get-vw-modal(22px);
+      max-width: get-vw-modal(22px);
+    }
+    &:hover {
+      border-color: $green;
+    }
+  }
+}
+
+.imagecard__rtext {
+  font-style: normal;
+    font-weight: 700;
+    font-size: get-vw-modal(20px);
+    line-height: get-vw-modal(26px);
+  a {
+   
+    color: #30CA4C;
+  }
+}
+
+
+
 @include medium-screen {
   .captchablock {
     text-align: center;

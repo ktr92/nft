@@ -2465,6 +2465,185 @@ textarea.input-error {
   background-color: #F8444F;
   border-color: #F8444F; }
 
+.sliderblock {
+  margin-bottom: 67px; }
+
+.sliderblock__card {
+  border-radius: 0.58194vw;
+  overflow: hidden;
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  background: #fff; }
+
+.imagecard__logo {
+  margin-bottom: 2.44413vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5.81937vw; }
+
+.imagecard__wrapper {
+  width: 26.04167vw;
+  /*   min-height: 895px);
+ */
+  padding: 1.33845vw 0.9311vw 0.81471vw 0.9311vw;
+  background: linear-gradient(to bottom, #30CA4C 0%, #30CA4C 313px, #fff 313px, #fff 100%); }
+
+.minicard__img {
+  border-radius: 50%;
+  width: 5.23743vw;
+  height: 5.23743vw;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-bottom: 0.40736vw;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  .minicard__img img:not([role='presentation']) {
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    top: -9999px;
+    bottom: -9999px;
+    margin: auto;
+    width: 100% !important;
+    max-height: initial !important;
+    height: initial !important; }
+
+.imagecard__content {
+  border: 0.17458vw solid #FFFFFF;
+  border-radius: 0.64013vw;
+  background: #fff;
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  margin-bottom: 0.81471vw; }
+
+/* 
+.sliderblock__card {
+
+  .imagecard__wrapper {
+    transform: scale($imagecard_scale);
+    transform-origin: left top;
+  }
+} */
+.minicard__header {
+  margin-top: -1.74581vw; }
+
+.minicard__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9311vw;
+  line-height: 1.19297vw;
+  color: #212531;
+  margin-bottom: 0.87291vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.minicard__main {
+  background: #f3f5f8;
+  text-align: center;
+  padding: 1.51304vw;
+  border-radius: 0 0 0.64013vw 0.64013vw; }
+
+.minicard__stat {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.56052vw;
+  line-height: 3.31704vw;
+  /* identical to box height */
+  margin-bottom: 0.75652vw;
+  color: #30CA4C; }
+
+.minicard__items {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.minicard__item {
+  padding-right: 1.62942vw;
+  margin-right: 1.62942vw;
+  text-align: center;
+  border-right: 0.08729vw solid rgba(33, 37, 49, 0.2); }
+  .minicard__item:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none; }
+
+.minicard__itemtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.04749vw;
+  line-height: 1.36755vw;
+  text-align: center;
+  color: #212531;
+  margin-bottom: 0.26187vw; }
+
+.minicard__itemtext {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.58194vw;
+  line-height: 0.75652vw;
+  /* identical to box height */
+  text-align: center;
+  color: rgba(33, 37, 49, 0.5); }
+
+.minicard__params {
+  margin-top: 1.13478vw; }
+
+.minicard__param {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.58194vw;
+  line-height: 0.75652vw;
+  color: rgba(33, 37, 49, 0.5); }
+
+.imagecard__footer {
+  margin-top: 0.81471vw;
+  /*   margin-bottom: get-vw-modal(28px);
+ */ }
+
+.imagecard__link {
+  margin-left: 0.69832vw; }
+  .imagecard__link:first-child {
+    margin-left: 0; }
+  .imagecard__link .iconlink__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.58194vw;
+    line-height: 0.75652vw;
+    /* identical to box height */
+    color: #30CA4C; }
+  .imagecard__link .iconlink__img {
+    max-width: 1.22207vw;
+    min-width: 1.22207vw;
+    height: 1.22207vw;
+    border: 0.05819vw solid rgba(33, 37, 49, 0.1);
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .imagecard__link .iconlink__img img {
+      min-width: 0.64013vw;
+      max-width: 0.64013vw; }
+    .imagecard__link .iconlink__img:hover {
+      border-color: #30CA4C; }
+
+.imagecard__rtext {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.58194vw;
+  line-height: 0.75652vw; }
+  .imagecard__rtext a {
+    color: #30CA4C; }
+
 @media only screen and (max-width: 999px) {
   .captchablock {
     text-align: center;
