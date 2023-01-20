@@ -45,7 +45,42 @@ $( window ).resize(function() {
     resizeEvents()
 })
 $(document).ready(function() {
-    resizeEvents();
+    resizeEvents(); 
+
+    
+
+    $('[data-click="download-img"]').on('click', function() {
+        html2canvas(document.querySelector('[data-download="download-img"]')).then(function(canvas) {
+            var link = document.createElement("a");
+            document.body.appendChild(link);
+            link.download = "repost.png";
+            link.href = canvas.toDataURL("image/png");
+            link.target = '_blank';
+            link.click();
+            canvas.remove();
+            link.remove();
+        });
+    })
+    $('[data-click="copy-img"]').on('click', function() {
+        html2canvas(document.querySelector('[data-download="download-img"]')).then(function(canvas) {
+            canvas.toBlob(function(blob) {
+                navigator.clipboard
+                    .write([
+                    new ClipboardItem(
+                        Object.defineProperty({}, blob.type, {
+                            value: blob,
+                            enumerable: true
+                        })
+                    )
+                ])
+                    .then(function() {
+                    console.log("Copied to clipboard");
+                    domNode.classList.remove("on");
+                });
+            });
+            canvas.remove();
+        });
+    })
 
     (function($) {
         $(function() {

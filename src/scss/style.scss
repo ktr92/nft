@@ -99,6 +99,7 @@
 @import "./partials/mixins.scss";
 @import "./partials/classes.scss";
 @import "./modal.scss";
+@import "./download.scss";
 /* @import './selectbox.scss'; */
 body {
   min-width: 16.666666666666664vw;
@@ -2208,7 +2209,7 @@ body.block {
   }
 }
 
-.btn_main:hover {
+.btn_main:hover,.btn_main:focus {
   svg path {
     fill: $green;
   }
@@ -2630,15 +2631,6 @@ line-height: 100%;
   margin-bottom: get-vw-modal(28px);
 }
 
-
-/* 
-.sliderblock__card {
-
-  .imagecard__wrapper {
-    transform: scale($imagecard_scale);
-    transform-origin: left top;
-  }
-} */
 
 .minicard__header {
   margin-top: get-vw-modal(-60px);
