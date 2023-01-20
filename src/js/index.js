@@ -4,6 +4,7 @@ function initFE() {
     closeByClickOutside('.fdropdown__menu', '.fdropdown__button')
     closeByClickOutside('.headersearch', '[data-toggleclick="headersearch"]')
     closeByClickOutside('.suggestions', '.searchinput')
+    repostSliderInit()
 }
 
 function showSuggestions(e) {
@@ -37,6 +38,29 @@ function closeByClickOutside(element, button, callback) {
   }
 
 
+  function repostSliderInit() {
+    $('[data-slider="repostslider"]').each(function() {
+        $(this).slick({
+            dots: true,
+            arrows: true,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            swipe: true,
+            nextArrow: $(this).closest('[data-sliderwrapper]').find('[data-slidernext]'),
+            prevArrow: $(this).closest('[data-sliderwrapper]').find('[data-sliderprev]'),
+        })
+        $('[data-slider="repostslider"]').on('afterChange', function(e, s, currentSlideIndex) {
+            let previousSlideIndex = currentSlideIndex + 1
+
+            $('[data-click="copy-img"]').attr('data-clickindex', previousSlideIndex)
+            $('[data-click="download-img"]').attr('data-downloadindex', previousSlideIndex)
+          });
+    })
+  }
+
+
 function resizeEvents() {
     $('.siteheader__left').css('min-width', $('.siteheader__right').width())
 }
@@ -47,10 +71,16 @@ $( window ).resize(function() {
 $(document).ready(function() {
     resizeEvents(); 
 
+
+    $('.modal').on('shown.bs.modal', function (e) {
+        $(this).find('[data-slider]').slick('setPosition');
+      })
+
     
 
     $('[data-click="download-img"]').on('click', function() {
-        html2canvas(document.querySelector('[data-download="download-img"]')).then(function(canvas) {
+        let index = $(this).attr('data-downloadindex')
+        html2canvas(document.querySelector(`[data-download="download-img"][data-blockindex="${index}"]`)).then(function(canvas) {
             var link = document.createElement("a");
             document.body.appendChild(link);
             link.download = "repost.png";
@@ -62,7 +92,9 @@ $(document).ready(function() {
         });
     })
     $('[data-click="copy-img"]').on('click', function() {
-        html2canvas(document.querySelector('[data-download="download-img"]')).then(function(canvas) {
+        let index = $(this).attr('data-clickindex')
+        console.log(index)
+        html2canvas(document.querySelector(`[data-download="download-img"][data-blockindex="${index}"]`)).then(function(canvas) {
             canvas.toBlob(function(blob) {
                 navigator.clipboard
                     .write([
@@ -75,24 +107,21 @@ $(document).ready(function() {
                 ])
                     .then(function() {
                     console.log("Copied to clipboard");
-                    domNode.classList.remove("on");
+                    /* domNode.classList.remove("on"); */
                 });
             });
             canvas.remove();
         });
     })
 
-    (function($) {
         $(function() {
-      
             $('[data-tabsheader="tabsheader"]').on('click', 'li:not(.active)', function() {
                 $(this)
                     .addClass('active').siblings().removeClass('active')
                     .closest('[data-tabswrapper="tabswrapper"]').find('[data-tabscontent]').removeClass('active').eq($(this).index()).addClass('active');
             });
-      
         });
-      })(jQuery);
+
 
 
       document.querySelectorAll('[data-toggle="password"]').forEach(item => {
