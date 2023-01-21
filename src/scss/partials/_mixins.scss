@@ -32,6 +32,14 @@
     @return $font / $vw-context * 1vw;
     @return $font;
   }
+  $imagecard_scale: 895/500;
+
+  @function get-vw-modal_medium($font){
+    $vw-viewport-modal: 834 * $imagecard_scale;
+    $vw-context: $vw-viewport-modal * 0.01 * 1px;
+    @return $font / $vw-context * 1vw;
+    @return $font;
+  }
 
 @mixin container {
   width: 100%;

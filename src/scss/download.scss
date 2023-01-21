@@ -1,10 +1,9 @@
 @import "./partials/params.scss";
 @import "./partials/mixins.scss";
 @import "./partials/classes.scss";
-.imagecard {
-  width: 895px;
-}
+
 .imagecard__download {
+  width: 895px;
   .imagecard__logo {
     margin-bottom: 84px;
     margin-left: auto;
