@@ -1600,6 +1600,7 @@ a {
     /*   min-height: 895px);
  */
     padding: 4.04749vw 2.81564vw 2.46369vw 2.81564vw;
+    border-radius: 1.05587vw;
     background: linear-gradient(to bottom, #30CA4C 0%, #30CA4C 25.51676vw, #fff 25.51676vw, #fff 100%);
     height: 78.75vw;
     position: relative; }

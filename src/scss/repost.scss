@@ -1572,6 +1572,7 @@ color: #212531;
   width: get-vw-modal_small(895px);
 /*   min-height: 895px);
  */  padding: get-vw-modal_small(46px) get-vw-modal_small(32px) get-vw-modal_small(28px) get-vw-modal_small(32px);
+ border-radius: get-vw-modal_small(12px);
   background: linear-gradient(
     to bottom,
     $green 0%,
