@@ -32,10 +32,17 @@
     @return $font / $vw-context * 1vw;
     @return $font;
   }
-  $imagecard_scale: 895/500;
 
   @function get-vw-modal_medium($font){
     $vw-viewport-modal: 834 * $imagecard_scale;
+    $vw-context: $vw-viewport-modal * 0.01 * 1px;
+    @return $font / $vw-context * 1vw;
+    @return $font;
+  }
+  $imagecard_scale_small: 895/252;
+
+  @function get-vw-modal_small($font){
+    $vw-viewport-modal: 320 * $imagecard_scale_small;
     $vw-context: $vw-viewport-modal * 0.01 * 1px;
     @return $font / $vw-context * 1vw;
     @return $font;

@@ -5531,7 +5531,7 @@ font-size: get-vw-small(14px);}
     margin: 0;
   }
   .buttonsrow__item {
-    width: 199%;
+    width: 100%;
     padding: 0;
     margin-bottom: get-vw-small(6px);
   }
@@ -5545,21 +5545,23 @@ font-size: get-vw-small(14px);}
 
   
 .slick-dots li {
-  height: get-vw-small(6px);
+  height: get-vw-small(4px);
   margin: 0 get-vw-small(3px);
-  width: get-vw-small(6px); }
+  width: get-vw-small(4px); }
 
 .slick-dots li button {
   background-color: #D9D9D9;
   border-radius: 50%;
-  height: get-vw-small(6px);
+  height: get-vw-small(4px);
   padding: 0;
-  width: get-vw-small(6px); }
+  width: get-vw-small(4px); }
 
 .slick-dots li.slick-active button {
   background-color: #30CA4C;
   opacity: 1; }
-
+  .slick-dots {
+    bottom: get-vw-small(-38px);
+  }
 .slick-dots li button:before {
   display: none; }
 
@@ -5571,38 +5573,31 @@ font-size: get-vw-small(14px);}
     filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
 }
 
-
-.sliderblock__arrow_next, .sliderblock__arrow_prev {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.sliderblock__arrows {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: get-vw-small(46px);
-  height: get-vw-small(46px);
-  border: get-vw-small(2px) solid rgba(58, 70, 89, 0.15);
-  border-radius: 555px;
-
+  justify-content: space-between;
+}
+.sliderblock__arrow_next, .sliderblock__arrow_prev {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  transform: none;
+  width: get-vw-small(30px);
+  height: get-vw-small(30px);
+  border: get-vw-small(1.5px) solid rgba(58, 70, 89, 0.15);
   img {
-    min-width: get-vw-small(16px);
-    max-width: get-vw-small(16px);
+    min-width: get-vw-small(10px);
+    max-width: get-vw-small(10px);
   }
 }
-.sliderblock__arrow_next {
-  right: get-vw-small(-45px);
+.sliderblock__slider.slick-initialized.slick-slider.slick-dotted {
+  margin-bottom: get-vw-small(19px);
 }
-.sliderblock__arrow_prev {
-  left: get-vw-small(-45px);
 
-  img {
-    transform: rotate(180deg);
-  }
-}
 .sliderblock {
-  margin-bottom: get-vw-small(67px);
+  margin-bottom: get-vw-small(16px);
 }
 }
