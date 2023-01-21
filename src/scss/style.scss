@@ -1,9 +1,10 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+
+@import "./partials/params.scss";
+@import "./partials/mixins.scss";
+@import "./partials/classes.scss";
+@import "./modal.scss";
+@import "./repost.scss";
+@import "./download.scss";
 
 @font-face {
   font-family: "Klein";
@@ -95,12 +96,6 @@
   font-display: swap;
 }
 
-@import "./partials/params.scss";
-@import "./partials/mixins.scss";
-@import "./partials/classes.scss";
-@import "./modal.scss";
-@import "./repost.scss";
-@import "./download.scss";
 
 /* @import './selectbox.scss'; */
 body {
@@ -2641,10 +2636,11 @@ line-height: 100%;
   }
 }
 .sliderblock {
-  margin-bottom: get-vw-large(67px);
+  margin-bottom: get-vw-large(27px);
 }
 .sliderblock__container {
   position: relative;
+  margin-bottom: get-vw-large(67px);
 }
 
 
@@ -4004,6 +4000,9 @@ font-size: get-vw-medium(14px);}
   }
 }
 .sliderblock {
+  margin-bottom: get-vw-medium(67px);
+}
+.sliderblock__container {
   margin-bottom: get-vw-medium(67px);
 }
 }
@@ -5599,5 +5598,8 @@ font-size: get-vw-small(14px);}
 
 .sliderblock {
   margin-bottom: get-vw-small(16px);
+}
+.sliderblock__container {
+  margin-bottom: get-vw-medium(16px);
 }
 }

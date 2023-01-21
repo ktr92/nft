@@ -11,6 +11,7 @@
   
 }
 .imagecard {
+  
 .imagecard__logo {
   margin-bottom: get-vw-modal(84px);
   margin-left: auto;
@@ -18,6 +19,8 @@
   width: get-vw-modal(200px);
 }
 .imagecard__wrapper {
+  border-radius: get-vw-modal(22px);
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
   width: get-vw-modal(895px);
 /*   min-height: 895px);
  */  padding: get-vw-modal(46px) get-vw-modal(32px) get-vw-modal(28px) get-vw-modal(32px);
@@ -51,6 +54,7 @@
   background: #fff;
   filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
   margin-bottom: get-vw-modal(28px);
+  border-radius: get-vw-modal(22px);
 }
 
 
@@ -144,8 +148,10 @@ color: rgba(33, 37, 49, 0.5);
 }
 .imagecard__footer {
   position: absolute;
+
   bottom: get-vw-modal(29px);
   left: get-vw-modal(42px);
+  right: get-vw-modal(42px);
   margin-top: get-vw-modal(28px);
 /*   margin-bottom: get-vw-modal(28px);
  */}
@@ -655,6 +661,122 @@ $card_profile_w: get-vw-modal(160px);
 }
 
 }
+.imagecard {
+.tablecard {
+  border: get-vw-modal(6px) solid #FFFFFF;
+  border-radius: get-vw-modal(22px);
+
+}
+.tablecard__img {
+  border-radius: 50%;
+  width: get-vw-modal(136px);
+  height: get-vw-modal(136px);
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-bottom: get-vw-modal(14px);
+  @include imageblock(height);
+}
+.tablecard__content {
+  background: #fff;
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  margin-bottom: get-vw-modal(28px);
+  border-radius: get-vw-modal(22px);
+}
+
+
+.tablecard__header {
+  margin-top: get-vw-modal(-70px);
+}
+
+.tablecard__title {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal(32px);
+line-height: get-vw-modal(41px);
+
+color: #212531;
+margin-bottom: get-vw-modal(5px);
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.tablecard__main {
+  background: rgba(243, 245, 248, 1);
+  text-align: center;
+  padding: get-vw-modal(31px) get-vw-modal(44px);;
+  border-radius: 0 0 get-vw-modal(22px) get-vw-modal(22px);
+}
+
+.tablecard__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: get-vw-modal(25px);
+  line-height: get-vw-modal(32px);
+  text-align: center;
+  color: #30CA4C;
+  margin-bottom: get-vw-modal(33px);
+}
+
+.tablecard__table {
+}
+.tablecard__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+$tablecard__col_w: get-vw-modal(82px);
+.tablecard__col {
+  min-width: $tablecard__col_w;
+  max-width: $tablecard__col_w;
+}
+.tablecard__col_info {
+  max-width: get-vw-modal(325px);
+  min-width: get-vw-modal(325px);
+}
+.tablecard__info {
+  display: flex;
+  align-items: center;
+}
+.tablecard__icon {
+}
+.tablecard__ic {
+  width: get-vw-modal(59px);
+  height: get-vw-modal(59px);
+  border-radius: 50%;
+  margin-bottom: 0;
+  @include imageblock();
+}
+.tablecard__data {
+  margin-left: get-vw-modal(19px);
+}
+.tablecard__caption {
+  font-style: normal;
+font-weight: 400;
+font-size: get-vw-modal(20px);
+line-height: get-vw-modal(26px);
+color: $main5;
+text-align: left;
+}
+.tablecard__name {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal(20px);
+line-height: get-vw-modal(26px);
+/* identical to box height */
+text-align: left;
+white-space: nowrap;
+
+
+color: #212531;
+}
+.tablecard__item {
+  margin-bottom: get-vw-modal(16px);
+}
+}
+
 
 @include medium-screen {
     
@@ -802,6 +924,7 @@ color: rgba(33, 37, 49, 0.5);
   bottom: get-vw-modal_medium(29px);
   left: get-vw-modal_medium(42px);
   margin-top: get-vw-modal_medium(28px);
+  right: get-vw-modal_medium(42px);
 /*   margin-bottom: get-vw-modal_medium(28px);
  */}
 .imagecard__links {
@@ -1310,6 +1433,123 @@ $card_profile_w: get-vw-modal_medium(160px);
 }
 
 }
+
+.imagecard {
+.tablecard {
+  border: get-vw-modal_medium(6px) solid #FFFFFF;
+  border-radius: get-vw-modal_medium(22px);
+
+}
+.tablecard__img {
+  border-radius: 50%;
+  width: get-vw-modal_medium(136px);
+  height: get-vw-modal_medium(136px);
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-bottom: get-vw-modal_medium(14px);
+  @include imageblock(height);
+}
+.tablecard__content {
+  background: #fff;
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  margin-bottom: get-vw-modal_medium(28px);
+  border-radius: get-vw-modal_medium(22px);
+}
+
+
+.tablecard__header {
+  margin-top: get-vw-modal_medium(-70px);
+}
+
+.tablecard__title {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal_medium(32px);
+line-height: get-vw-modal_medium(41px);
+
+color: #212531;
+margin-bottom: get-vw-modal_medium(5px);
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.tablecard__main {
+  background: rgba(243, 245, 248, 1);
+  text-align: center;
+  padding: get-vw-modal_medium(31px) get-vw-modal_medium(44px);;
+  border-radius: 0 0 get-vw-modal_medium(22px) get-vw-modal_medium(22px);
+}
+
+.tablecard__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: get-vw-modal_medium(25px);
+  line-height: get-vw-modal_medium(32px);
+  text-align: center;
+  color: #30CA4C;
+  margin-bottom: get-vw-modal_medium(33px);
+}
+
+.tablecard__table {
+}
+.tablecard__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+$tablecard__col_w: get-vw-modal_medium(82px);
+.tablecard__col {
+  min-width: $tablecard__col_w;
+  max-width: $tablecard__col_w;
+}
+.tablecard__col_info {
+  max-width: get-vw-modal_medium(325px);
+  min-width: get-vw-modal_medium(325px);
+}
+.tablecard__info {
+  display: flex;
+  align-items: center;
+}
+.tablecard__icon {
+}
+.tablecard__ic {
+  width: get-vw-modal_medium(59px);
+  height: get-vw-modal_medium(59px);
+  border-radius: 50%;
+  margin-bottom: 0;
+  @include imageblock();
+}
+.tablecard__data {
+  margin-left: get-vw-modal_medium(19px);
+}
+.tablecard__caption {
+  font-style: normal;
+font-weight: 400;
+font-size: get-vw-modal_medium(20px);
+line-height: get-vw-modal_medium(26px);
+color: $main5;
+text-align: left;
+}
+.tablecard__name {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal_medium(20px);
+line-height: get-vw-modal_medium(26px);
+/* identical to box height */
+text-align: left;
+white-space: nowrap;
+
+
+color: #212531;
+}
+.tablecard__item {
+  margin-bottom: get-vw-modal_medium(16px);
+}
+
+}
 }
 
 @include small-screen {
@@ -1457,6 +1697,8 @@ color: rgba(33, 37, 49, 0.5);
   position: absolute;
   bottom: get-vw-modal_small(29px);
   left: get-vw-modal_small(42px);
+  right: get-vw-modal_small(42px);
+  
   margin-top: get-vw-modal_small(28px);
 /*   margin-bottom: get-vw-modal_small(28px);
  */}
@@ -1966,4 +2208,122 @@ $card_profile_w: get-vw-modal_small(160px);
 }
 
 }
+
+.imagecard {
+
+.tablecard {
+  border: get-vw-modal_small(6px) solid #FFFFFF;
+  border-radius: get-vw-modal_small(22px);
+
+}
+.tablecard__img {
+  border-radius: 50%;
+  width: get-vw-modal_small(136px);
+  height: get-vw-modal_small(136px);
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-bottom: get-vw-modal_small(14px);
+  @include imageblock(height);
+}
+.tablecard__content {
+  background: #fff;
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  margin-bottom: get-vw-modal_small(28px);
+  border-radius: get-vw-modal_small(22px);
+}
+
+
+.tablecard__header {
+  margin-top: get-vw-modal_small(-70px);
+}
+
+.tablecard__title {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal_small(32px);
+line-height: get-vw-modal_small(41px);
+
+color: #212531;
+margin-bottom: get-vw-modal_small(5px);
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.tablecard__main {
+  background: rgba(243, 245, 248, 1);
+  text-align: center;
+  padding: get-vw-modal_small(31px) get-vw-modal_small(44px);;
+  border-radius: 0 0 get-vw-modal_small(22px) get-vw-modal_small(22px);
+}
+
+.tablecard__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: get-vw-modal_small(25px);
+  line-height: get-vw-modal_small(32px);
+  text-align: center;
+  color: #30CA4C;
+  margin-bottom: get-vw-modal_small(33px);
+}
+
+.tablecard__table {
+}
+.tablecard__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+$tablecard__col_w: get-vw-modal_small(82px);
+.tablecard__col {
+  min-width: $tablecard__col_w;
+  max-width: $tablecard__col_w;
+}
+.tablecard__col_info {
+  max-width: get-vw-modal_small(325px);
+  min-width: get-vw-modal_small(325px);
+}
+.tablecard__info {
+  display: flex;
+  align-items: center;
+}
+.tablecard__icon {
+}
+.tablecard__ic {
+  width: get-vw-modal_small(59px);
+  height: get-vw-modal_small(59px);
+  border-radius: 50%;
+  margin-bottom: 0;
+  @include imageblock();
+}
+.tablecard__data {
+  margin-left: get-vw-modal_small(19px);
+}
+.tablecard__caption {
+  font-style: normal;
+font-weight: 400;
+font-size: get-vw-modal_small(20px);
+line-height: get-vw-modal_small(26px);
+color: $main5;
+text-align: left;
+}
+.tablecard__name {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-modal_small(20px);
+line-height: get-vw-modal_small(26px);
+/* identical to box height */
+text-align: left;
+white-space: nowrap;
+
+
+color: #212531;
+}
+.tablecard__item {
+  margin-bottom: get-vw-modal_small(16px);
+}
+}
+
 }

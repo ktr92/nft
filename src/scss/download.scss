@@ -16,6 +16,7 @@
     }
   }
   .imagecard__wrapper {
+    border-radius: 0;
     width: 895px;
     /*   min-height: 895px;
    */
@@ -201,6 +202,7 @@
     width: 200px;
   }
   .imagecard__wrapper {
+    
     width: 895px;
     /*   min-height: 895px;
  */
@@ -787,4 +789,122 @@
     padding: 2px 10px 2px 10px;
     border-radius: 55px;
   }
+
+
+
+
+
+.tablecard {
+  border: 6px solid #FFFFFF;
+  border-radius: 22px;
+
+}
+.tablecard__img {
+  border-radius: 50%;
+  width: 136px;
+  height: 136px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-bottom: 14px;
+  @include imageblock(height);
+}
+.tablecard__content {
+  background: #fff;
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  margin-bottom: 28px;
+  border-radius: 22px;
+}
+
+
+.tablecard__header {
+  margin-top: -70px;
+}
+
+.tablecard__title {
+  font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 41px;
+
+color: #212531;
+margin-bottom: 5px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.tablecard__main {
+  background: rgba(243, 245, 248, 1);
+  text-align: center;
+  padding: 31px 44px;;
+  border-radius: 0 0 22px 22px;
+}
+
+.tablecard__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  color: #30CA4C;
+  margin-bottom: 33px;
+}
+
+.tablecard__table {
+}
+.tablecard__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+$tablecard__col_w: 82px;
+.tablecard__col {
+  min-width: $tablecard__col_w;
+  max-width: $tablecard__col_w;
+}
+.tablecard__col_info {
+  max-width: 325px;
+  min-width: 325px;
+}
+.tablecard__info {
+  display: flex;
+  align-items: center;
+}
+.tablecard__icon {
+}
+.tablecard__ic {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  margin-bottom: 0;
+  @include imageblock();
+}
+.tablecard__data {
+  margin-left: 19px;
+}
+.tablecard__caption {
+  font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+color: $main5;
+text-align: left;
+}
+.tablecard__name {
+  font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+text-align: left;
+white-space: nowrap;
+
+
+color: #212531;
+}
+.tablecard__item {
+  margin-bottom: 16px;
+}
 }
