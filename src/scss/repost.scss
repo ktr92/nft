@@ -6,12 +6,15 @@
 .sliderblock__card {
   border-radius: get-vw-modal(20px);
   overflow: hidden;
-/*   filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1)); */
+/*   filter: drop-shadow(get-vw-modal(8px) get-vw-modal(8px) get-vw-modal(60px) rgba(49, 56, 77, 0.1)); */
   background: #fff;
   
 }
 .imagecard {
-  
+  .cardprofile.flex.items-center {
+    display: flex !important;
+  }
+ 
 .imagecard__logo {
   margin-bottom: get-vw-modal(84px);
   margin-left: auto;
@@ -20,7 +23,7 @@
 }
 .imagecard__wrapper {
   border-radius: get-vw-modal(22px);
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: none;
   width: get-vw-modal(895px);
 /*   min-height: 895px);
  */  padding: get-vw-modal(46px) get-vw-modal(32px) get-vw-modal(28px) get-vw-modal(32px);
@@ -52,7 +55,7 @@
 }
 .imagecard__content {
   background: #fff;
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: drop-shadow(get-vw-modal(8px) get-vw-modal(8px) get-vw-modal(60px) rgba(49, 56, 77, 0.1));
   margin-bottom: get-vw-modal(28px);
   border-radius: get-vw-modal(22px);
 }
@@ -217,7 +220,10 @@ color: #30CA4C;
 
 
 .imagecard {
-
+  .card__follow .btn {
+    padding: get-vw-modal(13px) get-vw-modal(48px);
+    border: get-vw-modal(2px) solid rgba(33, 37, 49, 0.1);
+  }
 
   .btn {
     padding: get-vw-modal(13px) get-vw-modal(48px);
@@ -270,8 +276,7 @@ color: #30CA4C;
   background: #fff;
   border: get-vw-modal(6px) solid #ffffff;
   border-radius: get-vw-modal(12px);
-  -webkit-filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: none;
 }
 .card__header {
   padding: get-vw-modal(19px) get-vw-modal(50px);
@@ -466,8 +471,12 @@ $card_profile_w: get-vw-modal(160px);
 .carditem__main {
   min-width: get-vw-modal(498px);
 }
+.carditem__stat {
+  width: initial;
+}
 .carditem__header {
   margin-bottom: get-vw-modal(12px);
+  flex-wrap: nowrap;
 }
 .carditem__title {
   font-style: normal;
@@ -611,6 +620,7 @@ $card_profile_w: get-vw-modal(160px);
 .cardaction__img {
   svg {
     width: get-vw-modal(22px);
+
   }
 }
 .cardaction__caption {
@@ -679,7 +689,7 @@ $card_profile_w: get-vw-modal(160px);
 }
 .tablecard__content {
   background: #fff;
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: drop-shadow(get-vw-modal(8px) get-vw-modal(8px) get-vw-modal(60px) rgba(49, 56, 77, 0.1));
   margin-bottom: get-vw-modal(28px);
   border-radius: get-vw-modal(22px);
 }
@@ -783,7 +793,7 @@ color: #212531;
 .sliderblock__card {
   border-radius: get-vw-modal_medium(20px);
   overflow: hidden;
-/*   filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1)); */
+/*   filter: drop-shadow(get-vw-modal(8px) get-vw-modal(8px) get-vw-modal(60px) rgba(49, 56, 77, 0.1)); */
   background: #fff;
   
 }
@@ -826,7 +836,7 @@ color: #212531;
 }
 .imagecard__content {
   background: #fff;
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: drop-shadow(get-vw-modal_medium(8px) get-vw-modal_medium(8px) get-vw-modal_medium(60px) rgba(49, 56, 77, 0.1));
   margin-bottom: get-vw-modal_medium(28px);
 }
 
@@ -1042,8 +1052,7 @@ color: #30CA4C;
   background: #fff;
   border: get-vw-modal_medium(6px) solid #ffffff;
   border-radius: get-vw-modal_medium(12px);
-  -webkit-filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: none;
 }
 .card__header {
   padding: get-vw-modal_medium(19px) get-vw-modal_medium(50px);
@@ -1452,7 +1461,7 @@ $card_profile_w: get-vw-modal_medium(160px);
 }
 .tablecard__content {
   background: #fff;
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: drop-shadow(get-vw-modal_medium(8px) get-vw-modal_medium(8px) get-vw-modal_medium(60px) rgba(49, 56, 77, 0.1));
   margin-bottom: get-vw-modal_medium(28px);
   border-radius: get-vw-modal_medium(22px);
 }
@@ -1557,7 +1566,7 @@ color: #212531;
 .sliderblock__card {
   border-radius: get-vw-modal_small(20px);
   overflow: hidden;
-/*   filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1)); */
+/*   filter: drop-shadow(get-vw-modal(8px) get-vw-modal(8px) get-vw-modal(60px) rgba(49, 56, 77, 0.1)); */
   background: #fff;
   
 }
@@ -1601,7 +1610,7 @@ color: #212531;
 }
 .imagecard__content {
   background: #fff;
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: drop-shadow(get-vw-modal_small(8px) get-vw-modal_small(8px) get-vw-modal_small(60px) rgba(49, 56, 77, 0.1));
   margin-bottom: get-vw-modal_small(28px);
 }
 
@@ -1818,8 +1827,7 @@ color: #30CA4C;
   background: #fff;
   border: get-vw-modal_small(6px) solid #ffffff;
   border-radius: get-vw-modal_small(12px);
-  -webkit-filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: none;
 }
 .card__header {
   padding: get-vw-modal_small(19px) get-vw-modal_small(50px);
@@ -1952,6 +1960,9 @@ $card_profile_w: get-vw-modal_small(160px);
 
   @include imageblock(width);
 }
+.carditem__params {
+
+}
 .carditem__sticker {
   position: absolute;
   left: 0;
@@ -1978,39 +1989,7 @@ $card_profile_w: get-vw-modal_small(160px);
 
   border-radius: 555px;
 }
-.sticker_purple {
-  background: #9e44f8;
-  color: #fff;
-}
-.sticker_green {
-  background: #30ca4c;
-  color: #fff;
-}
-.sticker_mint {
-  background: #30c1ca;
-  color: #fff;
-}
-.sticker_black {
-  background: #212531;
-  color: #fff;
-}
-.sticker_blue {
-  background: #326bff;
-  color: #fff;
-}
-.sticker_red {
-  background: #ff3566;
-  color: #fff;
-}
-.sticker_gray {
-  background: #e1e3e7;
-  color: rgba(33, 37, 49, 0.3);
-}
 
-.btn_active {
-  background: rgba(48, 202, 76, 0.15);
-  border-color: transparent;
-}
 .carditem__main {
   min-width: get-vw-modal_small(498px);
 }
@@ -2045,6 +2024,7 @@ $card_profile_w: get-vw-modal_small(160px);
   background: #fff;
   border-radius: get-vw-modal_small(6px);
   padding: get-vw-modal_small(15px) get-vw-modal_small(32px);
+  margin-top: get-vw-modal_small(10px);
 }
 .carditem__param {
   margin-right: get-vw-modal_small(55px);
@@ -2078,8 +2058,9 @@ $card_profile_w: get-vw-modal_small(160px);
 }
 
 .card__footer {
-  padding: get-vw-modal_small(25px) get-vw-modal_small(50px) get-vw-modal_small(39px)
+  padding: get-vw-modal_small(25px) get-vw-modal_small(50px) get-vw-modal_small(0px)
     get-vw-modal_small(50px);
+    
 }
 .cardcontent {
 }
@@ -2105,7 +2086,7 @@ $card_profile_w: get-vw-modal_small(160px);
   font-size: get-vw-modal_small(26px);
   line-height: 100%;
   /* or 26px */
-  margin-bottom: get-vw-modal_small(25px);
+  margin-bottom: get-vw-modal_small(10px);
     overflow: hidden;
     height: get-vw-modal_small(52px);
 
@@ -2155,10 +2136,12 @@ $card_profile_w: get-vw-modal_small(160px);
   color: #212531;
 }
 .cardaction__icon {
+  line-height: 1;
 }
 .cardaction__img {
+  line-height: 1;
   svg {
-    width: get-vw-modal_small(22px);
+    width: get-vw-modal_small(16px);
   }
 }
 .cardaction__caption {
@@ -2229,7 +2212,7 @@ $card_profile_w: get-vw-modal_small(160px);
 }
 .tablecard__content {
   background: #fff;
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+  filter: drop-shadow(get-vw-modal_small(8px) get-vw-modal_small(8px) get-vw-modal_small(60px) rgba(49, 56, 77, 0.1));
   margin-bottom: get-vw-modal_small(28px);
   border-radius: get-vw-modal_small(22px);
 }
