@@ -1,4 +1,5 @@
 @import './params.scss';
+@import './mixins.scss';
 
 button {
 	cursor: pointer;
@@ -64,8 +65,31 @@ a {
   text-align: left !important;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-direction: column;
+}
+.mt-30 {
+  margin-top: get-vw-large(30px) !important;
+}
+
 @media (max-width: 1023px) {
   .mobile-full {
     width: 100% !important;
+  }
+}
+
+@include medium-screen {
+  .mt-30 {
+    margin-top: get-vw-medium(30px) !important;
+  }
+}
+
+@include small-screen {
+  .mt-30 {
+    margin-top: get-vw-small(30px) !important;
   }
 }
