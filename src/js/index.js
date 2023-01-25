@@ -4,6 +4,7 @@ function initFE() {
     closeByClickOutside('.fdropdown__menu', '.fdropdown__button')
     closeByClickOutside('.headersearch', '[data-toggleclick="headersearch"]')
     closeByClickOutside('.suggestions', '.searchinput')
+    closeByClickOutside('[data-toggle="notifications"]', '[data-toggleclickset="notifications"]')
     repostSliderInit()
 }
 
@@ -145,6 +146,19 @@ $(document).ready(function() {
         $('[data-toggle].active').not($(`[data-toggle=${dropdown}]`)).removeClass('active')
         $('[data-toggleclick].active').not($(`[data-toggleclick=${dropdown}]`)).removeClass('active')
         $(`[data-toggle=${dropdown}]`).toggleClass('active')
+        $(`[data-toggleactive=${dropdown}]`).toggleClass('active')
+    })
+
+    $('[data-toggleclickset]').on('click', function(e) {
+        $(this).toggleClass('active')
+        e.preventDefault()
+        let dropdown = $(this).data('toggleclickset')
+        let wrapper = $(this).closest(`[data-toggleitem]`)
+        $('[data-toggleitem].active').not(wrapper).removeClass('active')
+        $('[data-toggle].active').not(wrapper.find(`[data-toggle=${dropdown}]`)).removeClass('active')
+        $('[data-toggleclickset].active').not(wrapper.find(`[data-toggleclickset=${dropdown}]`)).removeClass('active')
+        wrapper.addClass('active')
+        wrapper.find(`[data-toggle=${dropdown}]`).toggleClass('active')
         $(`[data-toggleactive=${dropdown}]`).toggleClass('active')
     })
 
