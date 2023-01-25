@@ -2862,6 +2862,125 @@ $notifications_top: get-vw-large(8px);
   display: none;
 }
 
+.profilestats__item_green {
+  .profilestats__value {
+    color: $green;
+    font-weight: 700;
+    font-size: get-vw-large(32px);
+    line-height: get-vw-large(41px);
+  }
+
+}
+
+.profileheader.flex {
+  .card__follow {
+    margin-left: get-vw-large(34px);
+  } 
+}
+
+.contentblock {
+  margin-top: get-vw-large(42px);
+  padding-top: get-vw-large(42px);
+  border-top: get-vw-large(2px) solid rgba(33, 37, 49, 0.1);
+}
+
+.profileheader_left {
+  .card__header {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: get-vw-large(15px);
+    padding-right: get-vw-large(15px);
+  }
+}
+
+.contentblock h1 {
+  margin-top: 0;
+  margin-bottom: get-vw-large(16px);
+  font-style: normal;
+  font-weight: 700;
+  font-size: get-vw-large(32px);
+  line-height: get-vw-large(41px);
+
+  color: #212531;
+}
+.contentblock__body {
+  margin-top: 47px;
+}
+.contentblock__header {
+  margin-bottom: 40px;
+}
+
+.contentblock__param {
+  margin-right: 16px;
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: $main5;
+}
+
+
+.contentblock__content {
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    
+    
+    color: rgba(33, 37, 49, 0.7);
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  img {
+    display: block;
+    margin: 42px 0 59px 0;
+    max-width: 656px;
+    width: 100%;
+  }
+
+}
+
+.updatedtext__content {
+  padding: 38px 46px;
+  border: 1px solid #D9DDE3;
+  border-radius: 12px;
+
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contentblock__updated {
+  margin-top: 60px;
+  margin-bottom: 33px;
+}
+
+.updatedtext__info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  height: 36px;
+  padding: 0 21px;
+  line-height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #D9DDE3;
+  border-radius: 5555px;
+  display: inline-block;
+  margin-left: 46px;
+  transform: translateY(50%);
+  
+}
+
+
 @include medium-screen {
   .captchablock {
     text-align: center;

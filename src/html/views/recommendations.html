@@ -1,0 +1,180 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__items">
+        <ul>
+          <li>
+            <a href="/">
+              <span>
+                <img src="img/Home.svg" alt="">
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span>Victor Ivanov</span>
+            </a>
+          </li>
+          <li>
+            <span>The Ugly Duck</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="maincontent mt-30">
+    <div class="container">
+      <div class="assetblock">
+        <div class="assetblock__content">
+          <div class="assetblock__image">
+            <div class="carditem carditem_asset flex column items-center">
+              <div class="carditem__image">
+                <div class="carditem__img">
+                  <img src="img/card.png" alt="">
+                </div>
+                <div class="carditem__sticker">
+                  <div class="sticker sticker_purple">NFT</div>
+                </div>
+              </div>
+              <div class="carditem__main">
+                <div class="carditem__header">
+                  <div class="carditem__title flex items-center">
+                    <span class="carditem__name">The Ugly Duck</span>
+                    <div class="carditem__icon">
+                      <img src="img/ChartArrowRise.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carditem__links flex items-center wrap">
+                <div class="iconlink">
+                  <a href="#" class="iconlink__link">
+                    <span class="iconlink__content">
+                      <span class="iconlink__icon">
+                        <span class="iconlink__img imghover">
+                          <!-- здесь по 2 картинки - обычная и на ховер, т.к. в макетах есть растровые картинки, для которых невозможно менять цвет на ховере без подмены -->
+                          <img src="img/Globe.svg" alt="" class="unhover">
+                          <img src="img/Globe_white.svg" alt="" class="onhover">
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <div class="iconlink">
+                  <a href="#" class="iconlink__link">
+                    <span class="iconlink__content">
+                      <span class="iconlink__icon">
+                        <span class="iconlink__img imghover">
+                          <img src="img/Twitter2.svg" alt="" class="unhover">
+                          <img src="img/Twitter2_white.svg" alt="" class="onhover">
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <div class="iconlink">
+                  <a href="#" class="iconlink__link">
+                    <span class="iconlink__content">
+                      <span class="iconlink__icon">
+                        <span class="iconlink__img imghover">
+                          <img src="img/ne.svg" alt="" class="unhover">
+                          <img src="img/ne_white.svg" alt="" class="onhover">
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <!-- <div class="iconlink"><a href="#" class="iconlink__link"><span class="iconlink__content"><span class="iconlink__icon"><span class="iconlink__img imghover"><img src="img/sc.svg" alt="" class="unhover"><img src="img/sc_white.svg" alt="" class="onhover"></span></span></span></a></div><div class="iconlink"><a href="#" class="iconlink__link"><span class="iconlink__content"><span class="iconlink__icon"><span class="iconlink__img imghover"><img src="img/dyno.svg" alt="" class="unhover"><img src="img/dyno_white.svg" alt="" class="onhover"></span></span></span></a></div><div class="iconlink"><a href="#" class="iconlink__link"><span class="iconlink__content"><span class="iconlink__icon"><span class="iconlink__img imghover"><img src="img/dex.svg" alt="" class="unhover"><img src="img/dex_white.svg" alt="" class="onhover"></span></span></span></a></div><div class="iconlink"><a href="#" class="iconlink__link"><span class="iconlink__content"><span class="iconlink__icon"><span class="iconlink__img imghover"><img src="img/bird.svg" alt="" class="unhover"><img src="img/bird_white.svg" alt="" class="onhover"></span></span></span></a></div><div class="iconlink"><a href="#" class="iconlink__link"><span class="iconlink__content"><span class="iconlink__icon"><span class="iconlink__img imghover"><img src="img/LL.svg" alt="" class="unhover"><img src="img/LL_white.svg" alt="" class="onhover"></span></span></span></a></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contentblock">
+        <div class="profileheader profileheader_left flex content-between items-center">
+          <div class="profileheader__left">
+            <div class="card__header flex content-between items-center">
+              <div class="card__profile cardprofile flex items-center">
+                <div class="cardprofile__image">
+                  <div class="cardprofile__img">
+                    <img src="img/man.png" alt="">
+                  </div>
+                </div>
+                <div class="cardprofile__info">
+                  <div class="cardprofile__name">Victor Ivanov</div>
+                  <div class="cardprofile__stats flex items-center">
+                    <div class="cardstat ">
+                      <div class="cardstat__text ">7 400 followers</div>
+                    </div>
+                    <div class="cardstat cardstat_green">
+                      <div class="cardstat__text">87% Profitable shills</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__follow flex items-center" data-togglewrapper="notifications">
+                <a href="#" class="btn active">Following</a>
+              </div>
+            </div>
+          </div>
+          <div class="profileheader__right">
+            <div class="profilestats__items">
+              <div class="profilestats__col items-center">
+                <div class="profilestats__item">
+                  <div class="profilestats__value">5 SOL</div>
+                  <div class="profilestats__caption">Entry price</div>
+                </div>
+                <div class="profilestats__item">
+                  <div class="profilestats__value">10 SOL</div>
+                  <div class="profilestats__caption">Current Price</div>
+                </div>
+                <div class="profilestats__item profilestats__item_green">
+                  <div class="profilestats__value">+79.2%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contentblock__body">
+          <div class="contentblock__header">
+            <div class="contentblock__title">
+              <h1>Bond portfolio with monthly payments</h1>
+            </div>
+            <div class="contentblock__params flex">
+              <div class="contentblock__param">29.12.2020</div>
+              <div class="contentblock__param">Duration: 29 days</div>
+            </div>
+          </div>
+          <div class="contentblock__content">
+            <div class="text">
+              <p>Aenean dapibus bibendum dolor nec vulputate. Cras commodo facilisis lacus id accumsan. Integer venenatis augue sit amet fringilla cursus. Nulla ullamcorper quis metus id feugiat. Quisque diam urna, fermentum in varius quis, laoreet quis augue. Nam semper fermentum velit. Ut volutpat dictum orci vitae rhoncus. Aenean eu ante egestas, blandit neque nec, euismod mauris. Ut molestie fermentum egestas. Cras sollicitudin consequat sodales. Maecenas tortor augue, volutpat et mi eget, auctor mattis enim. Integer a convallis odio. Ut luctus tincidunt est a lobortis. Sed neque lacus, sollicitudin ac facilisis commodo, egestas in libero.</p>
+              <p> Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla semper risus a orci malesuada aliquam. Nam faucibus finibus lacus, ac dapibus nisl. Ut sed nisi eget erat aliquam eleifend. Aliquam erat volutpat. Curabitur vel pellentesque velit, nec iaculis ligula. Vivamus dictum bibendum tristique. Aliquam quis ipsum finibus, ornare metus at, fringilla odio.</p>
+              <p>Nunc vel orci non sapien sagittis bibendum a quis justo. Donec consequat pellentesque lorem sed commodo. Ut quis dolor vitae ligula fermentum vulputate a sit amet dolor. Nullam pharetra metus nibh, nec lacinia turpis condimentum vel. Donec eget urna vitae risus fermentum tempor. Fusce facilisis est eu ante porta egestas. Morbi at nulla vitae nulla ullamcorper porta.</p>
+            </div>
+            <div class="picture">
+              <a href="img/table.png" data-lightbox="content_img">
+                <img src="img/table.png" alt="">
+              </a>
+            </div>
+            <div class="text">
+              <p>Aenean dapibus bibendum dolor nec vulputate. Cras commodo facilisis lacus id accumsan. Integer venenatis augue sit amet fringilla cursus. Nulla ullamcorper quis metus id feugiat. Quisque diam urna, fermentum in varius quis, laoreet quis augue. Nam semper fermentum velit. Ut volutpat dictum orci vitae rhoncus. Aenean eu ante egestas, blandit neque nec, euismod mauris. Ut molestie fermentum egestas. Cras sollicitudin consequat sodales. Maecenas tortor augue, volutpat et mi eget, auctor mattis enim. Integer a convallis odio. Ut luctus tincidunt est a lobortis. Sed neque lacus, sollicitudin ac facilisis commodo, egestas in libero.</p>
+              <p> Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla semper risus a orci malesuada aliquam. Nam faucibus finibus lacus, ac dapibus nisl. Ut sed nisi eget erat aliquam eleifend. Aliquam erat volutpat. Curabitur vel pellentesque velit, nec iaculis ligula. Vivamus dictum bibendum tristique. Aliquam quis ipsum finibus, ornare metus at, fringilla odio.</p>
+              <p>Nunc vel orci non sapien sagittis bibendum a quis justo. Donec consequat pellentesque lorem sed commodo. Ut quis dolor vitae ligula fermentum vulputate a sit amet dolor. Nullam pharetra metus nibh, nec lacinia turpis condimentum vel. Donec eget urna vitae risus fermentum tempor. Fusce facilisis est eu ante porta egestas. Morbi at nulla vitae nulla ullamcorper porta.</p>
+            </div>
+            <div class="contentblock__updated updatedtext">
+              <div class="updatedtext__info">Updated 20.20.2020</div>
+              <div class="updatedtext__content">
+                <p>Aenean dapibus bibendum dolor nec vulputate. Cras commodo facilisis lacus id accumsan. Integer venenatis augue sit amet fringilla cursus. Nulla ullamcorper quis metus id feugiat. Quisque diam urna, fermentum in varius quis, laoreet quis augue. Nam semper fermentum velit. Ut volutpat dictum orci vitae rhoncus. Aenean eu ante egestas, blandit neque nec, euismod mauris. Ut molestie fermentum egestas. Cras sollicitudin consequat sodales. Maecenas tortor augue, volutpat et mi eget, auctor mattis enim. Integer a convallis odio. Ut luctus tincidunt est a lobortis. Sed neque lacus, sollicitudin ac facilisis commodo, egestas in libero.</p>
+                <p> Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla semper risus a orci malesuada aliquam. Nam faucibus finibus lacus, ac dapibus nisl. Ut sed nisi eget erat aliquam eleifend. Aliquam erat volutpat. Curabitur vel pellentesque velit, nec iaculis ligula. Vivamus dictum bibendum tristique. Aliquam quis ipsum finibus, ornare metus at, fringilla odio.</p>
+                <p>Nunc vel orci non sapien sagittis bibendum a quis justo. Donec consequat pellentesque lorem sed commodo. Ut quis dolor vitae ligula fermentum vulputate a sit amet dolor. Nullam pharetra metus nibh, nec lacinia turpis condimentum vel. Donec eget urna vitae risus fermentum tempor. Fusce facilisis est eu ante porta egestas. Morbi at nulla vitae nulla ullamcorper porta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>
