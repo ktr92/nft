@@ -3308,6 +3308,17 @@ line-height: get-vw-large(21px);
   }
 }
 
+.landlayout_type2 {
+  .landlayout__image {
+    position: initial;
+    width: 100%;
+    max-width: get-vw-large(1059px);
+  }
+  .landlayout__img {
+    height: initial;
+  }
+}
+
 @include medium-screen {
   .captchablock {
     text-align: center;
@@ -5241,7 +5252,56 @@ $elements_height: $header_height + $footer_height + $breadcrumbs_height;
     font-size: get-vw-medium(14px);
     line-height: get-vw-medium(18px);
   }
-   
+  .landlayout_type2 {
+    .landlayout__content {
+      margin-bottom: get-vw-medium(33px);
+    }
+
+    .landlayout__main {
+      width: 100%;
+      max-width: 100%;
+      height: initial;
+      padding-bottom: get-vw-medium(82px);
+    }
+    .landlayout__footer {
+      position: initial;
+    }
+    .landlayout__image {
+      padding-top: get-vw-medium(150px);
+      padding-bottom: get-vw-medium(144px);
+      height: initial;
+      position: initial;
+      min-height: initial;
+      max-width: initial;
+      overflow: initial;
+      width: 100%;
+      max-width: get-vw-medium(722px);
+      
+      img {
+        height: 100%;
+      /*   width: initial; */
+       /*  max-height: 52vh; */
+
+      }
+    }
+    .landlayout__img {
+      height: initial;
+      position: initial;
+      min-height: initial;
+      width: 100%;
+        height: 100%;
+    }
+    .landlayout__wrapper.flex.content-between.items-center {
+      flex-wrap: wrap;
+    }
+    .landlayout__image_tablet {
+      display: block !important;
+    }
+    /* .landlayout__header {
+      position: absolute;
+      top: get-vw-medium(47px);
+    } */
+  }
 
 
 }
@@ -6868,6 +6928,8 @@ p {
 .itemsblock__header_type2 {
   margin-bottom: get-vw-small(16px);
 
+ 
+
   .buttonsblock {
     order: -1;
     margin-bottom: get-vw-small(25px);
@@ -7534,5 +7596,57 @@ margin-bottom: get-vw-small(14px);
 .disclaimer__content {
   flex-wrap: wrap;
 }
+
+.landlayout_type2 {
+  .landlayout__content {
+    margin-bottom: get-vw-small(33px);
+  }
+
+  .landlayout__main {
+    width: 100%;
+    max-width: 100%;
+    height: initial;
+    padding-bottom: get-vw-small(82px);
+  }
+  .landlayout__footer {
+    position: absolute;
+  }
+  .landlayout__image {
+    padding-top: get-vw-small(49px);
+    padding-bottom: get-vw-small(33px);
+    height: initial;
+    position: initial;
+    min-height: initial;
+    max-width: initial;
+    overflow: initial;
+    width: 100%;
+    max-width: get-vw-small(722px);
+    
+    img {
+      height: 100%;
+    /*   width: initial; */
+     /*  max-height: 52vh; */
+
+    }
+  }
+  .landlayout__img {
+    height: initial;
+    position: initial;
+    min-height: initial;
+    width: 100%;
+      height: 100%;
+  }
+  .landlayout__wrapper.flex.content-between.items-center {
+    flex-wrap: wrap;
+  }
+  .landlayout__image_tablet {
+    display: block !important;
+  }
+  /* .landlayout__header {
+    position: absolute;
+    top: get-vw-medium(47px);
+  } */
+}
+
 
 }
