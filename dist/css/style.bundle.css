@@ -5669,6 +5669,50 @@ p {
     margin-top: 0;
     min-height: calc(100vh - 24.27083vw); }
 
+.disclaimer {
+  position: fixed;
+  left: 2.60417vw;
+  right: 2.60417vw;
+  bottom: 1.40625vw;
+  z-index: 999;
+  border-radius: 0.625vw; }
+
+.disclaimer__wrapper {
+  padding: 1.82292vw 2.60417vw; }
+
+.disclaimer__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.35417vw;
+  line-height: 1.77083vw;
+  /* identical to box height */
+  margin-bottom: 0.88542vw; }
+
+.disclaimer__content {
+  display: flex;
+  align-items: center; }
+
+.disclaimer__text {
+  padding-right: 2.86458vw;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.83333vw;
+  line-height: 1.09375vw; }
+
+.disclaimer__title {
+  color: #fff; }
+
+.disclaimer__text {
+  color: #fff; }
+
+.disclaimer_dark {
+  background: #212531; }
+
+.disclaimer_green {
+  background: #30CA4C; }
+  .disclaimer_green .btn {
+    background: #212531; }
+
 @media only screen and (max-width: 999px) {
   .captchablock {
     text-align: center;
@@ -6882,7 +6926,26 @@ p {
     .custompage .custompage__wrapper {
       padding: 2.39808vw 0 7.19424vw 0;
       margin-top: 0;
-      min-height: calc(100vh - 41.36691vw); } }
+      min-height: calc(100vh - 41.36691vw); }
+  .disclaimer {
+    left: 2.39808vw;
+    right: 2.39808vw;
+    bottom: 2.39808vw;
+    border-radius: 1.43885vw; }
+  .disclaimer__wrapper {
+    padding: 2.39808vw 2.39808vw; }
+  .disclaimer__title {
+    font-size: 2.63789vw;
+    line-height: 3.35731vw;
+    margin-bottom: 1.43885vw; }
+  .disclaimer__text {
+    padding-right: 4.19664vw;
+    font-size: 1.67866vw;
+    line-height: 2.15827vw; }
+  .disclaimer .btn {
+    padding: 1.91847vw 5.7554vw;
+    font-size: 1.67866vw;
+    line-height: 2.15827vw; } }
 
 @media only screen and (max-width: 600px) {
   .captchablock {
@@ -8332,7 +8395,36 @@ p {
     .custompage .custompage__wrapper {
       padding: 6.25vw 0 18.75vw 0;
       margin-top: 0;
-      min-height: calc(100vh - 103.125vw); } }
+      min-height: calc(100vh - 103.125vw); }
+  .disclaimer {
+    left: 5.625vw;
+    right: 5.625vw;
+    bottom: 5.3125vw;
+    border-radius: 3.75vw; }
+  .disclaimer__wrapper {
+    padding: 7.1875vw 5vw; }
+  .disclaimer__title {
+    font-size: 5vw;
+    line-height: 6.5625vw;
+    margin-bottom: 4.6875vw;
+    width: 100%; }
+  .disclaimer__button {
+    width: 100%; }
+  .disclaimer__text {
+    padding-right: 0;
+    font-weight: 400;
+    font-size: 3.75vw;
+    line-height: 5vw;
+    width: 100%;
+    margin-bottom: 4.375vw; }
+  .disclaimer .btn {
+    padding: 3.125vw 0;
+    font-size: 4.375vw;
+    line-height: 5.625vw;
+    width: 100%;
+    text-align: center; }
+  .disclaimer__content {
+    flex-wrap: wrap; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/
