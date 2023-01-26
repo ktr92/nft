@@ -1,0 +1,137 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %>
+<%= _.template(require('../includes/head.html').default)(data) %>
+<%= _.template(require('../includes/header.html').default)(data) %>
+<main>
+  <div class="topcontent topcontent_left">
+    <div class="container">
+      <div class="pagetitle pagetitle_left">
+        <div class="pagetitle__title text-left">Leaderboard</div>
+      </div> 
+      <div class="pagecontent">
+        <div class="pagecontent__text">
+          <p>Leaderboard for top alpha callers on our website</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <div class="maincontent">
+      <div class="container">
+        <div class="tabsnav">
+          <div class="tabsnav__links">
+            <ul class="flex">
+              <li class="active">
+                <a href="#">Top Shillers</a>
+              </li>
+              <li>
+                <a href="#">Top Shills</a>
+              </li>
+              <li>
+                <a href="#">Top Assets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="itemsnav itemsnav_table flex items-center content-between">
+          <div class="itemsnav__left flex items-center">
+            <div class="itemsnav__select">
+              <div class="filterblock__item">
+                <div class="fdropdown">
+                  <div class="fdropdown__button" data-toggleclick="fdropdown__menu1">
+                    <span>All assets</span>
+                    <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.13793 0.716563C8.01584 0.594479 7.81814 0.594479 7.69605 0.716563L5.00022 3.4124L2.3046 0.716563C2.18251 0.594479 1.9848 0.594479 1.86272 0.716563L0.508555 2.07073C0.386471 2.19281 0.386471 2.39052 0.508555 2.5126L4.77939 6.78344C4.84022 6.84469 4.92022 6.8751 5.00022 6.8751C5.08022 6.8751 5.16022 6.84469 5.22126 6.78365L9.49209 2.51281C9.61418 2.39073 9.61418 2.19302 9.49209 2.07094L8.13793 0.716563Z" fill="#212531"/>
+                      </svg>
+                      
+                  </div>
+                  <div class="fdropdown__menu dropdownblock" data-toggle="fdropdown__menu1">
+                    <div class="fdropdown__wrapper dropdownblock__wrapper">
+                      <div class="fdropdown__items">
+                        <div class="fdropdown__item">
+                          <div class="dcheckbox">
+                            <label for="filter1-1" class="dcheckbox__label">
+                              <span>
+                                <input type="checkbox" id="filter1-1">
+                                <span class="dcheckbox__text">All assets</span>
+                              </span>
+                            </label>                                  
+                          </div>
+                        </div>
+                        <div class="fdropdown__item">
+                          <div class="dcheckbox">
+                            <label for="filter1-2" class="dcheckbox__label">
+                              <span>
+                                <input type="checkbox" id="filter1-2">
+                                <span class="dcheckbox__text">All assets</span>
+                              </span>
+                            </label>                                  
+                          </div>
+                        </div>
+                        <div class="fdropdown__item">
+                          <div class="dcheckbox">
+                            <label for="filter1-3" class="dcheckbox__label">
+                              <span>
+                                <input type="checkbox" id="filter1-3">
+                                <span class="dcheckbox__text">All assets</span>
+                              </span>
+                            </label>                                  
+                          </div>
+                        </div>
+                        <div class="fdropdown__item">
+                          <div class="dcheckbox">
+                            <label for="filter1-4" class="dcheckbox__label">
+                              <span>
+                                <input type="checkbox" id="filter1-4">
+                                <span class="dcheckbox__text">All assets</span>
+                              </span>
+                            </label>                                  
+                          </div>
+                        </div>
+                        <div class="fdropdown__item">
+                          <div class="dcheckbox">
+                            <label for="filter1-5" class="dcheckbox__label">
+                              <span>
+                                <input type="checkbox" id="filter1-5">
+                                <span class="dcheckbox__text">All assets</span>
+                              </span>
+                            </label>                                  
+                          </div>
+                        </div>
+                        <div class="fdropdown__item">
+                          <div class="dcheckbox">
+                            <label for="filter1-6" class="dcheckbox__label">
+                              <span>
+                                <input type="checkbox" id="filter1-6">
+                                <span class="dcheckbox__text">All assets</span>
+                              </span>
+                            </label>                                  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="itemsnav__input">
+              
+              <div class="inputplaceholder">
+                <div class="inputplaceholder__placeholder">Minimum Shills:</div>
+                <input type="text" class="inputplaceholder__input" value="500">
+              </div>
+            </div>
+          </div>
+          <div class="itemsnav__right">
+            .
+          </div>
+        </div>
+      </div>
+  </div>
+
+</main>
+<%= _.template(require('../includes/footer.html').default)(data) %>
