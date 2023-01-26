@@ -472,9 +472,20 @@ a {
     top: -9999px;
     bottom: -9999px;
     margin: auto;
-    width: 100% !important;
-    max-height: initial !important;
-    height: initial !important; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
 
 .imagecard .imagecard__content {
   background: #fff;
@@ -763,9 +774,20 @@ a {
     top: -9999px;
     bottom: -9999px;
     margin: auto;
-    width: 100% !important;
-    max-height: initial !important;
-    height: initial !important; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
 
 .imagecard .carditem__sticker {
   position: absolute;
@@ -1003,9 +1025,20 @@ a {
     top: -9999px;
     bottom: -9999px;
     margin: auto;
-    height: 100% !important;
-    max-width: initial !important;
-    width: initial !important; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
 
 .imagecard .tablecard__content {
   background: #fff;
@@ -1074,9 +1107,20 @@ a {
     top: -9999px;
     bottom: -9999px;
     margin: auto;
-    width: 100% !important;
-    max-height: initial !important;
-    height: initial !important; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
 
 .imagecard .tablecard__data {
   margin-left: 0.55284vw; }
@@ -1142,9 +1186,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard .imagecard__content {
     background: #fff;
     filter: drop-shadow(0.53588vw 0.53588vw 4.01913vw rgba(49, 56, 77, 0.1));
@@ -1391,9 +1446,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard .carditem__sticker {
     position: absolute;
     left: 0;
@@ -1587,9 +1653,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
       height: 100% !important;
       max-width: initial !important;
-      width: initial !important; }
+      width: initial !important;
+    } */ }
   .imagecard .tablecard__content {
     background: #fff;
     filter: drop-shadow(0.53588vw 0.53588vw 4.01913vw rgba(49, 56, 77, 0.1));
@@ -1648,9 +1725,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard .tablecard__data {
     margin-left: 1.27272vw; }
   .imagecard .tablecard__caption {
@@ -1713,9 +1801,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard .imagecard__content {
     background: #fff;
     filter: drop-shadow(0.70391vw 0.70391vw 5.27933vw rgba(49, 56, 77, 0.1));
@@ -1962,9 +2061,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard .carditem__sticker {
     position: absolute;
     left: 0;
@@ -2139,9 +2249,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
       height: 100% !important;
       max-width: initial !important;
-      width: initial !important; }
+      width: initial !important;
+    } */ }
   .imagecard .tablecard__content {
     background: #fff;
     filter: drop-shadow(0.70391vw 0.70391vw 5.27933vw rgba(49, 56, 77, 0.1));
@@ -2200,9 +2321,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard .tablecard__data {
     margin-left: 1.67179vw; }
   .imagecard .tablecard__caption {
@@ -2332,9 +2464,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard__download .imagecard__content {
     border-radius: 22px;
     background: #fff;
@@ -2478,9 +2621,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard__download .imagecard__content {
     border: 6px solid #ffffff;
     border-radius: 22px;
@@ -2729,9 +2883,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard__download .carditem__sticker {
     position: absolute;
     left: 0;
@@ -2901,9 +3066,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
       height: 100% !important;
       max-width: initial !important;
-      width: initial !important; }
+      width: initial !important;
+    } */ }
   .imagecard__download .tablecard__content {
     background: #fff;
     filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
@@ -2962,9 +3138,20 @@ a {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .imagecard__download .tablecard__data {
     margin-left: 19px; }
   .imagecard__download .tablecard__caption {
@@ -4032,9 +4219,20 @@ span.dcheckbox__text:before {
     top: -9999px;
     bottom: -9999px;
     margin: auto;
-    width: 100% !important;
-    max-height: initial !important;
-    height: initial !important; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
 
 .carditem__sticker {
   position: absolute;
@@ -4626,9 +4824,20 @@ body.block {
     top: -9999px;
     bottom: -9999px;
     margin: auto;
-    height: 100% !important;
-    max-width: initial !important;
-    width: initial !important; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
 
 .profileblock__info {
   margin-left: 2.86458vw;
@@ -4882,9 +5091,20 @@ body.block {
     top: -9999px;
     bottom: -9999px;
     margin: auto;
-    height: 100% !important;
-    max-width: initial !important;
-    width: initial !important; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
 
 .formAvatar input {
   display: none; }
@@ -5583,9 +5803,20 @@ p {
     top: -9999px;
     bottom: -9999px;
     margin: auto;
-    height: 100% !important;
-    max-width: initial !important;
-    width: initial !important; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
 
 .comment__name {
   margin-left: 0.625vw;
@@ -5785,6 +6016,210 @@ input.inputplaceholder__input {
 
 .itemsnav .filterblock__item {
   margin-bottom: 0; }
+
+.linkset__items {
+  display: flex;
+  align-items: center; }
+
+.linkset__item {
+  margin-left: 6px; }
+  .linkset__item:first-child {
+    margin-left: 0; }
+
+.linkset__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: rgba(33, 37, 49, 0.3);
+  display: block;
+  min-width: 40px;
+  height: 40px;
+  padding: 12px 7px;
+  border-radius: 8px; }
+  .linkset__link.active, .linkset__link:hover, .linkset__link:focus {
+    color: #fff;
+    background: #30CA4C; }
+
+.tableblock__wrapper {
+  border: 6px solid #FFFFFF;
+  border-radius: 12px;
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1)); }
+
+.tableblock__row {
+  display: flex;
+  align-items: center;
+  background: #fff; }
+
+.tableblock__col {
+  padding: 0 20px;
+  height: 80px; }
+
+.tableblock_number {
+  width: 122px;
+  text-align: center;
+  justify-content: center; }
+
+.tableblock__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  /* identical to box height, or 20px */
+  color: #212531; }
+
+.tableblock_name {
+  min-width: 472px;
+  max-width: 472px; }
+
+/* $tableblock__param_w: calc((1920px - 472px - 122px)/4);
+.tableblock__param {
+  width: $tableblock__param_w;
+} */
+.tableblock__cols {
+  display: flex;
+  justify-content: space-between;
+  min-width: 157px;
+  width: 100%; }
+  .tableblock__cols .tableblock__col {
+    min-width: 240px;
+    max-width: 240px; }
+
+.tableblock_sort {
+  margin-right: 7px;
+  display: block; }
+
+.tableblock__info {
+  margin-left: 9px;
+  display: block; }
+
+.tablecard__img a {
+  display: block;
+  width: 2.08333vw;
+  height: 2.08333vw;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  .tablecard__img a img:not([role='presentation']) {
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    top: -9999px;
+    bottom: -9999px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* @if $fill == width {
+      width: 100% !important;
+      max-height: initial !important;
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
+
+.tablecard__name {
+  margin-left: 0.625vw;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.83333vw;
+  line-height: 1.09375vw;
+  color: #212531; }
+  .tablecard__name a {
+    color: #212531; }
+
+.sort.active img {
+  transform: rotate(180deg); }
+
+.tableblock__value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212531; }
+
+.tableblock__value_green {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #30CA4C; }
+
+.tableblock__value_orange {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #F88544; }
+
+.tableblock__value_yellow {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #F5C518; }
+
+.tableblock__value_red {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #F8444F; }
+
+.tableblock__body > .tableblock__row {
+  border-top: 2px solid #E2E9F2;
+  background: #fff; }
+
+.tableblock__body > .tableblock__row:nth-child(2n-1) {
+  background: #F8FAFD; }
+
+.tableblock__body .tableblock_number .tableblock__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  width: 26px;
+  text-align: left;
+  padding-left: 10px; }
+
+.tableblock {
+  margin-bottom: 75px; }
+
+.tableblock__footer {
+  padding: 39px 0;
+  border-top: 2px solid #E2E9F2;
+  background: #fff; }
+
+.tableblock__nav {
+  padding-left: 54px;
+  padding-right: 54px; }
+
+.showby__caption {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  margin-right: 12px;
+  color: rgba(33, 37, 49, 0.3); }
+
+.showby__value span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #212531; }
+
+.showby.active .showby__value img {
+  transform: rotate(180deg); }
+
+.tablenav__show {
+  position: relative; }
+
+.showby__dropdown {
+  top: calc(100%); }
 
 @media only screen and (max-width: 999px) {
   .captchablock {
@@ -6194,9 +6629,20 @@ input.inputplaceholder__input {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .carditem__sticker {
     bottom: -0.71942vw; }
   .sticker {
@@ -7507,9 +7953,20 @@ input.inputplaceholder__input {
       top: -9999px;
       bottom: -9999px;
       margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      /* @if $fill == width {
       width: 100% !important;
       max-height: initial !important;
-      height: initial !important; }
+      height: initial !important;
+    }
+    @else {
+      height: 100% !important;
+      max-width: initial !important;
+      width: initial !important;
+    } */ }
   .carditem__sticker {
     bottom: -1.875vw; }
   .sticker {

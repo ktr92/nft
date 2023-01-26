@@ -28,6 +28,7 @@ function initFE() {
     closeByClickOutside('.headersearch', '[data-toggleclick="headersearch"]')
     closeByClickOutside('.suggestions', '.searchinput')
     closeByClickOutside('[data-toggle="notifications"]', '[data-toggleclickset="notifications"]')
+    closeByClickOutside('[data-toggle="showby"]', '[data-toggleclick="showby"]')
     repostSliderInit()
 }
 

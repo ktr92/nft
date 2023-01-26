@@ -3403,6 +3403,265 @@ color: #212531;
   }
 }
 
+
+.itemsnav__right {
+}
+.linkset {
+}
+.linkset__items {
+  display: flex;
+  align-items: center;
+}
+.linkset__item {
+  margin-left: 6px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.linkset__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: rgba(33, 37, 49, 0.3);
+  display: block;
+  min-width: 40px;
+  height: 40px;
+  padding: 12px 7px;
+  border-radius: 8px;
+  &.active, &:hover, &:focus {
+    color: #fff;
+    background: $green;
+  }
+
+
+}
+
+.tableblock {
+}
+.tableblock__wrapper {
+  border: 6px solid #FFFFFF;
+  border-radius: 12px;
+
+  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1));
+}
+.tableblock__table {
+}
+.tableblock__header {
+}
+.tableblock__row {
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.tableblock__col {
+  padding: 0 20px;
+  height: 80px;
+
+}
+.tableblock_number {
+  width: 122px;
+  text-align: center;
+  justify-content: center;
+}
+.tableblock__title {
+  font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 100%;
+/* identical to box height, or 20px */
+
+
+color: #212531;
+}
+.tableblock_name {
+  min-width: 472px;
+  max-width: 472px;
+}
+
+
+/* $tableblock__param_w: calc((1920px - 472px - 122px)/4);
+.tableblock__param {
+  width: $tableblock__param_w;
+} */
+
+.tableblock__cols {
+  display: flex;
+  justify-content: space-between;
+  min-width: 157px;
+  width: 100%;
+
+  .tableblock__col {
+    min-width: 240px;
+    max-width: 240px;
+  }
+}
+
+.tableblock_sort {
+  margin-right: 7px;
+  display: block;
+}
+.tableblock__info {
+  margin-left: 9px;
+  display: block;
+}
+
+
+.tablecard__img {
+  a {
+    display: block;
+    width: get-vw-large(40px);
+    height: get-vw-large(40px);
+    border-radius: 50%;
+    position: relative;
+    @include imageblock(width);
+  }
+
+ 
+}
+.tablecard__name {
+  margin-left: get-vw-large(12px);
+  font-style: normal;
+  font-weight: 700;
+  font-size: get-vw-large(16px);
+  line-height: get-vw-large(21px);
+  color: #212531;
+  a {
+    color: #212531;
+  }
+}
+
+.sort.active {
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.tableblock__value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212531;
+}
+
+
+.tableblock__value_green {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #30CA4C;
+}
+.tableblock__value_orange {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #F88544;
+}
+.tableblock__value_yellow {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #F5C518;
+}
+.tableblock__value_red {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #F8444F;
+}
+
+
+
+.tableblock__body {
+  > .tableblock__row {
+    border-top: 2px solid #E2E9F2;
+    background: #fff;
+  }
+
+  > .tableblock__row:nth-child(2n-1) {
+    background: #F8FAFD;
+  }
+
+  .tableblock_number .tableblock__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    width: 26px;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+.tableblock {
+  margin-bottom: 75px;
+}
+.tableblock__footer {
+  padding: 39px 0;
+  border-top: 2px solid #E2E9F2;
+  background: #fff;
+}
+.tableblock__nav {
+  padding-left: 54px;
+  padding-right: 54px;
+}
+.tablenav {
+}
+
+.tablenav__left {
+}
+.tablenav__show {
+}
+.tablenav__right {
+}
+.tablenav__pagination {
+}
+.paginationblock {
+}
+.pagination {
+}
+.tablenav__show {
+}
+.showby {
+}
+
+.showby__caption {
+  font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 100%;
+margin-right: 12px;
+
+color: rgba(33, 37, 49, 0.3);
+}
+.showby__value span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  
+  color: #212531;
+}
+
+
+.showby.active {
+  .showby__value {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.tablenav__show {
+  position: relative;
+}
+
+.showby__dropdown {
+  top:calc(100%);
+}
+
 @include medium-screen {
   .captchablock {
     text-align: center;
