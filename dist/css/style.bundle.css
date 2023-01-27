@@ -6236,6 +6236,27 @@ input.inputplaceholder__input {
       display: inline-block;
       margin-right: 0.20833vw; }
 
+.tableblock__info img {
+  width: 0.9375vw;
+  min-width: 0.9375vw;
+  max-width: 0.9375vw; }
+
+.tableblock__cols .tableblock__col.tableblock__param_link {
+  min-width: 6.77083vw;
+  max-width: 6.77083vw; }
+
+.tableblock__link a {
+  color: #30CA4C; }
+
+.tablecard__sticker {
+  margin-left: 0.52083vw; }
+  .tablecard__sticker .sticker {
+    font-size: 0.72917vw;
+    line-height: 0.9375vw;
+    padding: 0 0.46875vw;
+    height: 0.98958vw;
+    line-height: 0.98958vw; }
+
 @media only screen and (max-width: 999px) {
   .captchablock {
     text-align: center;
@@ -7659,7 +7680,27 @@ input.inputplaceholder__input {
     font-size: 1.67866vw;
     margin-right: 0.95923vw; }
   .showby__value span {
-    font-size: 1.67866vw; } }
+    font-size: 1.67866vw; }
+  .tableblock__info img {
+    width: 2.15827vw;
+    min-width: 2.15827vw;
+    max-width: 2.15827vw; }
+  .tableblock__cols .tableblock__col.tableblock__param_link {
+    min-width: 15.58753vw;
+    max-width: 15.58753vw; }
+  .tableblock__link a {
+    color: #30CA4C; }
+  .tablecard__sticker {
+    margin-left: 1.19904vw; }
+    .tablecard__sticker .sticker {
+      font-size: 1.43885vw;
+      line-height: 1.91847vw;
+      padding: 0 0.47962vw;
+      height: 1.91847vw; }
+  .tablecard__itemblock {
+    flex-wrap: wrap; }
+    .tablecard__itemblock .tablecard__name {
+      width: 100%; } }
 
 @media only screen and (max-width: 600px) {
   .captchablock {
@@ -9368,9 +9409,25 @@ input.inputplaceholder__input {
   .showby__value span {
     font-size: 4.375vw; }
   .itemsnav__select img {
-    min-width: 2.15827vw;
-    max-width: 2.15827vw;
-    margin-right: 1.25vw; } }
+    min-width: 5.625vw;
+    max-width: 5.625vw;
+    margin-right: 1.25vw; }
+  .tableblock__info img {
+    width: 5.625vw;
+    min-width: 5.625vw;
+    max-width: 5.625vw; }
+  .tableblock__cols .tableblock__col.tableblock__param_link {
+    min-width: 40.625vw;
+    max-width: 40.625vw; }
+  .tableblock__link a {
+    color: #30CA4C; }
+  .tablecard__sticker {
+    margin-left: 3.125vw; }
+    .tablecard__sticker .sticker {
+      font-size: 3.75vw;
+      line-height: 5vw;
+      padding: 0 1.25vw;
+      height: 5vw; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/
