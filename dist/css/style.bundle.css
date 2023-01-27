@@ -5956,20 +5956,20 @@ p {
   z-index: 99; }
 
 .tabsnav {
-  margin-bottom: 32px; }
+  margin-bottom: 1.66667vw; }
 
 .tabsnav__links ul {
   padding: 0;
   margin: 0;
   list-style: none; }
   .tabsnav__links ul li a {
-    margin-right: 8px;
-    padding: 17px 55px;
-    border: 2px solid #E1E4E7;
+    margin-right: 0.41667vw;
+    padding: 0.88542vw 2.86458vw;
+    border: 0.10417vw solid #E1E4E7;
     border-radius: 555px;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 0.83333vw;
     line-height: 100%;
     display: block;
     color: rgba(33, 37, 49, 0.4);
@@ -5979,40 +5979,40 @@ p {
     color: #212531; }
 
 .itemsnav {
-  margin-bottom: 25px; }
+  margin-bottom: 1.30208vw; }
 
 .inputplaceholder {
   position: relative;
-  min-width: 215px;
+  min-width: 11.19792vw;
   width: min-content; }
 
 .inputplaceholder__placeholder {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 0.83333vw;
   line-height: 100%;
   position: absolute;
-  left: 25px;
+  left: 1.30208vw;
   top: 50%;
   transform: translateY(-50%);
   color: rgba(33, 37, 49, 0.4); }
 
 input.inputplaceholder__input {
-  padding-left: 148px;
-  padding-right: 35px;
-  height: 54px;
-  line-height: 54px;
+  padding-left: 7.70833vw;
+  padding-right: 1.82292vw;
+  height: 2.8125vw;
+  line-height: 2.8125vw;
   background: #F3F5F8;
-  border-radius: 6px;
+  border-radius: 0.3125vw;
   border: none;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.83333vw;
   width: 100%;
   color: #212531; }
 
 .itemsnav__left > div {
-  margin-left: 30px; }
+  margin-left: 1.5625vw; }
 
 .itemsnav .filterblock__item {
   margin-bottom: 0; }
@@ -6022,30 +6022,30 @@ input.inputplaceholder__input {
   align-items: center; }
 
 .linkset__item {
-  margin-left: 6px; }
+  margin-left: 0.3125vw; }
   .linkset__item:first-child {
     margin-left: 0; }
 
 .linkset__link {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.83333vw;
   line-height: 100%;
   text-align: center;
   color: rgba(33, 37, 49, 0.3);
   display: block;
-  min-width: 40px;
-  height: 40px;
-  padding: 12px 7px;
-  border-radius: 8px; }
+  min-width: 2.08333vw;
+  height: 2.08333vw;
+  padding: 0.625vw 0.36458vw;
+  border-radius: 0.41667vw; }
   .linkset__link.active, .linkset__link:hover, .linkset__link:focus {
     color: #fff;
     background: #30CA4C; }
 
 .tableblock__wrapper {
-  border: 6px solid #FFFFFF;
-  border-radius: 12px;
-  filter: drop-shadow(8px 8px 60px rgba(49, 56, 77, 0.1)); }
+  border: 0.3125vw solid #FFFFFF;
+  border-radius: 0.625vw;
+  filter: drop-shadow(0.41667vw 0.41667vw 3.125vw rgba(49, 56, 77, 0.1)); }
 
 .tableblock__row {
   display: flex;
@@ -6053,45 +6053,45 @@ input.inputplaceholder__input {
   background: #fff; }
 
 .tableblock__col {
-  padding: 0 20px;
-  height: 80px; }
+  padding: 0 1.04167vw;
+  height: 4.16667vw; }
 
 .tableblock_number {
-  width: 122px;
+  width: 6.35417vw;
   text-align: center;
   justify-content: center; }
 
 .tableblock__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.04167vw;
   line-height: 100%;
-  /* identical to box height, or 20px */
+  /* identical to box height, or 20px) */
   color: #212531; }
 
 .tableblock_name {
-  min-width: 472px;
-  max-width: 472px; }
+  min-width: 24.58333vw;
+  max-width: 24.58333vw; }
 
-/* $tableblock__param_w: calc((1920px - 472px - 122px)/4);
+/* $tableblock__param_w: calc((1920px) - 472px) - 122px)/4);
 .tableblock__param {
   width: $tableblock__param_w;
 } */
 .tableblock__cols {
   display: flex;
   justify-content: space-between;
-  min-width: 157px;
+  min-width: 8.17708vw;
   width: 100%; }
   .tableblock__cols .tableblock__col {
-    min-width: 240px;
-    max-width: 240px; }
+    min-width: 12.5vw;
+    max-width: 12.5vw; }
 
 .tableblock_sort {
-  margin-right: 7px;
+  margin-right: 0.36458vw;
   display: block; }
 
 .tableblock__info {
-  margin-left: 9px;
+  margin-left: 0.46875vw;
   display: block; }
 
 .tablecard__img a {
@@ -6141,36 +6141,36 @@ input.inputplaceholder__input {
 .tableblock__value {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.83333vw;
   line-height: 100%;
   color: #212531; }
 
 .tableblock__value_green {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.83333vw;
   line-height: 100%;
   color: #30CA4C; }
 
 .tableblock__value_orange {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.83333vw;
   line-height: 100%;
   color: #F88544; }
 
 .tableblock__value_yellow {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.83333vw;
   line-height: 100%;
   color: #F5C518; }
 
 .tableblock__value_red {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.83333vw;
   line-height: 100%;
   color: #F8444F; }
 
 .tableblock__body > .tableblock__row {
-  border-top: 2px solid #E2E9F2;
+  border-top: 0.10417vw solid #E2E9F2;
   background: #fff; }
 
 .tableblock__body > .tableblock__row:nth-child(2n-1) {
@@ -6179,36 +6179,36 @@ input.inputplaceholder__input {
 .tableblock__body .tableblock_number .tableblock__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.83333vw;
   line-height: 100%;
-  width: 26px;
+  width: 1.35417vw;
   text-align: left;
-  padding-left: 10px; }
+  padding-left: 0.52083vw; }
 
 .tableblock {
-  margin-bottom: 75px; }
+  margin-bottom: 3.90625vw; }
 
 .tableblock__footer {
-  padding: 39px 0;
-  border-top: 2px solid #E2E9F2;
+  padding: 2.03125vw 0;
+  border-top: 0.10417vw solid #E2E9F2;
   background: #fff; }
 
 .tableblock__nav {
-  padding-left: 54px;
-  padding-right: 54px; }
+  padding-left: 2.8125vw;
+  padding-right: 1.77083vw; }
 
 .showby__caption {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 0.9375vw;
   line-height: 100%;
-  margin-right: 12px;
+  margin-right: 0.625vw;
   color: rgba(33, 37, 49, 0.3); }
 
 .showby__value span {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 0.9375vw;
   line-height: 100%;
   color: #212531; }
 
@@ -6219,7 +6219,7 @@ input.inputplaceholder__input {
   position: relative; }
 
 .showby__dropdown {
-  top: calc(100%); }
+  top: 100%; }
 
 @media only screen and (max-width: 999px) {
   .captchablock {
