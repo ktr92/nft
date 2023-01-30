@@ -80,6 +80,12 @@ a {
 .mt-30 {
   margin-top: get-vw-large(30px) !important;
 }
+.w-full {
+  width: 100% !important;
+}
+.inline-flex {
+  display: inline-flex !important;
+}
 
 @media (max-width: 1023px) {
   .mobile-full {
