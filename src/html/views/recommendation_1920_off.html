@@ -8,16 +8,62 @@
         <a href="#" class="backbtn">
           <img src="img/backbtn.svg" alt="">
         </a>
-        <div class="pagetitle pagetitle_left">
-          <div class="pagetitle__title pagetitle__title_small text-left">Update Recommendation</div>
+        <div class="pagetitle pagetitle_left pagetitle_category">
+          <div class="pagetitle__title pagetitle__title_small text-left">Please choose 
+            <a href="#" data-toggleclick="choose_category" class="chooseCategory">category 
+              <span class="chooseCategory__icon" style="color: #30CA4C">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0215 3.89638C12.8261 3.70104 12.5098 3.70104 12.3145 3.89638L8.00113 8.20971L3.68813 3.89638C3.4928 3.70104 3.17647 3.70104 2.98113 3.89638L0.814469 6.06304C0.619135 6.25838 0.619135 6.57471 0.814469 6.77004L7.6478 13.6034C7.74513 13.7014 7.87313 13.75 8.00113 13.75C8.12913 13.75 8.25713 13.7014 8.3548 13.6037L15.1881 6.77038C15.3835 6.57504 15.3835 6.25871 15.1881 6.06338L13.0215 3.89638Z" fill="#30CA4C"/>
+                </svg>
+              </span>
+            </a>
+
+            <div class="categoryblock dropdownblock" data-toggle="choose_category">
+             <div class="categoryblock__wrapper dropdownblock__wrapper">
+              <div class="fdropdown__items">
+                <a href="#" class="fdropdown__item tableblock__value">
+                  NFT
+                </a>
+                <a  href="#" class="fdropdown__item tableblock__value">
+                  Token
+                </a>
+                <a  href="#" class="fdropdown__item tableblock__value">
+                  Mint
+                </a>
+                <a  href="#" class="fdropdown__item tableblock__value">
+                  Airdrop
+                </a>
+                <a  href="#" class="fdropdown__item tableblock__value">
+                  Whitelist
+                </a>
+                <a href="#" class="fdropdown__item tableblock__value">
+                  NFT
+                </a>
+                <a  href="#" class="fdropdown__item tableblock__value">
+                  Token
+                </a>
+                <a  href="#" class="fdropdown__item tableblock__value">
+                  Mint
+                </a>
+                <a  href="#" class="fdropdown__item tableblock__value">
+                  Airdrop
+                </a>
+                <a  href="#" class="fdropdown__item tableblock__value">
+                  Whitelist
+                </a>
+                
+              </div>
+             </div>
+            </div>
+
+          </div>
         </div>
-        
       </div>
     </div>
   </div>
   <div class="maincontent mt-0">
     <div class="container">
-      <div class="contentform">
+      <div class="contentform contentform_disabled">
         <form action="">
           <div class="contentform__items">
             <div class="contentform__item">
@@ -27,7 +73,7 @@
                   <div class="radiogroup__item">
                     <label class="customradio customradio_currently" for="currently_1">
                       <div class="customradio__wrapper">
-                        <input type="radio" checked="checked" name="currently" id="currently_1">
+                        <input disabled type="radio" name="currently" id="currently_1">
                         <div class="customradio__icon">
                           <div class="customradio__icn"><img src="img/Bullish.svg" alt=""></div>
                         </div>
@@ -45,7 +91,7 @@
                   <div class="radiogroup__item">
                     <label class="customradio customradio_currently" for="currently_2">
                       <div class="customradio__wrapper">
-                        <input type="radio" name="currently" id="currently_2">
+                        <input disabled type="radio" name="currently" id="currently_2">
                         <div class="customradio__icon">
                           <div class="customradio__icn"><img src="img/Bearrish.svg" alt=""></div>
                         </div>
@@ -70,7 +116,7 @@
         
             <div class="contentform__input" data-togglewrapper="suggestions">
               <div class="searchinput">
-                <input type="text" placeholder="The Ugly Duck" oninput="showSuggestions(this)">
+                <input disabled type="text" placeholder="The Ugly Duck" oninput="showSuggestions(this)">
               </div>
               <div class="suggestions" data-toggle="suggestions">
                 <div class="suggestions__wrapper">
@@ -144,7 +190,7 @@
               </div>
               <div class="contentform__input">
                 <div class="contentform__inputbtn contentform__inputprice inputplaceholder w-full">
-                  <input type="text" class="input input_dark" value="250">
+                  <input disabled type="text" class="input input_dark" value="250">
                   <div class="inputplaceholder__placeholder ">$</div>
                   <a href="#" class="btn btn_main">Update</a>
                 </div>
@@ -156,8 +202,16 @@
               </div>
               <div class="contentform__input">
               
-                <div class="form-control__wrapper range-slider" data-range-slider-type="day" data-range-slider-ready="yes">
-                  <input class="form-control range-slider__control input input_dark" data-max="365" data-min="1" data-day-format="" name="day1" placeholder="1 day" type="text" inputmode="integer" value="1">
+               <!-- если активна data-range-slider-ready="yes"
+
+                  <div class="form-control__wrapper range-slider" data-range-slider-type="day" data-range-slider-ready="yes">
+                  <input disabled class="form-control range-slider__control input input_dark" data-max="365" data-min="1" data-day-format="" name="day1" placeholder="1 day" type="text" inputmode="integer" value="1">
+                  <div class="range-slider__ui"></div>
+                </div> -->
+                <!-- если неактивна  data-range-slider-ready="no" -->
+                <div class="form-control__wrapper range-slider" data-range-slider-type="day" 
+                data-range-slider-ready="no">
+                  <input disabled class="form-control range-slider__control input input_dark" data-max="365" data-min="1" data-day-format="" name="day1" placeholder="1 day" type="text" inputmode="integer" value="1">
                   <div class="range-slider__ui"></div>
                 </div>
               </div>
@@ -169,13 +223,13 @@
               Title<span class="red">*</span>
             </div>
             <div class="contentform__input">
-              <input type="text" class="input input_bold" placeholder="Bond portfolio with monthly payments">
+              <input disabled type="text" class="input input_bold" placeholder="Max 256 symbols">
             </div>
           </div>
         </div>
 
         <div class="contentdelimeter">
-          <div class="contentdelimeter__title">Your recommendation</div>
+          <div class="contentdelimeter__title">Start creating your recommendation</div>
         </div>
 
           <div class="contentblock">
@@ -183,47 +237,12 @@
             <div class="contentblock__body">
               <div class="contentblock__header">
                 <div class="contentblock__title">
-                  <h1>Bond portfolio with monthly payments</h1>
+                  <h1>Title</h1>
                 </div>
-                <div class="contentblock__params flex">
-                  <div class="contentblock__param">29.12.2020</div>
-                  <div class="contentblock__param">Duration: 29 days</div>
-                </div>
+                
               </div>
               <div class="contentblock__content">
-                <div class="text">
-                  <p>Aenean dapibus bibendum dolor nec vulputate. Cras commodo facilisis lacus id accumsan. Integer venenatis augue sit amet fringilla cursus. Nulla ullamcorper quis metus id feugiat. Quisque diam urna, fermentum in varius quis, laoreet quis augue. Nam semper fermentum velit. Ut volutpat dictum orci vitae rhoncus. Aenean eu ante egestas, blandit neque nec, euismod mauris. Ut molestie fermentum egestas. Cras sollicitudin consequat sodales. Maecenas tortor augue, volutpat et mi eget, auctor mattis enim. Integer a convallis odio. Ut luctus tincidunt est a lobortis. Sed neque lacus, sollicitudin ac facilisis commodo, egestas in libero.</p>
-                  <p> Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla semper risus a orci malesuada aliquam. Nam faucibus finibus lacus, ac dapibus nisl. Ut sed nisi eget erat aliquam eleifend. Aliquam erat volutpat. Curabitur vel pellentesque velit, nec iaculis ligula. Vivamus dictum bibendum tristique. Aliquam quis ipsum finibus, ornare metus at, fringilla odio.</p>
-                  <p>Nunc vel orci non sapien sagittis bibendum a quis justo. Donec consequat pellentesque lorem sed commodo. Ut quis dolor vitae ligula fermentum vulputate a sit amet dolor. Nullam pharetra metus nibh, nec lacinia turpis condimentum vel. Donec eget urna vitae risus fermentum tempor. Fusce facilisis est eu ante porta egestas. Morbi at nulla vitae nulla ullamcorper porta.</p>
-                </div>
-                <div class="picture">
-                  <a href="img/table.png" data-lightbox="content_img">
-                    <img src="img/table.png" alt="">
-                  </a>
-                </div>
-                <div class="text">
-                  <p>Aenean dapibus bibendum dolor nec vulputate. Cras commodo facilisis lacus id accumsan. Integer venenatis augue sit amet fringilla cursus. Nulla ullamcorper quis metus id feugiat. Quisque diam urna, fermentum in varius quis, laoreet quis augue. Nam semper fermentum velit. Ut volutpat dictum orci vitae rhoncus. Aenean eu ante egestas, blandit neque nec, euismod mauris. Ut molestie fermentum egestas. Cras sollicitudin consequat sodales. Maecenas tortor augue, volutpat et mi eget, auctor mattis enim. Integer a convallis odio. Ut luctus tincidunt est a lobortis. Sed neque lacus, sollicitudin ac facilisis commodo, egestas in libero.</p>
-                  <p> Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla semper risus a orci malesuada aliquam. Nam faucibus finibus lacus, ac dapibus nisl. Ut sed nisi eget erat aliquam eleifend. Aliquam erat volutpat. Curabitur vel pellentesque velit, nec iaculis ligula. Vivamus dictum bibendum tristique. Aliquam quis ipsum finibus, ornare metus at, fringilla odio.</p>
-                  <p>Nunc vel orci non sapien sagittis bibendum a quis justo. Donec consequat pellentesque lorem sed commodo. Ut quis dolor vitae ligula fermentum vulputate a sit amet dolor. Nullam pharetra metus nibh, nec lacinia turpis condimentum vel. Donec eget urna vitae risus fermentum tempor. Fusce facilisis est eu ante porta egestas. Morbi at nulla vitae nulla ullamcorper porta.</p>
-                </div>
-                <div class="contentblock__updated updatedtext updatedtext_edit">
-                  <div class="updatedtext__info inline-flex items-center">
-                    <div class="updatedtext__text"> Update block 1</div>
-                    <div class="updatedtext__buttons flex items-center">
-                      <a href="#">
-                        <img src="img/Edit1.svg" alt="">
-                      </a>
-                      <a href="#">
-                        <img src="img/Remove1.svg" alt="">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="updatedtext__content">
-                    <p>Aenean dapibus bibendum dolor nec vulputate. Cras commodo facilisis lacus id accumsan. Integer venenatis augue sit amet fringilla cursus. Nulla ullamcorper quis metus id feugiat. Quisque diam urna, fermentum in varius quis, laoreet quis augue. Nam semper fermentum velit. Ut volutpat dictum orci vitae rhoncus. Aenean eu ante egestas, blandit neque nec, euismod mauris. Ut molestie fermentum egestas. Cras sollicitudin consequat sodales. Maecenas tortor augue, volutpat et mi eget, auctor mattis enim. Integer a convallis odio. Ut luctus tincidunt est a lobortis. Sed neque lacus, sollicitudin ac facilisis commodo, egestas in libero.</p>
-                    <p> Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla semper risus a orci malesuada aliquam. Nam faucibus finibus lacus, ac dapibus nisl. Ut sed nisi eget erat aliquam eleifend. Aliquam erat volutpat. Curabitur vel pellentesque velit, nec iaculis ligula. Vivamus dictum bibendum tristique. Aliquam quis ipsum finibus, ornare metus at, fringilla odio.</p>
-                    <p>Nunc vel orci non sapien sagittis bibendum a quis justo. Donec consequat pellentesque lorem sed commodo. Ut quis dolor vitae ligula fermentum vulputate a sit amet dolor. Nullam pharetra metus nibh, nec lacinia turpis condimentum vel. Donec eget urna vitae risus fermentum tempor. Fusce facilisis est eu ante porta egestas. Morbi at nulla vitae nulla ullamcorper porta.</p>
-                  </div>
-                </div>
+                
               </div>
             </div>
             <div class="contentblock__footer flex items-center content-between">

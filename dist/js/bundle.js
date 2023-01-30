@@ -29,6 +29,7 @@ function initFE() {
     closeByClickOutside('.suggestions', '.searchinput')
     closeByClickOutside('[data-toggle="notifications"]', '[data-toggleclickset="notifications"]')
     closeByClickOutside('[data-toggle="showby"]', '[data-toggleclick="showby"]')
+    closeByClickOutside('[data-toggle="choose_category"]', '[data-toggleclick="choose_category"]')
     repostSliderInit()
     inputSliderInit()
 }
@@ -92,6 +93,8 @@ function inputSliderInit() {
 
     var rangeTimeout;
 function rangeSliderCreate (slideIndex, slide) {
+
+    if ($(slide).attr('data-range-slider-ready') === 'yes') {
     var rangeSliderOptions;
     var rangeSliderType = $(slide).attr('data-range-slider-type');
     var rangeSliderStart = parseFloat($(slide).closest('.range-slider').find('.form-control').val());
@@ -144,6 +147,7 @@ function rangeSliderCreate (slideIndex, slide) {
             target.closest('.range-slider').find('.form-control').trigger("change");
         }, 500);
     });
+}
 }
 
 function rangeSliderInit(rangeSliders) {
