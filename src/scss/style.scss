@@ -3823,7 +3823,7 @@ line-height: 100%;
 
 
 
-.radiogroup {
+.radiogroup__items {
   display: flex;
   .radiogroup__item {
     margin-right: get-vw-large(9px);
@@ -3883,9 +3883,12 @@ input.input {
   border: get-vw-large(2px) solid #F3F5F8;
   border-bottom: get-vw-large(2px) solid #D9DDE3;
 
-  &.input_dark {
-    background: #F3F5F8;
-  }
+ 
+}
+
+input.input_dark {
+  background-color: #F3F5F8;
+  border-color: #F3F5F8;
 }
 
 .contentform__input {
@@ -4293,6 +4296,66 @@ text-align: left;
   
 }
 
+.radiogroup {
+  margin-left: get-vw-large(50px);
+  padding-left: get-vw-large(50px);
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: get-vw-large(1px);
+    background: rgba(217, 221, 227, 0.5);
+  }
+
+
+  &:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.formcard_ready {
+  .formcard__img {
+    width: get-vw-large(164px);
+    height: get-vw-large(164px);
+    border-radius: 50%;
+    @include imageblock();
+  }
+  .formcard__image {
+    position: relative;
+    margin-bottom: get-vw-large(26px);
+  }
+  .formcard__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: get-vw-large(18px);
+    line-height: get-vw-large(23px);
+    color: #212531;
+    text-align: center;
+    margin-bottom: get-vw-large(13px);
+  }
+  .iconlink__img {
+    min-width: get-vw-large(42px);  
+    max-width: get-vw-large(42px);
+    height: get-vw-large(42px);
+
+    img {
+      min-width: get-vw-large(22px);
+      max-width: get-vw-large(22px);
+      height: get-vw-large(22px);
+    }
+  }
+  .carditem__links {
+    justify-content: center;
+  }
+}
 
 
 @include medium-screen {
@@ -6594,7 +6657,7 @@ height:  get-vw-medium(16px);
   }
 }
 
-.radiogroup {
+.radiogroup__items {
   .radiogroup__item {
     margin-right: get-vw-medium(8px);
 
@@ -6977,6 +7040,78 @@ $contentform__item_cols4_ml:  get-vw-medium(6px);
 
   }
   
+}
+
+.contentform__input_topradio {
+  flex-wrap: wrap;
+  .radiogroup {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .customradio__check {
+    margin-left: 0 !important;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.radiogroup {
+  margin-left: 0;
+  padding-left: 0;
+  position: relative;
+
+  .radiogroup__item {
+    width: get-vw-medium(200px);
+    position: relative;
+
+  }
+
+  &:after {
+    display: none;
+  }
+
+
+  &:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.formcard_ready {
+  .formcard__img {
+    width: get-vw-medium(120px);
+    height: get-vw-medium(120px);
+    border-radius: 50%;
+    @include imageblock();
+  }
+  .formcard__image {
+    position: relative;
+    margin-bottom: get-vw-medium(15px);
+  }
+  .formcard__name {
+    font-size: get-vw-medium(14px);
+    line-height: get-vw-medium(18px);
+    margin-bottom: get-vw-medium(11px);
+  }
+  .iconlink__img {
+    min-width: get-vw-medium(36px);  
+    max-width: get-vw-medium(36px);
+    height: get-vw-medium(36px);
+
+    img {
+      min-width: get-vw-medium(19px);
+      max-width: get-vw-medium(19px);
+      height: get-vw-medium(19px);
+    }
+  }
+  .carditem__links {
+    justify-content: center;
+  }
 }
 
 }
@@ -9708,7 +9843,7 @@ height:  get-vw-small(16px);
   }
 }
 
-.radiogroup {
+.radiogroup__items {
   .radiogroup__item {
     margin-right: get-vw-small(8px);
 
@@ -10170,7 +10305,88 @@ $contentform__item_cols4_ml:  get-vw-small(6px);
   
 }
 
+.contentform__input_topradio {
+  flex-wrap: wrap;
+  .radiogroup {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .customradio__check {
+    margin-left: 0 !important;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.radiogroup {
+  margin-left: 0;
+  padding-left: 0;
+  position: relative;
+
+  .radiogroup__item {
+    width: get-vw-small(138px);
+    position: relative;
+
+  }
+
+  &:after {
+    display: none;
+  }
 
 
+  &:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.formcard_ready {
+  .formcard__content {
+    display: flex;
+    align-items: center;
+    
+  }
+  .formcard__info {
+    margin-left: get-vw-small(10px);
+  }
+
+  .formcard__img {
+    width: get-vw-small(70px);
+    height: get-vw-small(70px);
+    border-radius: 50%;
+    @include imageblock();
+  }
+  .formcard__image {
+    position: relative;
+    margin-bottom: 0;
+  }
+  .formcard__name {
+    font-size: get-vw-small(14px);
+    line-height: get-vw-small(18px);
+    margin-bottom: get-vw-small(5px);
+  }
+  .iconlink__img {
+    min-width: get-vw-small(30px);  
+    max-width: get-vw-small(30px);
+    height: get-vw-small(30px);
+
+    img {
+      min-width: get-vw-small(16px);
+      max-width: get-vw-small(16px);
+      height: get-vw-small(16px);
+    }
+  }
+  .carditem__links {
+    justify-content: center;
+  }
+}
+.contentform__input.contentform__input_radio.contentform__input_topradio.flex {
+  margin-bottom: get-vw-small(23px);
+}
 
 }
