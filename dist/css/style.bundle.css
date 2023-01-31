@@ -12482,7 +12482,7 @@ input.range-slider__control {
     margin-bottom: 0; }
   .contentform_disabled .contentform__item {
     margin-bottom: 9.375vw; }
-  .chooseCategory span.chooseCategory__icon, .chooseCategory svg {
+  .chooseCategory span.chooseCategory__icon svg {
     min-width: 5vw;
     max-width: 5vw;
     height: 5vw;
