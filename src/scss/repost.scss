@@ -2,6 +2,8 @@
 @import "./partials/mixins.scss";
 @import "./partials/classes.scss";
 
+.sliderblock {
+
 
 .sliderblock__card {
   border-radius: get-vw-modal(20px);
@@ -786,9 +788,11 @@ color: #212531;
   margin-bottom: get-vw-modal(16px);
 }
 }
-
+}
 
 @include medium-screen {
+
+  .sliderblock {
     
 .sliderblock__card {
   border-radius: get-vw-modal_medium(20px);
@@ -1560,9 +1564,9 @@ color: #212531;
 
 }
 }
-
+}
 @include small-screen {
-      
+      .sliderblock {
 .sliderblock__card {
   border-radius: get-vw-modal_small(20px);
   overflow: hidden;
@@ -2309,5 +2313,5 @@ color: #212531;
   margin-bottom: get-vw-modal_small(16px);
 }
 }
-
+      }
 }

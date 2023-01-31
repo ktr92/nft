@@ -30,7 +30,17 @@
     width: get-vw-large(534px);
   }
 }
-
+.modal_largest {
+  .modal-dialog {
+    width: get-vw-large(971px);
+  }
+  .modal-content {
+    padding: get-vw-large(70px);
+  }
+}
+.modal .card * {
+  pointer-events: none;
+}
 
 .modal {
   z-index: 9999999999;
@@ -136,6 +146,9 @@ button.close {
   }
 }
 
+
+
+
 .modal-body {
   padding: 0;
   overflow: visible;
@@ -215,6 +228,7 @@ button.close {
 }
 
 @include medium-screen {
+  
   .modal-dialog {
     width: get-vw-medium(660px);
 
@@ -312,6 +326,20 @@ button.close {
     padding: get-vw-medium(50px) get-vw-medium(80px) get-vw-medium(47px) get-vw-medium(80px);
   }
 }
+
+.modal_largest {
+  .modal-title {
+    br {
+      display: none;
+    }
+  }
+  .modal-dialog {
+    width: get-vw-medium(762px);
+  }
+  .modal-content {
+    padding: get-vw-medium(36px);
+  }
+}
 }
 
 @include small-screen {
@@ -407,5 +435,12 @@ button.close {
   .modal-content {
     padding: get-vw-small(24px) get-vw-small(16px);
   }
+}
+.modal_largest {
+  .modal-dialog {
+    width: get-vw-small(284px);
+  }
+  .modal-content {
+    padding: get-vw-small(24px) get-vw-small(16px);  }
 }
 }

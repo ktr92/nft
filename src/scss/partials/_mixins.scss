@@ -48,6 +48,33 @@
     @return $font;
   }
 
+
+  $imagecard_largest_scale: 831/831;
+
+  @function get-vw-modal_largest($font){
+    $vw-viewport-modal: 1920 * $imagecard_largest_scale;
+    $vw-context: $vw-viewport-modal * 0.01 * 1px;
+    @return $font / $vw-context * 1vw;
+    @return $font;
+  }
+
+
+  $imagecard_largest_scale_medium: 831/690;
+  @function get-vw-modal_medium_largest($font){
+    $vw-viewport-modal: 834 * $imagecard_largest_scale_medium;
+    $vw-context: $vw-viewport-modal * 0.01 * 1px;
+    @return $font / $vw-context * 1vw;
+    @return $font;
+  }
+  $imagecard_largest_scale_small: 895/252;
+
+  @function get-vw-modal_small_largest($font){
+    $vw-viewport-modal: 320 * $imagecard_largest_scale_small;
+    $vw-context: $vw-viewport-modal * 0.01 * 1px;
+    @return $font / $vw-context * 1vw;
+    @return $font;
+  }
+
 @mixin container {
   width: 100%;
   width: 100vw;

@@ -4,6 +4,7 @@
 @import "./partials/classes.scss";
 @import "./modal.scss";
 @import "./repost.scss";
+@import "./repost_largest.scss";
 @import "./download.scss";
 
 @font-face {
@@ -4208,6 +4209,22 @@ $formaside_w: get-vw-large(396px);
 .contentform__item:last-child {
   margin-bottom: 0;
 }
+.imagecard .imagecard__rtext a {
+  color: #30CA4C;
+}
+
+.modal_largest .imagecard {
+  margin-bottom: get-vw-large(43px);
+}
+.modal_largest .modal-title {
+  font-style: normal;
+font-weight: 700;
+font-size: get-vw-large(36px);
+line-height: 100%;
+margin-bottom: get-vw-large(50px);
+text-align: left;
+}
+
 
 
 @include medium-screen {
@@ -6808,7 +6825,14 @@ $formaside_w: get-vw-medium(212px);
 .contentform__item:last-child {
   margin-bottom: 0;
 }
+.modal_largest .imagecard {
+  margin-bottom: get-vw-medium(35px);
+}
+.modal_largest .modal-title {
 
+  font-size: get-vw-medium(26px);
+  margin-bottom: get-vw-medium(26px);
+}
 }
 @include small-screen {
   .captchablock {
@@ -9895,5 +9919,12 @@ font-size: get-vw-small(14px);
 .contentform__item:last-child {
   margin-bottom: 0;
 }
+.imagecard_largest.imagecard {
+  margin-bottom: get-vw-small(15px);
+}
+.modal_largest .modal-title {
 
+  font-size: get-vw-small(18px);
+  margin-bottom: get-vw-small(15px);
+}
 }
