@@ -4045,6 +4045,7 @@ a {
     font-style: normal;
     font-weight: 700;
     font-size: 1.23184vw;
+    line-height: 1.5838vw;
     display: inline-block;
     color: #ffffff;
     border-radius: 555px; }
@@ -8426,10 +8427,10 @@ input.range-slider__control {
     font-style: normal;
     font-weight: 400;
     font-size: 0.9375vw;
-    line-height: 100%;
     color: #212531;
     background: #fff;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .contentdelimeter .contentdelimeter__title:after {
       content: "";
       width: 100%;
