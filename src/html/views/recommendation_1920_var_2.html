@@ -88,89 +88,38 @@
             </div>
             <div class="contentform__main">
               <div class="contentform__formleft">
-                <div class="contentform__item">
-                  <div class="contentform__label"> Select NFT <span class="red">*</span>
-                  </div>
-                  <div class="contentform__input" data-togglewrapper="suggestions">
-                    <div class="searchinput">
-                      <input  type="text" placeholder="The Ugly Duck" oninput="showSuggestions(this)">
-                    </div>
-                    <div class="suggestions" data-toggle="suggestions">
-                      <div class="suggestions__wrapper">
-                        <div class="suggestions__blocks">
-                          <div class="suggestions__block">
-                            <div class="suggestions__items">
-                              <a href="#" class="suggestions__item">
-                                <div class="suggestions__icon">
-                                  <div class="suggestions__img">
-                                    <img src="img/Forefront.png" alt="">
-                                  </div>
-                                </div>
-                                <div class="suggestions__name">Forefront (FF)</div>
-                              </a>
-                              <a href="#" class="suggestions__item">
-                                <div class="suggestions__icon">
-                                  <div class="suggestions__img">
-                                    <img src="img/FFA.png" alt="">
-                                  </div>
-                                </div>
-                                <div class="suggestions__name">FFA.Games (FFA)</div>
-                              </a>
-                              <a href="#" class="suggestions__item">
-                                <div class="suggestions__icon">
-                                  <div class="suggestions__img">
-                                    <img src="img/FiFaSport.png" alt="">
-                                  </div>
-                                </div>
-                                <div class="suggestions__name">FiFaSport (FFS)</div>
-                              </a>
-                              <a href="#" class="suggestions__item">
-                                <div class="suggestions__icon">
-                                  <div class="suggestions__img">
-                                    <img src="img/FairyForest.png" alt="">
-                                  </div>
-                                </div>
-                                <div class="suggestions__name">Fairy Forest (FFN)</div>
-                              </a>
-                              <a href="#" class="suggestions__item">
-                                <div class="suggestions__icon">
-                                  <div class="suggestions__img">
-                                    <img src="img/Forefront2.png" alt="">
-                                  </div>
-                                </div>
-                                <div class="suggestions__name">Forefront (FF)</div>
-                              </a>
-                              <a href="#" class="suggestions__item">
-                                <div class="suggestions__icon">
-                                  <div class="suggestions__img">
-                                    <img src="img/FFA.png" alt="">
-                                  </div>
-                                </div>
-                                <div class="suggestions__name">FFA.Games (FFA)</div>
-                              </a>
-                              <a href="#" class="suggestions__item">
-                                <div class="suggestions__icon">
-                                  <div class="suggestions__img">
-                                    <img src="img/FiFaSport.png" alt="">
-                                  </div>
-                                </div>
-                                <div class="suggestions__name">FiFaSport (FFS)</div>
-                              </a>
-                              <a href="#" class="suggestions__item">
-                                <div class="suggestions__icon">
-                                  <div class="suggestions__img">
-                                    <img src="img/FairyForest.png" alt="">
-                                  </div>
-                                </div>
-                                <div class="suggestions__name">Fairy Forest (FFN)</div>
-                              </a>
-                            </div>
-                          </div>
+                <div class="contentform__row flex items-center">
+                  <div class="contentform__item contentform__item_avatar">
+                    <div class="contentform__assetphoto formAvatar">
+                      <label for="fileAsset">
+                        <input accept="image/*" type="file" id="fileAsset">
+                        <div class="fileImage__img">
+                          <img id="assetFile" src="img/Camera2.png" alt="">
                         </div>
-                      </div>
+                        <span class="fileImage__btn">
+                          <img src="img/Camera.svg" alt="">
+                        </span>
+                      </label>
+                    </div>
+                    <script>
+                      const imgInp = document.getElementById('fileAsset')
+                      imgInp.onchange = evt => {
+                        const [file] = imgInp.files
+                        if (file) {
+                          document.getElementById('assetFile').src = URL.createObjectURL(file)
+                        }
+                      }
+                    </script>
+                  </div>
+                  <div class="contentform__item">
+                    <div class="contentform__label"> Asset name</span>
+                    </div>
+                    <div class="contentform__input">
+                      <input  type="text" class="input input_dark" placeholder="">
                     </div>
                   </div>
                 </div>
+                
                 <div class="contentform__card onlyMobile">
                   <div class="formcard formcard_empty ">
                     <div class="formcard__content">
@@ -181,24 +130,30 @@
                     </div>
                   </div>
                 </div>
-                <div class="contentform__item contentform__item_cols contentform__item_cols2 flex ">
+                <div class="contentform__item contentform__item_cols contentform__item_cols4 flex ">
                   <div class="contentform__item_col">
-                    <div class="contentform__label flex items-center"> Entry Price <span class="red">*</span>
-                      <span class="oversize oversize_desktop">
-                        <img src="img/info.svg" alt="">
-                        <span class="oversize__tooltip oversize__tooltip_large">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </span>
-                      </span>
+                    <div class="contentform__label">Twitter link</span>
                     </div>
                     <div class="contentform__input">
-                      <div class="contentform__inputbtn contentform__inputprice inputplaceholder w-full">
-                        <input  type="text" class="input input_dark" value="250">
-                        <div class="inputplaceholder__placeholder ">$</div>
-                        <a href="#" class="btn btn_main">Update</a>
-                      </div>
-                    </div>
+                      <input  type="text" class="input input_dark" placeholder="">
+                    </div> 
                   </div>
                   <div class="contentform__item_col">
-                    <div class="contentform__label"> Duration <span class="red">*</span>
+                    <div class="contentform__label">Telegram link</span>
+                    </div>
+                    <div class="contentform__input">
+                      <input  type="text" class="input input_dark" placeholder="">
+                    </div> 
+                  </div>
+                  <div class="contentform__item_col">
+                    <div class="contentform__label">Discord link</span>
+                    </div>
+                    <div class="contentform__input">
+                      <input  type="text" class="input input_dark" placeholder="">
+                    </div> 
+                  </div>
+                  <div class="contentform__item_col">
+                    <div class="contentform__label">Duration <span class="red">*</span>
                     </div>
                     <div class="contentform__input">
 
@@ -213,7 +168,7 @@
                     <div class="contentform__label"> Title <span class="red">*</span>
                     </div>
                     <div class="contentform__input">
-                      <input  type="text" class="input input_bold" placeholder="Max 256 symbols">
+                      <input  type="text" class="input input_dark" placeholder="Max 256 symbols">
                     </div>
                   </div>
                 </div>
@@ -237,10 +192,68 @@
               <div class="contentblock__body">
                 <div class="contentblock__header">
                   <div class="contentblock__title">
-                    <h1>Title</h1>
+                    <h1>Bond portfolio with monthly payments</h1>
                   </div>
                 </div>
-                <div class="contentblock__content"></div>
+                <div class="contentblock__content contentblock__content_editmode">
+                  <div class="contentblock__updated updatedtext updatedtext_edit">
+                    <div class="updatedtext__info inline-flex items-center">
+                      <div class="updatedtext__text"> Text block</div>
+                      <div class="updatedtext__buttons flex items-center">
+                        <a href="#">
+                          <img src="img/Edit1.svg" alt="">
+                        </a>
+                        <a href="#">
+                          <img src="img/Remove1.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="updatedtext__content">
+                      <p>Aenean dapibus bibendum dolor nec vulputate. Cras commodo facilisis lacus id accumsan. Integer venenatis augue sit amet fringilla cursus. Nulla ullamcorper quis metus id feugiat. Quisque diam urna, fermentum in varius quis, laoreet quis augue. Nam semper fermentum velit. Ut volutpat dictum orci vitae rhoncus. Aenean eu ante egestas, blandit neque nec, euismod mauris. Ut molestie fermentum egestas. Cras sollicitudin consequat sodales. Maecenas tortor augue, volutpat et mi eget, auctor mattis enim. Integer a convallis odio. Ut luctus tincidunt est a lobortis. Sed neque lacus, sollicitudin ac facilisis commodo, egestas in libero.</p>
+                      <p> Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla semper risus a orci malesuada aliquam. Nam faucibus finibus lacus, ac dapibus nisl. Ut sed nisi eget erat aliquam eleifend. Aliquam erat volutpat. Curabitur vel pellentesque velit, nec iaculis ligula. Vivamus dictum bibendum tristique. Aliquam quis ipsum finibus, ornare metus at, fringilla odio.</p>
+                      <p>Nunc vel orci non sapien sagittis bibendum a quis justo. Donec consequat pellentesque lorem sed commodo. Ut quis dolor vitae ligula fermentum vulputate a sit amet dolor. Nullam pharetra metus nibh, nec lacinia turpis condimentum vel. Donec eget urna vitae risus fermentum tempor. Fusce facilisis est eu ante porta egestas. Morbi at nulla vitae nulla ullamcorper porta.</p>
+                    </div>
+                  </div>
+
+                  <div class="contentblock__updated updatedtext updatedtext_edit">
+                    <div class="updatedtext__info inline-flex items-center">
+                      <div class="updatedtext__text">Image block</div>
+                      <div class="updatedtext__buttons flex items-center updatedtext__buttons_onebtn">
+                      
+                        <a href="#">
+                          <img src="img/Remove1.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="updatedtext__content">
+                      <div class="picture">
+                        <a href="img/table.png" data-lightbox="content_img">
+                          <img src="img/table.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contentblock__updated updatedtext updatedtext_edit">
+                    <div class="updatedtext__info inline-flex items-center">
+                      <div class="updatedtext__text"> Text block</div>
+                      <div class="updatedtext__buttons flex items-center">
+                        <a href="#">
+                          <img src="img/Edit1.svg" alt="">
+                        </a>
+                        <a href="#">
+                          <img src="img/Remove1.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="updatedtext__content">
+                      <p>Aenean dapibus bibendum dolor nec vulputate. Cras commodo facilisis lacus id accumsan. Integer venenatis augue sit amet fringilla cursus. Nulla ullamcorper quis metus id feugiat. Quisque diam urna, fermentum in varius quis, laoreet quis augue. Nam semper fermentum velit. Ut volutpat dictum orci vitae rhoncus. Aenean eu ante egestas, blandit neque nec, euismod mauris. Ut molestie fermentum egestas. Cras sollicitudin consequat sodales. Maecenas tortor augue, volutpat et mi eget, auctor mattis enim. Integer a convallis odio. Ut luctus tincidunt est a lobortis. Sed neque lacus, sollicitudin ac facilisis commodo, egestas in libero.</p>
+                      <p> Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla semper risus a orci malesuada aliquam. Nam faucibus finibus lacus, ac dapibus nisl. Ut sed nisi eget erat aliquam eleifend. Aliquam erat volutpat. Curabitur vel pellentesque velit, nec iaculis ligula. Vivamus dictum bibendum tristique. Aliquam quis ipsum finibus, ornare metus at, fringilla odio.</p>
+                      <p>Nunc vel orci non sapien sagittis bibendum a quis justo. Donec consequat pellentesque lorem sed commodo. Ut quis dolor vitae ligula fermentum vulputate a sit amet dolor. Nullam pharetra metus nibh, nec lacinia turpis condimentum vel. Donec eget urna vitae risus fermentum tempor. Fusce facilisis est eu ante porta egestas. Morbi at nulla vitae nulla ullamcorper porta.</p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
               <div class="contentblock__footer flex items-center content-between">
                 <div class="contentblock__actions flex wrap">
