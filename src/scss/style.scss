@@ -3729,7 +3729,7 @@ line-height: 100%;
   font-size: get-vw-large(16px);
   line-height: get-vw-large(21px);
   color: $main5;
-  height: get-vw-large(23px);
+  min-height: get-vw-large(23px);
   overflow: hidden;
 }
 
@@ -3772,16 +3772,42 @@ line-height: 100%;
   line-height: 100%;
   color: #212531;
   opacity: 0.4;
+  white-space: nowrap;
 }
-.customradio__check {
+/* .customradio__check {
   margin-left: get-vw-large(60px);
 
   span {
     display: block;
   }
-}
-.customradio__unselected {
+} */
 
+.contentform__input_topradio {
+/*   flex-wrap: wrap; */
+  .radiogroup {
+    /* width: 100%; */
+    margin-bottom: get-vw-large(24px);
+  }
+  .customradio__wrapper {
+    padding-right: get-vw-large(54px);
+    position: relative;
+  }
+  .customradio__check {
+    margin-left: 0 !important;
+    position: absolute;
+    right: get-vw-large(16px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    span {
+      line-height: 1;
+    }
+  }
+}
+
+
+.customradio__unselected {
+  display: block;
   width: get-vw-large(18px);
   height: get-vw-large(18px);
   max-width: get-vw-large(18px);
@@ -4357,7 +4383,11 @@ text-align: left;
   }
 }
 
-
+span.chooseCategory__icon   {
+  line-height: 1;
+  display: inline-block;
+    vertical-align: text-top;
+}
 @include medium-screen {
   .captchablock {
     text-align: center;
@@ -6607,7 +6637,7 @@ height:  get-vw-medium(16px);
   margin-bottom: get-vw-medium(8px);
   font-size: get-vw-medium(14px);
   line-height: get-vw-medium(18px);
-  height: get-vw-medium(23px);
+  min-height: get-vw-medium(23px);
 }
 
 
@@ -7043,19 +7073,27 @@ $contentform__item_cols4_ml:  get-vw-medium(6px);
 }
 
 .contentform__input_topradio {
-  flex-wrap: wrap;
-  .radiogroup {
-    width: 100%;
-    margin-bottom: 24px;
+    flex-wrap: wrap;
+    .radiogroup {
+      /* width: 100%; */
+      margin-bottom: get-vw-medium(24px);
+    }
+    .customradio__wrapper {
+      padding-right: get-vw-medium(54px);
+      position: relative;
+    }
+    .customradio__check {
+      margin-left: 0 !important;
+      position: absolute;
+      right: get-vw-medium(16px);
+      top: 50%;
+      transform: translateY(-50%);
+  
+      span {
+        line-height: 1;
+      }
+    }
   }
-  .customradio__check {
-    margin-left: 0 !important;
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
 
 .radiogroup {
   margin-left: 0;
@@ -7113,6 +7151,30 @@ $contentform__item_cols4_ml:  get-vw-medium(6px);
     justify-content: center;
   }
 }
+
+.contentform__input_topradio {
+  /*   flex-wrap: wrap; */
+    .radiogroup {
+      /* width: 100%; */
+      margin-bottom: get-vw-medium(24px);
+    }
+    .customradio__wrapper {
+      padding-right: get-vw-medium(54px);
+      position: relative;
+    }
+    .customradio__check {
+      margin-left: 0 !important;
+      position: absolute;
+      right: get-vw-medium(16px);
+      top: 50%;
+      transform: translateY(-50%);
+  
+      span {
+        line-height: 1;
+      }
+    }
+  }
+  
 
 }
 
@@ -9794,7 +9856,7 @@ height:  get-vw-small(16px);
   margin-bottom: get-vw-small(8px);
   font-size: get-vw-small(12px);
   line-height: 1;
-  height: get-vw-small(16px);
+  min-height: get-vw-small(16px);
 
 }
 
@@ -10387,6 +10449,47 @@ $contentform__item_cols4_ml:  get-vw-small(6px);
 }
 .contentform__input.contentform__input_radio.contentform__input_topradio.flex {
   margin-bottom: get-vw-small(23px);
+}
+
+.contentform__input_topradio {
+  flex-wrap: wrap;
+  .radiogroup {
+    /* width: 100%; */
+    margin-bottom: get-vw-small(24px);
+  }
+  .customradio__wrapper {
+    padding-right: get-vw-small(54px);
+    position: relative;
+  }
+  .customradio__check {
+    margin-left: 0 !important;
+    position: absolute;
+    right: get-vw-small(16px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    span {
+      line-height: 1;
+    }
+  }
+}
+
+.radiogroup_oversize {
+  .radiogroup__items {
+    flex-wrap: wrap;
+  }
+  .radiogroup__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: get-vw-small(6px);
+  }
+  .customradio__wrapper {
+    width: 100%;
+    height: get-vw-small(40px);
+  }
+  .customradio__text {
+    font-style: get-vw-small(14px);
+  }
 }
 
 }
