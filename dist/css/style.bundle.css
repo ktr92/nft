@@ -6914,6 +6914,7 @@ body.block {
 .oversize .oversize__tooltip {
   visibility: hidden;
   min-width: 7.1875vw;
+  transition: .5s all ease;
   background: #ffffff;
   box-shadow: 5px 5px 60px rgba(36, 40, 43, 0.1);
   border-radius: 0.3125vw;
@@ -6953,7 +6954,8 @@ body.block {
   top: 95%; }
 
 .oversize:hover .oversize__tooltip {
-  visibility: visible; }
+  visibility: visible;
+  transition: .5s all ease; }
 
 .itemsblock__header {
   margin-bottom: 2.65625vw;
@@ -8252,7 +8254,7 @@ input.inputplaceholder__input {
   line-height: 1.09375vw;
   color: rgba(33, 37, 49, 0.5);
   min-height: 1.19792vw;
-  overflow: hidden; }
+  /*   overflow: hidden; */ }
 
 .customradio input {
   position: absolute;
@@ -8773,6 +8775,65 @@ span.chooseCategory__icon {
   line-height: 1;
   display: inline-block;
   vertical-align: text-top; }
+
+.customradio__subtitle {
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 100%;
+  color: rgba(33, 37, 49, 0.7);
+  margin-top: 0.20833vw; }
+
+.radiotooltip {
+  visibility: hidden;
+  z-index: -1;
+  display: block;
+  transition: all 0.5s ease;
+  top: unset;
+  bottom: 100%; }
+
+.customradio[data-radiotooltip].active:hover .radiotooltip {
+  visibility: visible;
+  z-index: 999; }
+
+.radiotooltip__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer; }
+
+.radiotooltip__content {
+  display: flex;
+  align-items: center; }
+
+.radiotooltip .radiotooltip__unselected {
+  display: block;
+  width: 0.9375vw;
+  height: 0.9375vw;
+  max-width: 0.9375vw;
+  min-width: 0.9375vw;
+  border: 0.10417vw solid #E1E4E7;
+  border-radius: 28.90625vw; }
+
+.radiotooltip .radiotooltip__selected {
+  display: none; }
+
+.radiotooltip__block.active .radiotooltip__selected {
+  display: block; }
+
+.radiotooltip__block.active .radiotooltip__unselected {
+  display: none; }
+
+.radiotooltip__icn {
+  margin-right: 0.52083vw; }
+  .radiotooltip__icn img {
+    width: 1.97917vw;
+    min-width: 1.97917vw;
+    max-width: 1.97917vw;
+    height: 1.97917vw; }
+
+.radiotooltip__wrapper {
+  padding: 0.57292vw 1.14583vw; }
 
 @media only screen and (max-width: 999px) {
   .captchablock {
@@ -10572,7 +10633,27 @@ span.chooseCategory__icon {
       top: 50%;
       transform: translateY(-50%); }
       .contentform__input_topradio .customradio__check span {
-        line-height: 1; } }
+        line-height: 1; }
+  .customradio__subtitle {
+    font-size: 1.43885vw;
+    margin-top: 0.47962vw; }
+  .radiotooltip .radiotooltip__unselected {
+    display: block;
+    width: 2.15827vw;
+    height: 2.15827vw;
+    max-width: 2.15827vw;
+    min-width: 2.15827vw;
+    border: 0.23981vw solid #E1E4E7;
+    border-radius: 66.54676vw; }
+  .radiotooltip__icn {
+    margin-right: 0.71942vw; }
+    .radiotooltip__icn img {
+      width: 3.83693vw;
+      min-width: 3.83693vw;
+      max-width: 3.83693vw;
+      height: 3.83693vw; }
+  .radiotooltip__wrapper {
+    padding: 1.31894vw 1.55875vw; } }
 
 @media only screen and (max-width: 600px) {
   .captchablock {
@@ -12727,7 +12808,26 @@ span.chooseCategory__icon {
     width: 100%;
     height: 12.5vw; }
   .radiogroup_oversize .customradio__text {
-    font-style: 4.375vw; } }
+    font-style: 4.375vw; }
+  .customradio__subtitle {
+    display: none; }
+  .radiotooltip .radiotooltip__unselected {
+    display: block;
+    width: 5.625vw;
+    height: 5.625vw;
+    max-width: 5.625vw;
+    min-width: 5.625vw;
+    border: 0.625vw solid #E1E4E7;
+    border-radius: 173.4375vw; }
+  .radiotooltip__icn {
+    margin-right: 1.875vw; }
+    .radiotooltip__icn img {
+      width: 10vw;
+      min-width: 10vw;
+      max-width: 10vw;
+      height: 10vw; }
+  .radiotooltip__wrapper {
+    padding: 3.4375vw 6.875vw; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/

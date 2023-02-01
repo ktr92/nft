@@ -9,6 +9,7 @@ function initFE() {
     closeByClickOutside('[data-toggle="choose_category"]', '[data-toggleclick="choose_category"]')
     repostSliderInit()
     inputSliderInit()
+    radioTooltip()
 }
 
 function showSuggestions(e) {
@@ -21,6 +22,39 @@ function showSuggestions(e) {
         $(e).closest('[data-togglewrapper]').find('[data-toggle="suggestions"]').removeClass('active')
         $(e).closest('[data-togglewrapper]').removeClass('sugg')
     }
+}
+
+
+function radioTooltip() {
+    $('input[type="radio"]').on('change', function() {
+        $('.customradio').removeClass('active')
+        const radio = $(this)
+        const wrapper = radio.closest('[data-radiotooltip]')
+        if (wrapper.length) {
+            wrapper.addClass('active')
+        } 
+    })
+    $('[data-radioclick]').on('click', function() {
+        $('[data-radioclick]').removeClass('active')
+        $(this).addClass('active')
+
+        const clicked = $(this)
+        const value = clicked.find('input').val()
+        const radio = clicked.attr('data-radioclick')
+
+        $(`[data-radiotooltip="${radio}"]`).find('input[type="radio"]').val(value)
+        const text = clicked.find('[data-radiocaption]').text()
+        $(`[data-radiotooltip="${radio}"]`).find('.customradio__subtitle').text(text)
+
+    })
+   /*  $('input[type="radio"]').on('change', function() {
+        const radio = $(this)
+        const wrapper = radio.closest('[data-radiotooltip]')
+        const tooltip = wrapper.attr('data-radiotooltip')
+        if (wrapper.length) {
+            wrapper.addClass('active')
+        }
+    }) */
 }
 
 function closeByClickOutside(element, button, callback) {

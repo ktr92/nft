@@ -2087,7 +2087,7 @@ body.block {
 .oversize .oversize__tooltip {
   visibility: hidden;
   min-width: get-vw-large(138px);
-
+  transition: .5s all ease;
   background: #ffffff;
   box-shadow: 5px 5px 60px rgba(36, 40, 43, 0.1);
   border-radius: get-vw-large(6px);
@@ -2129,6 +2129,7 @@ body.block {
 
 .oversize:hover .oversize__tooltip {
   visibility: visible;
+  transition: .5s all ease;
 }
 
 
@@ -3730,7 +3731,7 @@ line-height: 100%;
   line-height: get-vw-large(21px);
   color: $main5;
   min-height: get-vw-large(23px);
-  overflow: hidden;
+/*   overflow: hidden; */
 }
 
 
@@ -4388,6 +4389,83 @@ span.chooseCategory__icon   {
   display: inline-block;
     vertical-align: text-top;
 }
+
+.customradio__subtitle {
+  font-weight: 400;
+font-size: get-vw-large(12px);
+line-height: 100%;
+color: $main7;
+margin-top: get-vw-large(4px);
+}
+
+.radiotooltip {
+  visibility: hidden;
+  z-index: -1;
+  display: block;
+  transition: all 0.5s ease;
+  top: unset;
+    bottom: 100%;
+}
+
+.customradio[data-radiotooltip].active:hover {
+  .radiotooltip {
+    visibility: visible;
+    z-index: 999;
+  }
+}
+
+.radiotooltip__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.radiotooltip__content {
+  display: flex;
+  align-items: center;
+}
+
+.radiotooltip {
+  .radiotooltip__unselected {
+    display: block;
+    width: get-vw-large(18px);
+    height: get-vw-large(18px);
+    max-width: get-vw-large(18px);
+    min-width: get-vw-large(18px);
+    border: get-vw-large(2px) solid #E1E4E7;
+    border-radius: get-vw-large(555px);
+  }
+  .radiotooltip__selected {
+    display: none;
+  }
+}
+
+.radiotooltip__block.active {
+  .radiotooltip__selected  {
+    display: block;
+  }
+  .radiotooltip__unselected {
+    display: none;
+  }
+}
+
+.radiotooltip__icn {
+  margin-right: get-vw-large(10px);
+
+  img {
+    width: get-vw-large(38px);
+    min-width: get-vw-large(38px);
+    max-width: get-vw-large(38px);
+    height: get-vw-large(38px);
+  }
+}
+
+.radiotooltip__wrapper {
+  padding: get-vw-large(11px) get-vw-large(22px);
+}
+
+
 @include medium-screen {
   .captchablock {
     text-align: center;
@@ -7173,6 +7251,54 @@ $contentform__item_cols4_ml:  get-vw-medium(6px);
         line-height: 1;
       }
     }
+  }
+
+
+  .customradio__subtitle {
+  font-size: get-vw-medium(12px);
+
+  margin-top: get-vw-medium(4px);
+  }
+  
+  .radiotooltip {
+   
+  }
+  
+ 
+  
+  .radiotooltip__block {
+   
+  }
+  .radiotooltip__content {
+   
+  }
+  
+  .radiotooltip {
+    .radiotooltip__unselected {
+      display: block;
+      width: get-vw-medium(18px);
+      height: get-vw-medium(18px);
+      max-width: get-vw-medium(18px);
+      min-width: get-vw-medium(18px);
+      border: get-vw-medium(2px) solid #E1E4E7;
+      border-radius: get-vw-medium(555px);
+    }
+   
+  }
+ 
+  .radiotooltip__icn {
+    margin-right: get-vw-medium(6px);
+  
+    img {
+      width: get-vw-medium(32px);
+      min-width: get-vw-medium(32px);
+      max-width: get-vw-medium(32px);
+      height: get-vw-medium(32px);
+    }
+  }
+  
+  .radiotooltip__wrapper {
+    padding: get-vw-medium(11px) get-vw-medium(13px);
   }
   
 
@@ -10491,5 +10617,53 @@ $contentform__item_cols4_ml:  get-vw-small(6px);
     font-style: get-vw-small(14px);
   }
 }
+
+
+
+.customradio__subtitle {
+display: none;
+  }
+  
+  .radiotooltip {
+   
+  }
+  
+ 
+  
+  .radiotooltip__block {
+   
+  }
+  .radiotooltip__content {
+   
+  }
+  
+  .radiotooltip {
+    .radiotooltip__unselected {
+      display: block;
+      width: get-vw-small(18px);
+      height: get-vw-small(18px);
+      max-width: get-vw-small(18px);
+      min-width: get-vw-small(18px);
+      border: get-vw-small(2px) solid #E1E4E7;
+      border-radius: get-vw-small(555px);
+    }
+   
+  }
+ 
+  .radiotooltip__icn {
+    margin-right: get-vw-small(6px);
+  
+    img {
+      width: get-vw-small(32px);
+      min-width: get-vw-small(32px);
+      max-width: get-vw-small(32px);
+      height: get-vw-small(32px);
+    }
+  }
+  
+  .radiotooltip__wrapper {
+    padding: get-vw-small(11px) get-vw-small(22px);
+  }
+  
 
 }
