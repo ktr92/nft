@@ -7,6 +7,7 @@ function initFE() {
     closeByClickOutside('[data-toggle="notifications"]', '[data-toggleclickset="notifications"]')
     closeByClickOutside('[data-toggle="showby"]', '[data-toggleclick="showby"]')
     closeByClickOutside('[data-toggle="choose_category"]', '[data-toggleclick="choose_category"]')
+    closeByClickOutside('.radiotooltip', '[data-radiotooltip]')
     repostSliderInit()
     inputSliderInit()
     radioTooltip()
@@ -47,6 +48,13 @@ function radioTooltip() {
         $(`[data-radiotooltip="${radio}"]`).find('.customradio__subtitle').text(text)
 
     })
+
+    if ($(window).width() < 1000) {
+        $('[data-radiotooltip]').on('click', function() {
+            $(this).find('.radiotooltip').addClass('active')
+        })
+    }
+
    /*  $('input[type="radio"]').on('change', function() {
         const radio = $(this)
         const wrapper = radio.closest('[data-radiotooltip]')
@@ -77,6 +85,7 @@ function closeByClickOutside(element, button, callback) {
 
 
   function repostSliderInit() {
+
     $('[data-slider="repostslider"]').each(function() {
         $(this).slick({
             dots: true,
@@ -92,8 +101,8 @@ function closeByClickOutside(element, button, callback) {
         $('[data-slider="repostslider"]').on('afterChange', function(e, s, currentSlideIndex) {
             let previousSlideIndex = currentSlideIndex + 1
 
-            $('[data-click="copy-img"]').attr('data-clickindex', previousSlideIndex)
-            $('[data-click="download-img"]').attr('data-downloadindex', previousSlideIndex)
+            $(this).closest('.modal').find('[data-click="copy-img"]').attr('data-clickindex', previousSlideIndex)
+            $(this).closest('.modal').find('[data-click="download-img"]').attr('data-downloadindex', previousSlideIndex)
           });
     })
   }
