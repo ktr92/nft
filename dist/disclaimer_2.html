@@ -2085,17 +2085,25 @@
     </div>
   </div>
 
-  <div class="disclaimer disclaimer_green">
+  <div class="disclaimer disclaimer_green" data-acceptwrapper="disclaimer">
     <div class="disclaimer__wrapper">
       <div class="disclaimer__title">Disclaimer</div>
       <div class="disclaimer__content">
         <div class="disclaimer__text">The information on this website is for general informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. The website makes no representation or warranty, express or implied. Your use of the site is solely at your own risk. This site may contain links to third party content, which we do not warrant, endorse, or assume liability for.</div>
         <div class="disclaimer__button">
-          <a href="#" class="btn btn_main">Accept</a>
+          <a href="#" class="btn btn_main" data-accept="disclaimer">Accept</a>
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    // добавьте Cookie
+    $('[data-accept="disclaimer"]').on('click', function(e) {
+      e.preventDefault()
+      $(this).closest('[data-acceptwrapper="disclaimer"]').hide()
+    })
+  </script>
 
 </main>
 
