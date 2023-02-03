@@ -174,7 +174,9 @@ button.close {
     opacity: 1;
   }
 }
-
+.modal-submit {
+  margin-top: get-vw-large(25px);
+}
 .modal-submit_small {
   margin-top: get-vw-large(30px);
 }
@@ -228,7 +230,9 @@ button.close {
 }
 
 @include medium-screen {
-  
+  .modal-submit {
+    margin-top: get-vw-medium(25px);
+  }
   .modal-dialog {
     width: get-vw-medium(660px);
 
@@ -343,6 +347,9 @@ button.close {
 }
 
 @include small-screen {
+  .modal-submit {
+    margin-top: get-vw-small(25px);
+  }
   .modal-dialog {
     width: get-vw-small(284px);
 

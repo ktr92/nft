@@ -10,27 +10,36 @@
   <div class="container">
     <br>
     <br>
+    <a href="#popup_ask" data-toggle='modal' class="btn btn_main btn_red">Ask</a>
+
     <a href="#popup_edit" data-toggle='modal' class="btn btn_main"> edit </a>
     <a href="#popup_auth" data-toggle='modal' class="btn btn_main"> Log In </a>
     <a href="#popup_sign" data-toggle='modal' class="btn btn_main"> Sign Up </a>
     <a href="#popup_reset" data-toggle='modal' class="btn btn_main"> Password reset </a>
     <a href="#popup_reset_password" data-toggle='modal' class="btn btn_main"> Password reset 2</a>
     <a href="#popup_emailsent" data-toggle='modal' class="btn btn_main">Recovery email sent</a>
+    <a href="#popup_error" data-toggle='modal' class="btn btn_main  ">Error</a>
+
     <a href="#popup_emailcheck" data-toggle='modal' class="btn btn_main">Check email</a>
     <a href="#popup_success" data-toggle='modal' class="btn btn_main">Success</a>
-    <a href="#popup_error" data-toggle='modal' class="btn btn_main">Error</a>
-    <a href="#popup_report" data-toggle='modal' class="btn btn_main">Report</a>
+    <a href="#popup_report" data-toggle='modal' class="btn btn_main ">Report</a>
     <br>
     <br>
     <button data-modalcall="#popup_recommendation">Вызов окна через JS</button>
     <script>
       // подробнее https://getbootstrap.com/docs/4.0/components/modal/
+
+      // вызвать в любом месте $('#popup_recommendation').modal('show') т.е. выбираем окно через селектор по id
+      // закрытие $('#popup_recommendation').modal('hide')
+
+      // привязка к кнопке
       $('[data-modalcall]').on('click', function(e) {
         e.preventDefault()
         const modalname = $(this).attr('data-modalcall')
         $(`${modalname}`).modal('show')
+        // закрытие $(`#${modalname}`).modal('hide')
       })
-      // закрытие $(`#${modalname}`).modal('hide')
+    
     </script>
     <br>
     <br>
@@ -438,7 +447,7 @@ Hi, My name is Victor Ivanov, my story is so boring b...
                 </div>
                 <div class="formblock__input">
                   <div class="inputpassword">
-                    <input type="password" value="andr182838">
+                    <input type="password" >
                     <img src="img/Invisible.svg" alt="" data-toggle="password" class="password_invisible">
                     <img src="img/Eye2.svg" alt="" data-toggle="password" class="password_visible">
                   </div>
@@ -447,7 +456,7 @@ Hi, My name is Victor Ivanov, my story is so boring b...
             </div>
           </div>
           <div class="captchablock">
-            <img src="img/captcha.png" alt="">
+            
           </div>
           <div class="modal-submit">
             <div class="buttonsrow">
@@ -493,7 +502,7 @@ Hi, My name is Victor Ivanov, my story is so boring b...
               </div>
             </div>
             <div class="captchablock">
-              <img src="img/captcha.png" alt="">
+              
             </div>
             <div class="modal-submit">
               <div class="buttonsrow">
@@ -535,7 +544,7 @@ Hi, My name is Victor Ivanov, my story is so boring b...
                 </div>
                 <div class="formblock__input">
                   <div class="inputpassword">
-                    <input type="password" value="andr182838">
+                    <input type="password" >
                     <img src="img/Invisible.svg" alt="" data-toggle="password" class="password_invisible">
                     <img src="img/Eye2.svg" alt="" data-toggle="password" class="password_visible">
                   </div>
@@ -546,7 +555,7 @@ Hi, My name is Victor Ivanov, my story is so boring b...
                 </div>
                 <div class="formblock__input">
                   <div class="inputpassword">
-                    <input type="password" value="andr182838">
+                    <input type="password" >
                     <img src="img/Invisible.svg" alt="" data-toggle="password" class="password_invisible">
                     <img src="img/Eye2.svg" alt="" data-toggle="password" class="password_visible">
                   </div>
@@ -555,7 +564,7 @@ Hi, My name is Victor Ivanov, my story is so boring b...
             </div>
           </div>
           <div class="captchablock">
-            <img src="img/captcha.png" alt="">
+            
           </div>
           <div class="modal-submit">
             <div class="buttonsrow">
@@ -659,6 +668,35 @@ Hi, My name is Victor Ivanov, my story is so boring b...
         </div>
         <div class="modalclose">
           <button href="#" class="btn btn_main btn_red">Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_ask'>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <img src="img/closebutton.svg" alt="">
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="modalinfo">
+          <div class="modalinfo__image text-center">
+            <div class="modalinfo__icontext">
+              <span>?</span>
+            </div>
+          </div>
+          <div class="modalinfo__title">Congratulations, your account has been successfully created! </div>
+        </div>
+        <div class="buttonsrow">
+          <div class="buttonsrow__item ">
+            <a href="#" class="btn btn_main btn_red">Yes</a>
+          </div>
+          <div class="buttonsrow__item ">
+            <a href="#" class="btn btn_main btn_red">No</a>
+          </div>
         </div>
       </div>
     </div>

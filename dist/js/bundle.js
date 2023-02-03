@@ -30,7 +30,7 @@ function initFE() {
     closeByClickOutside('[data-toggle="notifications"]', '[data-toggleclickset="notifications"]')
     closeByClickOutside('[data-toggle="showby"]', '[data-toggleclick="showby"]')
     closeByClickOutside('[data-toggle="choose_category"]', '[data-toggleclick="choose_category"]')
-    closeByClickOutside('.radiotooltip', '[data-radiotooltip]')
+    /* closeByClickOutside('.radiotooltip', '[data-radiotooltip]') */
     repostSliderInit()
     inputSliderInit()
     radioTooltip()
@@ -358,6 +358,20 @@ $(document).ready(function() {
         $('body').removeClass('block')
   
     })
+
+    $('.card__follow .btn_active').on('mouseover', function(e) {
+        $(this).text("Unfollow")
+    })
+
+    $(".card__follow .btn_active").on({
+        mouseenter: function () {
+            $(this).text("Unfollow")
+            
+        },
+        mouseleave: function () {
+            $(this).text("Following")
+        }
+    });
 
     
 

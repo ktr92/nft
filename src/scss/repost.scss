@@ -21,7 +21,7 @@
   margin-bottom: get-vw-modal(84px);
   margin-left: auto;
   margin-right: auto;
-  width: get-vw-modal(200px);
+  width: get-vw-modal(344px);
 }
 .imagecard__wrapper {
   border-radius: get-vw-modal(22px);
@@ -40,6 +40,14 @@
   position: relative;
 
 }
+
+.imagecard__wrapper_type2 {
+  .imagecard__logo {
+    margin-top: get-vw-modal(28px);
+
+  }
+}
+
 .minicard {
   border: get-vw-modal(6px) solid #FFFFFF;
   border-radius: get-vw-modal(22px);
@@ -806,8 +814,16 @@ color: #212531;
   margin-bottom: get-vw-modal_medium(84px);
   margin-left: auto;
   margin-right: auto;
-  width: get-vw-modal_medium(200px);
+  width: get-vw-modal_medium(340px);
 }
+
+.imagecard__wrapper_type2 {
+  .imagecard__logo {
+    margin-top: get-vw-modal_medium(35px);
+
+  }
+}
+
 .imagecard__wrapper {
   width: get-vw-modal_medium(895px);
 /*   min-height: 895px);
@@ -823,6 +839,7 @@ color: #212531;
   position: relative;
 
 }
+
 .minicard {
   border: get-vw-modal_medium(6px) solid #FFFFFF;
   border-radius: get-vw-modal_medium(22px);
@@ -1579,7 +1596,14 @@ color: #212531;
   margin-bottom: get-vw-modal_small(84px);
   margin-left: auto;
   margin-right: auto;
-  width: get-vw-modal_small(200px);
+  width: get-vw-modal_small(340px);
+}
+
+.imagecard__wrapper_type2 {
+  .imagecard__logo {
+    margin-top: get-vw-modal_small(35px);
+
+  }
 }
 .imagecard__wrapper {
   width: get-vw-modal_small(895px);
@@ -1597,6 +1621,8 @@ color: #212531;
   position: relative;
 
 }
+
+
 .minicard {
   border: get-vw-modal_small(6px) solid #FFFFFF;
   border-radius: get-vw-modal_small(22px);
