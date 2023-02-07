@@ -6937,6 +6937,10 @@ body.block {
 .oversize {
   position: relative; }
 
+.oversize > img {
+  width: 1.19792vw;
+  height: 1.19792vw; }
+
 .oversize .oversize__tooltip {
   visibility: hidden;
   min-width: 7.1875vw;
@@ -8404,6 +8408,7 @@ input.inputplaceholder__input {
   border-top-right-radius: 0.3125vw;
   background-size: 1.45833vw;
   height: 3.125vw;
+  background-color: #F3F5F8;
   border-color: #F3F5F8;
   border-bottom-color: #D9DDE3; }
 
@@ -8428,7 +8433,10 @@ input.input {
   display: block;
   width: 100%;
   border: 0.10417vw solid #F3F5F8;
-  border-bottom: 2px solid #D9DDE3; }
+  border-bottom: 2px solid #D9DDE3;
+  background-color: #F3F5F8;
+  border-color: #F3F5F8;
+  border-bottom-color: #D9DDE3; }
 
 input.input_dark {
   background-color: #F3F5F8;
@@ -8461,7 +8469,7 @@ input.input_dark {
     margin-right: 0; }
 
 .noUi-horizontal {
-  height: 0.10417vw; }
+  height: 2px; }
 
 .noUi-horizontal .noUi-handle {
   top: -0.46875vw;
@@ -10483,7 +10491,7 @@ img.notifications__current {
     .contentform__item_cols2 .contentform__item_col:nth-child(2n) {
       margin-right: 0; }
   .noUi-horizontal {
-    height: 0.23981vw; }
+    height: 2px; }
   .noUi-horizontal .noUi-handle {
     top: -1.07914vw;
     width: 2.63789vw;
@@ -10799,7 +10807,10 @@ img.notifications__current {
   .card__follow.flex > a.btn_icon {
     margin-left: 1.79856vw; }
   .imagecard .card__item {
-    min-height: initial; } }
+    min-height: initial; }
+  .oversize > img {
+    width: 2.75779vw;
+    height: 2.75779vw; } }
 
 @media only screen and (max-width: 600px) {
   .card__follow .btn {
@@ -12629,7 +12640,7 @@ img.notifications__current {
     width: 100%;
     margin-bottom: 5.625vw; }
   .noUi-horizontal {
-    height: 0.625vw; }
+    height: 2px; }
   .noUi-horizontal .noUi-handle {
     top: -2.8125vw;
     width: 6.875vw;
@@ -13013,7 +13024,10 @@ img.notifications__current {
     min-width: 6.25vw;
     height: 6.25vw; }
   .card__follow.flex > a.btn_icon {
-    margin-left: 4.6875vw; } }
+    margin-left: 4.6875vw; }
+  .oversize > img {
+    width: 7.1875vw;
+    height: 7.1875vw; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/
