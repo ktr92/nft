@@ -114,9 +114,9 @@ a {
 .modal_largest .modal-content {
   padding: 3.64583vw; }
 
-.modal .card * {
-  pointer-events: none; }
-
+/* .modal .card * {
+  pointer-events: none;
+} */
 .modal {
   z-index: 9999999999; }
 
@@ -854,7 +854,7 @@ a {
   width: min-content; }
 
 .sliderblock .imagecard .sticker {
-  padding: 0.23277vw 0.58194vw;
+  padding: 0.29097vw 0.58194vw 0.23277vw 0.58194vw;
   height: 0.902vw;
   text-align: center;
   font-style: normal;
@@ -862,6 +862,7 @@ a {
   font-size: 0.40736vw;
   display: inline-block;
   color: #ffffff;
+  line-height: 1;
   border-radius: 555px; }
 
 .sliderblock .imagecard .sticker_purple {
@@ -1008,7 +1009,20 @@ a {
   transition: all 0.3s ease; }
 
 .sliderblock .imagecard .cardcontent__button {
-  margin-right: 0.37826vw; }
+  margin-right: 0.37826vw;
+  height: 0.58194vw;
+  display: flex;
+  align-items: center; }
+
+.sliderblock .imagecard .cardaction__icon {
+  height: 0.58194vw;
+  display: flex;
+  align-items: center; }
+
+.sliderblock .imagecard .cardaction__img {
+  height: 0.58194vw;
+  display: flex;
+  align-items: center; }
 
 .sliderblock .imagecard .cardaction {
   display: -webkit-box;
@@ -1020,7 +1034,8 @@ a {
   color: #212531; }
 
 .sliderblock .imagecard .cardaction__img svg {
-  width: 0.64013vw; }
+  width: 0.64013vw;
+  height: 0.46555vw; }
 
 .sliderblock .imagecard .cardcontent__rate .cardaction__caption {
   font-weight: 700; }
@@ -1526,13 +1541,12 @@ a {
     width: -moz-min-content;
     width: min-content; }
   .sliderblock .imagecard .sticker {
-    padding: 0.53588vw 1.33971vw;
+    padding: 0.53588vw 1.33971vw 0.53588vw 1.33971vw;
     height: 2.07655vw;
     text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 0.9378vw;
-    display: inline-block;
     color: #ffffff;
     border-radius: 555px; }
   .sliderblock .imagecard .sticker_purple {
@@ -1649,7 +1663,18 @@ a {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   .sliderblock .imagecard .cardcontent__button {
-    margin-right: 0.87081vw; }
+    margin-right: 0.87081vw;
+    height: 1.33971vw;
+    display: flex;
+    align-items: center; }
+  .sliderblock .imagecard .cardaction__icon {
+    height: 1.33971vw;
+    display: flex;
+    align-items: center; }
+  .sliderblock .imagecard .cardaction__img {
+    height: 1.33971vw;
+    display: flex;
+    align-items: center; }
   .sliderblock .imagecard .cardaction {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1659,7 +1684,8 @@ a {
     align-items: center;
     color: #212531; }
   .sliderblock .imagecard .cardaction__img svg {
-    width: 1.47368vw; }
+    width: 1.47368vw;
+    height: 1.47368vw; }
   .sliderblock .imagecard .cardcontent__rate .cardaction__caption {
     font-weight: 700; }
   .sliderblock .imagecard .cardcontent__rate .cardcontent__button {
@@ -2143,7 +2169,7 @@ a {
     width: -moz-min-content;
     width: min-content; }
   .sliderblock .imagecard .sticker {
-    padding: 0.70391vw 1.75978vw;
+    padding: 0.87989vw 1.75978vw 0.70391vw 1.75978vw;
     height: 2.72765vw;
     text-align: center;
     font-style: normal;
@@ -2242,8 +2268,22 @@ a {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+  .sliderblock .imagecard .cardcontent__buttons {
+    margin-top: 1.75978vw;
+    margin-bottom: 1.75978vw; }
   .sliderblock .imagecard .cardcontent__button {
-    margin-right: 1.14385vw; }
+    margin-right: 1.14385vw;
+    height: 1.75978vw;
+    display: flex;
+    align-items: center; }
+  .sliderblock .imagecard .cardaction__icon {
+    height: 1.75978vw;
+    display: flex;
+    align-items: center; }
+  .sliderblock .imagecard .cardaction__img {
+    height: 1.75978vw;
+    display: flex;
+    align-items: center; }
   .sliderblock .imagecard .cardaction {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2257,7 +2297,8 @@ a {
   .sliderblock .imagecard .cardaction__img {
     line-height: 1; }
     .sliderblock .imagecard .cardaction__img svg {
-      width: 1.40782vw; }
+      width: 1.40782vw;
+      height: 1.40782vw; }
   .sliderblock .imagecard .cardcontent__rate .cardaction__caption {
     font-weight: 700; }
   .sliderblock .imagecard .cardcontent__rate .cardcontent__button {
@@ -6754,7 +6795,7 @@ body.block {
 .breadcrumbs__items ul li:after {
   content: "/";
   position: absolute;
-  top: 0.20833vw;
+  bottom: 0;
   right: -0.3125vw;
   font-style: normal;
   font-weight: 300;
@@ -7238,7 +7279,8 @@ textarea.input-error {
 .check input[type="checkbox"]:checked + label:before {
   background-image: url(../img/selected_icon.svg);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: 0.9375vw; }
 
 .input-errortext {
   font-style: normal;
@@ -7330,6 +7372,12 @@ textarea.input-error {
   /* identical to box height */
   color: #212531;
   margin-right: 0.26042vw; }
+
+.textlogin__link {
+  display: flex; }
+
+.check {
+  display: flex; }
 
 .textlogin__link a {
   font-style: normal;
@@ -9572,7 +9620,7 @@ img.notifications__current {
     margin-right: 0.83933vw; }
   .breadcrumbs__items ul li:after {
     content: "/";
-    top: 0.47962vw;
+    bottom: 0;
     right: -0.71942vw;
     font-size: 1.43885vw;
     line-height: 1.91847vw; }
@@ -10810,7 +10858,9 @@ img.notifications__current {
     min-height: initial; }
   .oversize > img {
     width: 2.75779vw;
-    height: 2.75779vw; } }
+    height: 2.75779vw; }
+  .check input[type="checkbox"]:checked + label:before {
+    background-size: 2.15827vw; } }
 
 @media only screen and (max-width: 600px) {
   .card__follow .btn {
@@ -11494,7 +11544,7 @@ img.notifications__current {
     right: -1.875vw;
     font-size: 3.75vw;
     line-height: 5vw;
-    top: 1.25vw; }
+    bottom: 0; }
   .breadcrumbs__items ul span {
     font-size: 3.75vw;
     line-height: 5vw; }
@@ -13027,7 +13077,9 @@ img.notifications__current {
     margin-left: 4.6875vw; }
   .oversize > img {
     width: 7.1875vw;
-    height: 7.1875vw; } }
+    height: 7.1875vw; }
+  .check input[type="checkbox"]:checked + label:before {
+    background-size: 5.625vw; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/

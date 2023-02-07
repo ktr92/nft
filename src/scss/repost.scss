@@ -434,7 +434,7 @@ $card_profile_w: get-vw-modal(160px);
   width: min-content;
 }
 .sticker {
-  padding: get-vw-modal(8px) get-vw-modal(20px);
+  padding: get-vw-modal(10px) get-vw-modal(20px) get-vw-modal(8px) get-vw-modal(20px);
   height: get-vw-modal(31px);
   text-align: center;
   font-style: normal;
@@ -442,6 +442,7 @@ $card_profile_w: get-vw-modal(160px);
   font-size: get-vw-modal(14px);
   display: inline-block;
   color: #ffffff;
+  line-height: 1;
 
   border-radius: 555px;
 }
@@ -615,6 +616,20 @@ $card_profile_w: get-vw-modal(160px);
 }
 .cardcontent__button {
   margin-right: get-vw-modal(13px);
+  height: get-vw-modal(20px);
+  display: flex;
+  align-items: center;
+  
+}
+.cardaction__icon {
+  height: get-vw-modal(20px);
+  display: flex;
+  align-items: center;
+}
+.cardaction__img {
+  height: get-vw-modal(20px);
+  display: flex;
+  align-items: center;
 }
 .cardaction {
   display: -webkit-box;
@@ -630,6 +645,7 @@ $card_profile_w: get-vw-modal(160px);
 .cardaction__img {
   svg {
     width: get-vw-modal(22px);
+    height:  get-vw-modal(16px);
 
   }
 }
@@ -642,6 +658,7 @@ $card_profile_w: get-vw-modal(160px);
   .cardcontent__button {
     margin-right: get-vw-modal(3px);
   }
+
 }
 
 .cardaction:hover,
@@ -1221,15 +1238,14 @@ $card_profile_w: get-vw-modal_medium(160px);
   width: min-content;
 }
 .sticker {
-  padding: get-vw-modal_medium(8px) get-vw-modal_medium(20px);
+  padding: get-vw-modal_medium(8px) get-vw-modal_medium(20px) get-vw-modal_medium(8px) get-vw-modal_medium(20px);
   height: get-vw-modal_medium(31px);
   text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: get-vw-modal_medium(14px);
-  display: inline-block;
+ 
   color: #ffffff;
-
   border-radius: 555px;
 }
 .sticker_purple {
@@ -1396,8 +1412,24 @@ $card_profile_w: get-vw-modal_medium(160px);
 }
 .cardcontent__actions {
 }
+
+
 .cardcontent__button {
   margin-right: get-vw-modal_medium(13px);
+  height: get-vw-modal_medium(20px);
+  display: flex;
+  align-items: center;
+  
+}
+.cardaction__icon {
+  height: get-vw-modal_medium(20px);
+  display: flex;
+  align-items: center;
+}
+.cardaction__img {
+  height: get-vw-modal_medium(20px);
+  display: flex;
+  align-items: center;
 }
 .cardaction {
   display: -webkit-box;
@@ -1413,6 +1445,7 @@ $card_profile_w: get-vw-modal_medium(160px);
 .cardaction__img {
   svg {
     width: get-vw-modal_medium(22px);
+    height:  get-vw-modal_medium(22px);
   }
 }
 .cardaction__caption {
@@ -2008,7 +2041,7 @@ $card_profile_w: get-vw-modal_small(160px);
   width: min-content;
 }
 .sticker {
-  padding: get-vw-modal_small(8px) get-vw-modal_small(20px);
+  padding: get-vw-modal_small(10px) get-vw-modal_small(20px) get-vw-modal_small(8px) get-vw-modal_small(20px);
   height: get-vw-modal_small(31px);
   text-align: center;
   font-style: normal;
@@ -2153,8 +2186,28 @@ $card_profile_w: get-vw-modal_small(160px);
 }
 .cardcontent__actions {
 }
+
+.cardcontent__buttons {
+  margin-top: get-vw-modal_small(20px);
+  margin-bottom: get-vw-modal_small(20px);
+}
+
 .cardcontent__button {
   margin-right: get-vw-modal_small(13px);
+  height: get-vw-modal_small(20px);
+  display: flex;
+  align-items: center;
+  
+}
+.cardaction__icon {
+  height: get-vw-modal_small(20px);
+  display: flex;
+  align-items: center;
+}
+.cardaction__img {
+  height: get-vw-modal_small(20px);
+  display: flex;
+  align-items: center;
 }
 .cardaction {
   display: -webkit-box;
@@ -2172,6 +2225,7 @@ $card_profile_w: get-vw-modal_small(160px);
   line-height: 1;
   svg {
     width: get-vw-modal_small(16px);
+    height:  get-vw-modal_small(16px);
   }
 }
 .cardaction__caption {

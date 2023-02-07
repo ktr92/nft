@@ -296,7 +296,7 @@
         <div class="commentsblock__items">
           <div class="commentsblock__item ">
             <div class=" comment__level">
-              <div class="comment">
+              <div class="comment" data-wrapper="reply">
                 <div class="comment__header flex items-center">
                   <div class="comment__image">
                     <div class="comment__img">
@@ -318,26 +318,21 @@
                     </div>
                   </div>
                   <div class="comment__reply">
-                    <a href="" class="btn_reply">
+                    <!-- id коммента для добавления формы с ответом -->
+                    <a href="#" class="btn_reply" data-showbyid="comment_001">
                       <img src="img/ReplyArrow.svg" alt="">
                       <span>Reply</span>
                     </a>
                   </div>
                 </div>
               </div>
+              <div class=" comment__level" data-replyid="comment_001">
+                <!-- id коммента - Сюда добавится форма - скрипт внизу -->
+               
+              </div>
               <div class=" comment__level">
-                <div class="commentsblock__form commentform">
-                  <form action="">
-                    <div class="commentform__input">
-                      <input type="text" placeholder="Your comment">
-                      <button type="submit">
-                        <img src="img/Sent.svg" alt="">
-                      </button>
-                    </div>
-                  </form>
-                </div>
-
-                <div class="comment">
+                  
+                <div class="comment" data-wrapper="reply">
                   <div class="comment__header flex items-center">
                     <div class="comment__image">
                       <div class="comment__img">
@@ -359,16 +354,21 @@
                       </div>
                     </div>
                     <div class="comment__reply">
-                      <a href="" class="btn_reply">
+                      <!-- id коммента для добавления формы с ответом -->
+                      <a href="#" class="btn_reply" data-showbyid="comment_002">
                         <img src="img/ReplyArrow.svg" alt="">
                         <span>Reply</span>
                       </a>
                     </div>
                   </div>
                 </div>
+                <div class=" comment__level" data-replyid="comment_002">
+                  <!-- id коммента - Сюда добавится форма - скрипт внизу -->
+                 
+                </div>
                 <div class=" comment__level">
                   
-                  <div class="comment">
+                  <div class="comment" data-wrapper="reply">
                     <div class="comment__header flex items-center">
                       <div class="comment__image">
                         <div class="comment__img">
@@ -390,17 +390,22 @@
                         </div>
                       </div>
                       <div class="comment__reply">
-                        <a href="" class="btn_reply">
+                        <!-- id коммента для добавления формы с ответом -->
+                        <a href="#" class="btn_reply" data-showbyid="comment_003">
                           <img src="img/ReplyArrow.svg" alt="">
                           <span>Reply</span>
                         </a>
                       </div>
                     </div>
                   </div>
+                  <div class=" comment__level" data-replyid="comment_003">
+                    <!-- id коммента - Сюда добавится форма - скрипт внизу -->
+                   
+                  </div>
                 </div>
               </div>
               <div class="comment__level">
-                <div class="comment">
+                <div class="comment" data-wrapper="reply">
                   <div class="comment__header flex items-center">
                     <div class="comment__image">
                       <div class="comment__img">
@@ -422,20 +427,25 @@
                       </div>
                     </div>
                     <div class="comment__reply">
-                      <a href="" class="btn_reply">
+                      <!-- id коммента для добавления формы с ответом -->
+                      <a href="#" class="btn_reply" data-showbyid="comment_004">
                         <img src="img/ReplyArrow.svg" alt="">
                         <span>Reply</span>
                       </a>
                     </div>
                   </div>
                 </div>
+                <div class=" comment__level" data-replyid="comment_004">
+                  <!-- id коммента - Сюда добавится форма - скрипт внизу -->
+                 
+                </div>
               </div>
             </div>
           </div>
 
           <div class="commentblock__item">
             <div class="comment__level">
-              <div class="comment">
+              <div class="comment" data-wrapper="reply">
                 <div class="comment__header flex items-center">
                   <div class="comment__image">
                     <div class="comment__img">
@@ -457,19 +467,24 @@
                     </div>
                   </div>
                   <div class="comment__reply">
-                    <a href="" class="btn_reply">
+                    <!-- id коммента для добавления формы с ответом -->
+                    <a href="#" class="btn_reply" data-showbyid="comment_005">
                       <img src="img/ReplyArrow.svg" alt="">
                       <span>Reply</span>
                     </a>
                   </div>
                 </div>
               </div>
+              <div class=" comment__level" data-replyid="comment_005">
+                <!-- id коммента - Сюда добавится форма - скрипт внизу -->
+               
+              </div>
             </div>
           </div>
 
           <div class="commentblock__item">
             <div class="comment__level">
-              <div class="comment">
+              <div class="comment" data-wrapper="reply">
                 <div class="comment__header flex items-center">
                   <div class="comment__image">
                     <div class="comment__img">
@@ -491,12 +506,17 @@
                     </div>
                   </div>
                   <div class="comment__reply">
-                    <a href="" class="btn_reply">
+                    <!-- id коммента для добавления формы с ответом -->
+                    <a href="#" class="btn_reply" data-showbyid="comment_006">
                       <img src="img/ReplyArrow.svg" alt="">
                       <span>Reply</span>
                     </a>
                   </div>
                 </div>
+              </div>
+              <div class=" comment__level" data-replyid="comment_006">
+                <!-- id коммента - Сюда добавится форма - скрипт внизу -->
+               
               </div>
             </div>
           </div>
@@ -517,4 +537,34 @@
       </div>
     </div>
   </div>
+  <script>
+    let reply = `
+      <div class="commentsblock__form commentform" data-add="reply">
+      <form action="">
+        <div class="commentform__input">
+          <input type="text" placeholder="Your comment">
+          <button type="submit">
+            <img src="img/Sent.svg" alt="">
+          </button>
+        </div>
+      </form>
+    </div>
+    `
+    $('[data-showbyid]').each(function() {
+      $(this).on('click', function(e) {
+        e.preventDefault()
+        let commentId = $(this).data('showbyid')
+        console.log(commentId)
+        let wrapper = $(`[data-replyid="${commentId}"]`)
+
+        if (wrapper.find('> .commentform').length === 0) {
+          wrapper.prepend(reply)
+        } else {
+          wrapper.html('')
+        }
+        
+        })
+    })
+  </script>
+
 </main><%= _.template(require('../includes/footer.html').default)(data) %>
