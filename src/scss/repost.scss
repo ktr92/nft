@@ -814,6 +814,125 @@ color: #212531;
 }
 }
 }
+.imagecard_type2 {
+  .imagecard__content {
+    margin-bottom: 0;
+  } 
+}
+.sliderblock {
+  .imagecard  {
+    .minicard_type2 {
+      
+      .minicard__header {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        padding: get-vw-modal(26px) get-vw-modal(46px);
+      }
+      .minicard__titleblock {
+        margin-left: get-vw-modal(44px);
+    
+        .minicard__title {
+          margin-bottom: get-vw-modal(14px);
+        }
+      }
+      .minicard__status {
+        padding: get-vw-modal(5px) get-vw-modal(20px) get-vw-modal(5px) get-vw-modal(10px);
+        display: inline-flex;
+        align-items: center;
+      /*   background: #30CA4C; */
+        border-radius: 555px;
+     
+      }
+
+     
+      
+      .minicard__statusicon {
+        width: get-vw-modal(14px);
+        height: get-vw-modal(14px);
+        background: #FFFFFF;
+        border: get-vw-modal(4px) solid rgba(255, 255, 255, 0.3);
+        -webkit-background-clip: padding-box; /* for Safari */
+        background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+        border-radius: 50%;
+        margin-right: get-vw-modal(10px);
+      }
+      .minicard__statustext {
+        font-style: normal;
+        font-weight: 700;
+        font-size: get-vw-modal(22px);
+        line-height: get-vw-modal(28px);
+    
+        color: #FFFFFF;
+      }
+      .minicard__status_live {
+
+          background: #30CA4C;
+          border-radius: 555px;
+     
+        .minicard__statustext  {
+          color: #FFFFFF;
+        }
+      }
+      .minicard__status_closed {
+        background: rgba(33, 37, 49, 0.1);
+        padding: get-vw-modal(5px) get-vw-modal(15px);
+        .minicard__statustext {
+          color: rgba(33, 37, 49, 0.3);
+        }
+      }
+      .minicard__img {
+        width: get-vw-modal(244px);
+        height: get-vw-modal(244px);
+      }
+      .minicard__main {
+        text-align: left;
+        padding: get-vw-modal(28px) get-vw-modal(46px) get-vw-modal(43px) get-vw-modal(46px);
+      }
+      .minicard__itemtext {
+        text-align: left;
+      }
+      .minicard__items {
+        justify-content: flex-start;
+      }
+      .minicard__footer {
+        padding: get-vw-modal(35px) get-vw-modal(46px) get-vw-modal(33px) get-vw-modal(46px);
+      }
+      .minicard__leaklink {
+        display: flex;
+        align-items: center;
+      }
+      .minicard__leaklogo {
+        min-width: get-vw-modal(65px);
+        max-width: get-vw-modal(65px);
+      }
+    
+      .minicard__leakurl a {
+        margin-left: get-vw-modal(22px);
+        font-style: normal;
+        font-weight: 700;
+        font-size: get-vw-modal(32px);
+        line-height: get-vw-modal(41px);
+        color: #212531;
+        border-bottom: get-vw-modal(3px) solid #30CA4C;
+      }
+    
+      .minicard__leaktext {
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw-modal(26px);
+        line-height: get-vw-modal(34px);
+        /* identical to box height */
+        margin-top: get-vw-modal(11px);
+        
+        color: rgba(33, 37, 49, 0.5);
+      }
+
+      
+    
+    }
+  } 
+}
 
 @include medium-screen {
 

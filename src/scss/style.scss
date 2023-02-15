@@ -1658,7 +1658,7 @@ $card_profile_w: get-vw-large(160px);
   line-height: get-vw-large(21px);
   /* identical to box height */
 
-  border-bottom: get-vw-large(2px) solid $green;
+  border-bottom: 2px solid $green;
   color: #ffffff;
 }
 .sitefooter__right {
@@ -2957,7 +2957,20 @@ color: $main5;
 
 
 .contentblock__content {
-
+  ul {
+    margin-bottom: get-vw-large(30px);
+  }
+  li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: get-vw-large(22px);
+    line-height: get-vw-large(30px);
+    
+    
+    color: rgba(33, 37, 49, 0.7);
+    margin-top: 0;
+    margin-bottom: get-vw-large(10px);
+  }
   p {
     font-style: normal;
     font-weight: 400;
@@ -4599,6 +4612,17 @@ img.notifications__current {
   min-width: get-vw-large(26px);
   height: get-vw-large(26px);
 }
+
+.sitefooter__links{
+  margin-right: get-vw-large(12px);
+}
+.sitefooter__link {
+  margin-right: get-vw-large(25px);
+  line-height: 1;
+ 
+}
+
+
 
 
 @include medium-screen {
@@ -6268,6 +6292,18 @@ $notifications_top: get-vw-medium(8px);
 
 .contentblock__content {
 
+  ul {
+    margin-bottom: get-vw-medium(30px);
+  }
+
+  li {
+    font-size: get-vw-medium(18px);
+    line-height: get-vw-medium(22px);
+    
+    
+    margin-bottom: get-vw-medium(10px);
+  }
+
   p {
     font-style: normal;
     font-weight: 400;
@@ -7502,6 +7538,15 @@ $contentform__item_cols4_ml:  get-vw-medium(6px);
 .check input[type="checkbox"]:checked + label:before {
   background-size: get-vw-medium(18px);
 }
+
+
+.sitefooter__links{
+  margin-right: 0
+}
+.sitefooter__link {
+  margin-right: get-vw-medium(15px);
+}
+
 
 }
 
@@ -9526,7 +9571,18 @@ $notifications_top: get-vw-small(8px);
 
 
 .contentblock__content {
+  ul {
+    margin-bottom: get-vw-small(30px);
+  }
 
+
+  li {
+    font-size: get-vw-small(16px);
+    line-height: get-vw-small(20px);
+    
+    
+    margin-bottom: get-vw-small(10px);
+  }
   p {
     font-size: get-vw-small(16px);
     line-height: get-vw-small(20px);
@@ -10930,6 +10986,26 @@ display: none;
 
 .check input[type="checkbox"]:checked + label:before {
   background-size: get-vw-small(18px);
+}
+.sitefooter__copy {
+  order: -1;
+}
+.sitefooter__links{
+  width: 100%;
+  justify-content: center;
+  margin-top: get-vw-small(14px);
+}
+.sitefooter__link {
+ margin: 0 get-vw-small(7px);
+ a {
+  display: block;
+  font-size:  get-vw-small(14px);
+  line-height: get-vw-small(18px);
+ }
+}
+
+.sitefooter__right {
+  flex-wrap: wrap;
 }
 
 }

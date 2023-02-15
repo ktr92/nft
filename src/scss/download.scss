@@ -914,3 +914,115 @@ color: #212531;
   margin-bottom: 16px;
 }
 }
+
+.imagecard__download {
+.minicard_type2 {
+      
+  .minicard__header {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 26px 46px;
+  }
+  .minicard__titleblock {
+    margin-left: 44px;
+
+    .minicard__title {
+      margin-bottom: 14px;
+    }
+  }
+  .minicard__status {
+    padding: 5px 20px 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    background: #000;
+    border-radius: 555px;
+    color: #FFFFFF;
+  }
+
+
+  .minicard__statusicon {
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .minicard__statustext {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+  }
+
+  .minicard__status_closed {
+    background: rgba(33, 37, 49, 0.1);
+    padding: 5px 15px;
+    .minicard__statustext {
+      color: rgba(33, 37, 49, 0.3);
+    }
+  }
+
+  .minicard__status_lvll{
+    background: #30CA4C;
+
+    .minicard__statustext  {
+      color: #FFFFFF;
+    }
+  }
+
+
+  .minicard__img {
+    width: 244px;
+    height: 244px;
+  }
+  .minicard__main {
+    text-align: left;
+    padding: 28px 46px 43px 46px;
+  }
+  .minicard__itemtext {
+    text-align: left;
+  }
+  .minicard__items {
+    justify-content: flex-start;
+  }
+  .minicard__footer {
+    padding: 35px 46px 33px 46px;
+  }
+  .minicard__leaklink {
+    display: flex;
+    align-items: center;
+  }
+  .minicard__leaklogo {
+    min-width: 65px;
+    max-width: 65px;
+  }
+
+  .minicard__leakurl a {
+    margin-left: 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: #212531;
+    border-bottom: 3px solid #30CA4C;
+  }
+
+  .minicard__leaktext {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    /* identical to box height */
+    margin-top: 11px;
+    
+    color: rgba(33, 37, 49, 0.5);
+  }
+
+}
+}
