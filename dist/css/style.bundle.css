@@ -9376,6 +9376,17 @@ img.notifications__current {
   margin-right: 1.30208vw;
   line-height: 1; }
 
+.logo.logo_default {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.siteheader__main {
+  position: relative; }
+
 @media only screen and (max-width: 999px) {
   .captchablock {
     text-align: center;
@@ -11252,6 +11263,8 @@ img.notifications__current {
     min-width: initial; } }
 
 @media only screen and (max-width: 600px) {
+  .logo.logo_default {
+    position: initial; }
   .accountblock_unauthored {
     min-width: initial; }
   .card__follow .btn {

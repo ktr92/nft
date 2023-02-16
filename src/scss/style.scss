@@ -4633,8 +4633,17 @@ img.notifications__current {
  
 }
 
-
-
+.logo.logo_default {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.siteheader__main {
+  position: relative;
+}
 
 @include medium-screen {
   .captchablock {
@@ -7566,6 +7575,9 @@ $contentform__item_cols4_ml:  get-vw-medium(6px);
 
 
 @include small-screen {
+  .logo.logo_default {
+    position: initial;
+}
   .accountblock_unauthored {
     min-width: initial;
   
