@@ -6942,6 +6942,7 @@ span.dcheckbox__text:before {
   font-size: 0.83333vw;
   line-height: 1.09375vw;
   /* identical to box height */
+  display: block;
   border-bottom: 2px solid #30CA4C;
   color: #ffffff; }
 
@@ -13475,7 +13476,11 @@ img.notifications__current {
       font-size: 4.375vw;
       line-height: 5.625vw; }
   .sitefooter__right {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .sitefooter__copy {
+    text-align: center;
+    width: 100%;
+    justify-content: center; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/

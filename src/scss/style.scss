@@ -1657,7 +1657,7 @@ $card_profile_w: get-vw-large(160px);
   font-size: get-vw-large(16px);
   line-height: get-vw-large(21px);
   /* identical to box height */
-
+display: block;
   border-bottom: 2px solid $green;
   color: #ffffff;
 }
@@ -11007,5 +11007,9 @@ display: none;
 .sitefooter__right {
   flex-wrap: wrap;
 }
-
+.sitefooter__copy {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
 }
