@@ -7577,6 +7577,7 @@ $contentform__item_cols4_ml:  get-vw-medium(6px);
 @include small-screen {
   .logo.logo_default {
     position: initial;
+    transform: none;
 }
   .accountblock_unauthored {
     min-width: initial;

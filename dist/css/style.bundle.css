@@ -11264,7 +11264,8 @@ img.notifications__current {
 
 @media only screen and (max-width: 600px) {
   .logo.logo_default {
-    position: initial; }
+    position: initial;
+    transform: none; }
   .accountblock_unauthored {
     min-width: initial; }
   .card__follow .btn {
