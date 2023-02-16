@@ -950,13 +950,16 @@ color: #212531;
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     border-radius: 50%;
     margin-right: 10px;
+    position: relative;
+    z-index: 3;
   }
   .minicard__statustext {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
-
+    position: relative;
+    z-index: 3;
     color: #FFFFFF;
   }
 
