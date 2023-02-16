@@ -5956,6 +5956,11 @@ img {
 .siteheader__right {
   position: relative; }
 
+.accountblock_unauthored {
+  min-width: 17.08333vw;
+  display: flex;
+  justify-content: flex-end; }
+
 .dropdownblock {
   position: absolute;
   top: calc(100% + 1.71875vw);
@@ -11241,9 +11246,14 @@ img.notifications__current {
   .sitefooter__links {
     margin-right: 0; }
   .sitefooter__link {
-    margin-right: 1.79856vw; } }
+    margin-right: 1.79856vw; }
+  .accountblock_unauthored {
+    width: 23.86091vw;
+    min-width: initial; } }
 
 @media only screen and (max-width: 600px) {
+  .accountblock_unauthored {
+    min-width: initial; }
   .card__follow .btn {
     font-size: 3.75vw;
     line-height: 1;

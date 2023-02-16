@@ -485,6 +485,13 @@ img {
 
 .siteheader__right {
   position: relative;
+  
+}
+
+.accountblock_unauthored {
+  min-width: get-vw-large(328px);
+  display: flex;
+  justify-content: flex-end;
 }
 
 $dropdownblock_top: get-vw-large(33px);
@@ -7550,12 +7557,19 @@ $contentform__item_cols4_ml:  get-vw-medium(6px);
 .sitefooter__link {
   margin-right: get-vw-medium(15px);
 }
-
+.accountblock_unauthored {
+  width: get-vw-medium(199px);
+  min-width: initial;
+}
 
 }
 
 
 @include small-screen {
+  .accountblock_unauthored {
+    min-width: initial;
+  
+  }
   .card__follow {
     .btn {
       font-size: get-vw-small(12px);
