@@ -7853,9 +7853,13 @@ textarea.input-error {
 .sliderblock {
   margin-bottom: 1.40625vw; }
 
+/* .sliderblock__container {
+  position: relative;
+  margin-bottom: get-vw-large(67px);
+} */
 .sliderblock__container {
   position: relative;
-  margin-bottom: 3.48958vw; }
+  margin-bottom: 1.92708vw; }
 
 p a {
   font-weight: 600;

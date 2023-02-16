@@ -2692,9 +2692,13 @@ line-height: 100%;
 .sliderblock {
   margin-bottom: get-vw-large(27px);
 }
-.sliderblock__container {
+/* .sliderblock__container {
   position: relative;
   margin-bottom: get-vw-large(67px);
+} */
+.sliderblock__container {
+  position: relative;
+  margin-bottom: get-vw-large(37px);
 }
 p a {
   font-weight: 600;
