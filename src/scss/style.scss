@@ -8298,6 +8298,26 @@ img.notifications__current {
     min-width: initial;
   }
 
+  textarea {
+    border-top-right-radius: get-vw-medium(6px);
+    border-top-left-radius: get-vw-medium(6px);
+    border: none;
+    display: block;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+
+    color: #212531;
+    font-style: normal;
+    font-weight: 400;
+    font-size: get-vw-medium(20px);
+    line-height: get-vw-medium(24px);
+
+
+    color: rgba(33, 37, 49, 0.7);
+    margin-top: 0;
+    margin-bottom: get-vw-medium(30px);
+  }
 }
 
 
@@ -12134,5 +12154,27 @@ img.notifications__current {
     text-align: center;
     width: 100%;
     justify-content: center;
+  }
+
+
+  textarea {
+    border-top-right-radius: get-vw-small(6px);
+    border-top-left-radius: get-vw-small(6px);
+    border: none;
+    display: block;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+
+    color: #212531;
+    font-style: normal;
+    font-weight: 400;
+    font-size: get-vw-small(16px);
+    line-height: get-vw-small(20px);
+
+
+    color: rgba(33, 37, 49, 0.7);
+    margin-top: 0;
+    margin-bottom: get-vw-small(30px);
   }
 }

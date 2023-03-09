@@ -11303,7 +11303,23 @@ img.notifications__current {
     margin-right: 1.79856vw; }
   .accountblock_unauthored {
     width: 23.86091vw;
-    min-width: initial; } }
+    min-width: initial; }
+  textarea {
+    border-top-right-radius: 0.71942vw;
+    border-top-left-radius: 0.71942vw;
+    border: none;
+    display: block;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    color: #212531;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.39808vw;
+    line-height: 2.8777vw;
+    color: rgba(33, 37, 49, 0.7);
+    margin-top: 0;
+    margin-bottom: 3.59712vw; } }
 
 @media only screen and (max-width: 600px) {
   .logo.logo_default {
@@ -13554,7 +13570,23 @@ img.notifications__current {
   .sitefooter__copy {
     text-align: center;
     width: 100%;
-    justify-content: center; } }
+    justify-content: center; }
+  textarea {
+    border-top-right-radius: 1.875vw;
+    border-top-left-radius: 1.875vw;
+    border: none;
+    display: block;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    color: #212531;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 6.25vw;
+    color: rgba(33, 37, 49, 0.7);
+    margin-top: 0;
+    margin-bottom: 9.375vw; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/
