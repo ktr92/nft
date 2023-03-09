@@ -2584,6 +2584,10 @@ textarea {
   margin-bottom: get-vw-large(30px);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .formblock__input {
 
   input,

@@ -7579,6 +7579,9 @@ textarea {
   margin-top: 0;
   margin-bottom: 1.5625vw; }
 
+body.modal-open {
+  overflow: hidden; }
+
 .formblock__input input,
 .formblock__input textarea {
   background: #f3f5f8;
