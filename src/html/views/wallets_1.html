@@ -1,0 +1,168 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="topcontent topcontent_left">
+          <div class="container">
+            <div class="pagetitle pagetitle_left">
+              <div class="pagetitle__title text-left">Wallet Analyzer</div>
+            </div>
+            <div class="pagecontent">
+              <div class="pagecontent__text">
+                <p>Leaderboard for top alpha callers on our website</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="maincontent">
+          <div class="container">
+            <div class="tabsnav">
+              <div class="tabsnav__links flex content-between items-center">
+                <ul class="flex">
+                  <li>
+                    <a class="change_leaderboard_tab" data-name="popular_tokens" href="javascript:void(0)">Popular
+                      tokens</a>
+                  </li>
+                  <li>
+                    <a class="change_leaderboard_tab" data-name="popular_presales" href="javascript:void(0)">Popular
+                      presales</a>
+                  </li>
+                  <li class="active">
+                    <a class="change_leaderboard_tab" data-name="top_calls" href="javascript:void(0)">Top Calls</a>
+                  </li>
+
+                </ul>
+                <div class="itemsnav itemsnav_table flex items-center content-between">
+                  <div class="itemsnav__right">
+                    <div class="linkset">
+                      <div class="linkset__items statistics_ranges">
+                        <div class="linkset__item"><a data-value="30m" href="javascript:void(0)"
+                            class="linkset__link">30m</a></div>
+                        <div class="linkset__item"><a data-value="1h" href="javascript:void(0)"
+                            class="linkset__link">1h</a></div>
+                        <div class="linkset__item"><a data-value="2h" href="javascript:void(0)"
+                            class="linkset__link">2h</a></div>
+                        <div class="linkset__item"><a data-value="3h" href="javascript:void(0)"
+                            class="linkset__link">3h</a></div>
+                        <div class="linkset__item"><a data-value="6h" href="javascript:void(0)"
+                            class="linkset__link">6h</a></div>
+                        <div class="linkset__item"><a data-value="12h" href="javascript:void(0)"
+                            class="linkset__link">12h</a></div>
+                        <div class="linkset__item"><a data-value="24h" href="javascript:void(0)"
+                            class="linkset__link">24h</a></div>
+                        <div class="linkset__item"><span class="linkset__link linkset__link_more"
+                            data-toggleclick="fdropdown__timerange_more_1">More...</span></div>
+                        <div class="dropdownblock_more dropdownblock" data-toggle="fdropdown__timerange_more_1"
+                          style="left: calc(70%);">
+                          <div class="fdropdown__wrapper dropdownblock__wrapper">
+                            <div class="fdropdown__items">
+                              <div class="fdropdown__item">
+                                <div class="dcheckbox dcheckbox_radio">
+                                  <label for="fdropdown__more-8" class="dcheckbox__label">
+                                    <span>
+                                      <input value="2d" name="leaderbord_filter_timerange_more_1" type="radio"
+                                        id="fdropdown__more-8">
+                                      <span class="dcheckbox__text">2d</span>
+                                    </span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="fdropdown__item">
+                                <div class="dcheckbox dcheckbox_radio">
+                                  <label for="fdropdown__more-9" class="dcheckbox__label">
+                                    <span>
+                                      <input value="3d" name="leaderbord_filter_timerange_more_1" type="radio"
+                                        id="fdropdown__more-9">
+                                      <span class="dcheckbox__text">3d</span>
+                                    </span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="fdropdown__item">
+                                <div class="dcheckbox dcheckbox_radio">
+                                  <label for="fdropdown__more-10" class="dcheckbox__label">
+                                    <span>
+                                      <input value="5d" name="leaderbord_filter_timerange_more_1" type="radio"
+                                        id="fdropdown__more-10">
+                                      <span class="dcheckbox__text">5d</span>
+                                    </span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="fdropdown__item">
+                                <div class="dcheckbox dcheckbox_radio">
+                                  <label for="fdropdown__more-11" class="dcheckbox__label">
+                                    <span>
+                                      <input value="10d" name="leaderbord_filter_timerange_more_1" type="radio"
+                                        id="fdropdown__more-11">
+                                      <span class="dcheckbox__text">10d</span>
+                                    </span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="fdropdown__item">
+                                <div class="dcheckbox dcheckbox_radio">
+                                  <label for="fdropdown__more-12" class="dcheckbox__label">
+                                    <span>
+                                      <input value="15d" name="leaderbord_filter_timerange_more_1" type="radio"
+                                        id="fdropdown__more-12">
+                                      <span class="dcheckbox__text">15d</span>
+                                    </span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="fdropdown__item">
+                                <div class="dcheckbox dcheckbox_radio">
+                                  <label for="fdropdown__more-13" class="dcheckbox__label">
+                                    <span>
+                                      <input checked="checked" value="30d" name="leaderbord_filter_timerange_more_1"
+                                        type="radio" id="fdropdown__more-13">
+                                      <span class="dcheckbox__text">30d</span>
+                                    </span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="linkset__items statistics_ranges_old" style="display: None;">
+                        <div class="linkset__item"><a data-value="all" href="javascript:void(0)"
+                            class="linkset__link">All</a></div>
+                        <div class="linkset__item"><a data-value="1h" href="javascript:void(0)"
+                            class="linkset__link">1h</a></div>
+                        <div class="linkset__item"><a data-value="6h" href="javascript:void(0)"
+                            class="linkset__link">6h</a></div>
+                        <div class="linkset__item"><a data-value="12h" href="javascript:void(0)"
+                            class="linkset__link">12h</a></div>
+                        <div class="linkset__item"><a data-value="24h" href="javascript:void(0)"
+                            class="linkset__link">24h</a></div>
+                        <div class="linkset__item"><a data-value="7d" href="javascript:void(0)"
+                            class="linkset__link">7d</a></div>
+                        <div class="linkset__item"><a data-value="30d" href="javascript:void(0)"
+                            class="linkset__link active">30d</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="emptyblock">
+              <div class="emptyblock__wrapper flex column items-center">
+                <div class="emptyblock__image">
+                  <div class="emptyblock__img"><img src="img/empty_folder.svg" alt=""></div>
+                </div>
+                <div class="emptyblock__text">
+                  No active recommendations in this category
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
