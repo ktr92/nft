@@ -233,6 +233,8 @@ $walletblock__card: get-vw-large(539px);
     width: unset;
     min-width: unset;
     max-width: unset;
+    height: unset;
+    min-height: get-vw-large(65px);
     .tableblock__title {
       font-size: get-vw-large(16px);
       font-style: normal;
@@ -254,6 +256,7 @@ $walletblock__card: get-vw-large(539px);
       vertical-align: middle;
       display: table-cell !important;
       width: unset;
+      padding: get-vw-large(24px) get-vw-large(12px);
     }
     .tableblock__col_default {
       vertical-align: middle;
@@ -273,13 +276,34 @@ $walletblock__card: get-vw-large(539px);
 
   .tableblock__body {
     font-size: get-vw-large(16px);
+
+    .tableblock__col {
+      height: unset;
+      border-top: 0.10417vw solid #e2e9f2;
+      min-height: get-vw-large(65px);
+      padding: get-vw-large(24px) get-vw-large(12px);
+    }
+    .tableblock__row:first-child {
+      .tableblock__col {
+        border-top: none;
+      }
+    }
     .tableblock__title {
       font-weight: 500;
       font-size: get-vw-large(16px);
     }
   }
 }
+.tableblock__img {
+  display: block;
+  text-align: center;
 
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .tableblock__date {
   color: rgba(33, 37, 49, 0.5);
   white-space: nowrap;
@@ -302,10 +326,47 @@ a.tableblock__link {
     overflow: hidden;
   }
 }
-
+.tableblock_tab_full {
+  .tableblock__wrapper {
+    border-right: none;
+    border-left: none;
+  }
+}
 .tableblock_tab {
   .pagination ul li:last-child {
     margin-right: 0;
+  }
+  .tableblock__body > .tableblock__row {
+    background: #f8fafd !important;
+  }
+  .tableblock__col_wallet {
+    max-width: get-vw-large(400px);
+    word-wrap: break-word;
+  }
+}
+
+.tableblock_tab img.wallet_like_active {
+  display: none;
+}
+.tableblock_tab {
+  .tableblock__img.active {
+    img.wallet_like {
+      display: none !important;
+    }
+    img.wallet_like_active {
+      display: block !important;
+    }
+  }
+}
+
+.tableblock__col_walleticon {
+  img {
+    max-width: get-vw-large(20px);
+  }
+}
+.tableblock__col_favorite {
+  img {
+    max-width: get-vw-large(26px);
   }
 }
 

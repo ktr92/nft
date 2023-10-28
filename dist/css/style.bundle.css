@@ -14720,7 +14720,9 @@ p {
 .tableblock_tab .tableblock__col_default {
   width: unset;
   min-width: unset;
-  max-width: unset; }
+  max-width: unset;
+  height: unset;
+  min-height: 3.38542vw; }
   .tableblock_tab .tableblock__col_default .tableblock__title {
     font-size: 0.83333vw;
     font-style: normal;
@@ -14740,7 +14742,8 @@ p {
   .tableblock_tab .tableblock__body .tableblock__col {
     vertical-align: middle;
     display: table-cell !important;
-    width: unset; }
+    width: unset;
+    padding: 1.25vw 0.625vw; }
   .tableblock_tab .tableblock__header .tableblock__col_default,
   .tableblock_tab .tableblock__body .tableblock__col_default {
     vertical-align: middle;
@@ -14757,9 +14760,24 @@ p {
 
 .tableblock_tab .tableblock__body {
   font-size: 0.83333vw; }
+  .tableblock_tab .tableblock__body .tableblock__col {
+    height: unset;
+    border-top: 0.10417vw solid #e2e9f2;
+    min-height: 3.38542vw;
+    padding: 1.25vw 0.625vw; }
+  .tableblock_tab .tableblock__body .tableblock__row:first-child .tableblock__col {
+    border-top: none; }
   .tableblock_tab .tableblock__body .tableblock__title {
     font-weight: 500;
     font-size: 0.83333vw; }
+
+.tableblock__img {
+  display: block;
+  text-align: center; }
+  .tableblock__img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 .tableblock__date {
   color: rgba(33, 37, 49, 0.5);
@@ -14780,8 +14798,34 @@ a.tableblock__link {
   width: 100%;
   overflow: hidden; }
 
+.tableblock_tab_full .tableblock__wrapper {
+  border-right: none;
+  border-left: none; }
+
 .tableblock_tab .pagination ul li:last-child {
   margin-right: 0; }
+
+.tableblock_tab .tableblock__body > .tableblock__row {
+  background: #f8fafd !important; }
+
+.tableblock_tab .tableblock__col_wallet {
+  max-width: 20.83333vw;
+  word-wrap: break-word; }
+
+.tableblock_tab img.wallet_like_active {
+  display: none; }
+
+.tableblock_tab .tableblock__img.active img.wallet_like {
+  display: none !important; }
+
+.tableblock_tab .tableblock__img.active img.wallet_like_active {
+  display: block !important; }
+
+.tableblock__col_walleticon img {
+  max-width: 1.04167vw; }
+
+.tableblock__col_favorite img {
+  max-width: 1.35417vw; }
 
 @media only screen and (max-width: 999px) {
   .itemsnav__right .searchinput a.headersearch__close {
