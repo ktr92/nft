@@ -14556,6 +14556,10 @@ p {
   padding: 5.72917vw 0;
   min-height: unset; }
 
+.tabsnav__links_wallets ul li a {
+  padding-left: 1.66667vw;
+  padding-right: 1.66667vw; }
+
 .mt-0 {
   margin-top: 0; }
 
@@ -14579,6 +14583,124 @@ p {
   margin: 0;
   padding: 0 1.04167vw;
   opacity: 1; }
+
+.itemsnav__right .searchinput input {
+  font-weight: bold; }
+
+.walletcard {
+  border-radius: 0.41667vw;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), #d9d9d9;
+  padding: 1.875vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .walletcard > * {
+    width: 100%; }
+
+.walletcard__caption {
+  color: #212531;
+  margin-bottom: 0.72917vw;
+  font-size: 0.83333vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; }
+
+.walletcard__name {
+  color: #212531;
+  margin-bottom: 0.72917vw;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  word-wrap: break-word; }
+
+.btnicon {
+  display: block;
+  display: flex;
+  align-items: center; }
+  .btnicon span {
+    line-height: 1; }
+
+.btnicon__text {
+  padding-left: 0.20833vw;
+  color: #0085ff;
+  font-size: 0.83333vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; }
+
+.emptyblock_color.active .emptyblock__wrapper {
+  padding: 2.08333vw;
+  min-height: unset; }
+
+.walletblock__card {
+  margin-right: 1.82292vw;
+  max-width: 28.07292vw; }
+  .walletblock__card .walletcard {
+    height: 100%; }
+
+.walletblock__table {
+  width: calc(100% - 28.07292vw); }
+
+.wallettable__cols {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.wallettable__colhead {
+  color: #fff;
+  text-align: center;
+  font-size: 0.83333vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; }
+
+.wallettable__colhead.wallettable__profit {
+  font-size: 1.14583vw; }
+
+.wallettable__head {
+  margin-bottom: 1.35417vw; }
+
+.wallettable__colbody {
+  color: #212531;
+  font-size: 0.83333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; }
+
+.wallettable__col {
+  text-align: center; }
+
+.wallettable__profit {
+  max-width: 11.97917vw;
+  min-width: 11.97917vw;
+  text-align: left; }
+
+.wallettable__traded {
+  max-width: 6.25vw;
+  min-width: 6.25vw; }
+
+.wallettable__profitability {
+  max-width: 6.25vw;
+  min-width: 6.25vw; }
+
+.wallettable__eth {
+  max-width: 6.25vw;
+  min-width: 6.25vw; }
+
+.wallettable__usd {
+  max-width: 6.25vw;
+  min-width: 6.25vw;
+  text-align: left; }
+
+.wallettable__row {
+  border-radius: 0.41667vw;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), #d9d9d9;
+  padding: 0.67708vw 1.04167vw;
+  margin-bottom: 0.3125vw; }
+
+.wallettable__head {
+  padding-right: 1.04167vw; }
 
 @media only screen and (max-width: 999px) {
   .itemsnav__right .searchinput a.headersearch__close {

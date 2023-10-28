@@ -17,6 +17,11 @@
     min-height: unset;
   }
 }
+.tabsnav__links_wallets ul li a {
+  padding-left: get-vw-large(32px);
+  padding-right: get-vw-large(32px);
+}
+
 .mt-0 {
   margin-top: 0;
 }
@@ -43,7 +48,167 @@
       padding: 0 get-vw-large(20px);
       opacity: 1;
     }
+    input {
+      font-weight: bold;
+    }
   }
+}
+
+.walletcard {
+  border-radius: get-vw-large(8px);
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), #d9d9d9;
+  padding: get-vw-large(36px);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.walletcard__caption {
+  color: #212531;
+
+  margin-bottom: get-vw-large(14px);
+  font-size: get-vw-large(16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.walletcard__name {
+  color: #212531;
+  margin-bottom: get-vw-large(14px);
+  font-size: get-vw-large(18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  word-wrap: break-word;
+}
+
+.btnicon {
+  display: block;
+  display: flex;
+  align-items: center;
+
+  span {
+    line-height: 1;
+  }
+}
+
+.btnicon__text {
+  padding-left: get-vw-large(4px);
+  color: #0085ff;
+
+  font-size: get-vw-large(16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.emptyblock_color.active {
+  .emptyblock__wrapper {
+    padding: get-vw-large(40px);
+    min-height: unset;
+  }
+}
+
+$walletblock__card: get-vw-large(539px);
+
+.walletblock__card {
+  margin-right: get-vw-large(35px);
+  max-width: $walletblock__card;
+
+  .walletcard {
+    height: 100%;
+  }
+}
+
+.walletblock__table {
+  width: calc(100% - #{$walletblock__card});
+}
+.wallettable {
+}
+.wallettable__cols {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wallettable__table {
+}
+.wallettable__colhead {
+  color: #fff;
+
+  text-align: center;
+  font-size: get-vw-large(16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.wallettable__colhead.wallettable__profit {
+  font-size: get-vw-large(22px);
+}
+.wallettable__head {
+  margin-bottom: get-vw-large(26px);
+}
+.wallettable__cols {
+}
+
+.wallettable__colbody {
+  color: #212531;
+
+  font-size: get-vw-large(16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.wallettable__col {
+  text-align: center;
+}
+.wallettable__col_1 {
+}
+.wallettable__profit {
+  max-width: get-vw-large(230px);
+  min-width: get-vw-large(230px);
+  text-align: left;
+}
+.wallettable__col_2 {
+}
+.wallettable__traded {
+  max-width: get-vw-large(120px);
+  min-width: get-vw-large(120px);
+}
+.wallettable__col_3 {
+}
+.wallettable__profitability {
+  max-width: get-vw-large(120px);
+  min-width: get-vw-large(120px);
+}
+.wallettable__col_4 {
+}
+.wallettable__eth {
+  max-width: get-vw-large(120px);
+  min-width: get-vw-large(120px);
+}
+.wallettable__col_5 {
+}
+.wallettable__usd {
+  max-width: get-vw-large(120px);
+  min-width: get-vw-large(120px);
+  text-align: left;
+}
+.wallettable__body {
+}
+.wallettable__row {
+  border-radius: get-vw-large(8px);
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), #d9d9d9;
+  padding: get-vw-large(13px) get-vw-large(20px);
+  margin-bottom: get-vw-large(6px);
+}
+
+.wallettable__head {
+  padding-right: get-vw-large(20px);
 }
 
 @media only screen and (max-width: 999px) {
