@@ -91,7 +91,12 @@
   display: block;
   display: flex;
   align-items: center;
-
+  .btnicon__img {
+    svg {
+      min-width: get-vw-large(26px);
+      max-width: get-vw-large(26px);
+    }
+  }
   span {
     line-height: 1;
   }
@@ -111,6 +116,7 @@
   .emptyblock__wrapper {
     padding: get-vw-large(40px);
     min-height: unset;
+    margin: get-vw-large(40px) 0;
   }
 }
 
@@ -211,6 +217,93 @@ $walletblock__card: get-vw-large(539px);
   padding-right: get-vw-large(20px);
 }
 
+.tableblock_tab {
+  .tableblock__scroll {
+    display: table;
+    /*  table-layout: fixed; */
+    vertical-align: middle;
+    width: 100%;
+  }
+  .tableblock__col_default {
+    width: unset;
+    min-width: unset;
+    max-width: unset;
+    .tableblock__title {
+      font-size: get-vw-large(16px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      white-space: nowrap;
+    }
+  }
+  .tableblock__header,
+  .tableblock__body {
+    display: table-row-group;
+    width: 100%;
+
+    .tableblock__row {
+      display: table-row;
+      width: 100%;
+    }
+    .tableblock__col {
+      vertical-align: middle;
+      display: table-cell !important;
+      width: unset;
+    }
+    .tableblock__col_default {
+      vertical-align: middle;
+      .tableblock__value {
+        font-size: get-vw-large(16px) !important;
+      }
+      padding: 0 get-vw-large(11px);
+
+      &:first-child {
+        padding-left: get-vw-large(28px);
+      }
+      &:last-child {
+        padding-right: get-vw-large(28px);
+      }
+    }
+  }
+
+  .tableblock__body {
+    font-size: get-vw-large(16px);
+    .tableblock__title {
+      font-weight: 500;
+      font-size: get-vw-large(16px);
+    }
+  }
+}
+
+.tableblock__date {
+  color: rgba(33, 37, 49, 0.5);
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: get-vw -large(16px);
+}
+
+a.tableblock__link {
+  font-size: get-vw-large(16px);
+  color: #0085ff;
+  font-weight: 500;
+}
+.tableblock_tab {
+  .tableblock__table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .tableblock__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.tableblock_tab {
+  .pagination ul li:last-child {
+    margin-right: 0;
+  }
+}
+
 @media only screen and (max-width: 999px) {
   .itemsnav__right {
     .searchinput {
@@ -227,6 +320,10 @@ $walletblock__card: get-vw-large(539px);
       font-size: 1.21847vw;
     }
   }
+  /* .tableblock_tab .tableblock__body .tableblock__title,
+  .tableblock_tab .tableblock__col_default .tableblock__title {
+    font-size: get-vw-medium(10px);
+  } */
 }
 .mobilecontent {
   display: none;
