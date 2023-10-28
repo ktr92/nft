@@ -224,6 +224,11 @@ $walletblock__card: get-vw-large(539px);
     vertical-align: middle;
     width: 100%;
   }
+  .tableblock__col {
+    width: unset;
+    min-width: unset;
+    max-width: unset;
+  }
   .tableblock__col_default {
     width: unset;
     min-width: unset;

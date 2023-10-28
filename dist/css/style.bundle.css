@@ -14712,6 +14712,11 @@ p {
   vertical-align: middle;
   width: 100%; }
 
+.tableblock_tab .tableblock__col {
+  width: unset;
+  min-width: unset;
+  max-width: unset; }
+
 .tableblock_tab .tableblock__col_default {
   width: unset;
   min-width: unset;
