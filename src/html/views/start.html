@@ -1,0 +1,57 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %>
+<%= _.template(require('../includes/head.html').default)(data) %>
+<%= _.template(require('../includes/header.html').default)(data) %>
+<style>
+  ul {
+    list-style: decimal;
+  }
+  li {
+    margin-bottom: 15px;
+    list-style: decimal;
+  }
+  a {
+    color: #000 !important;
+    display: inline-block;
+  }
+  ul {
+    margin: 30px;
+  } 
+</style>
+<main>
+    <div class="container">
+     <ul>
+      <li><a href="coming_soon.html" target="_blank" rel="noopener noreferrer" class=''>coming_soon</a></li>
+      <li><a href="popup.html" target="_blank" rel="noopener noreferrer" class=''>popup</a></li>
+      <li><a href="popup_repost.html" target="_blank" rel="noopener noreferrer" class=''>popup repost</a></li>
+      <li><a href="index.html" target="_blank" rel="noopener noreferrer" class=''>main</a></li>
+      <li><a href="index_few.html" target="_blank" rel="noopener noreferrer" class=''>main - без пагинации, не авторизован</a></li>
+      <li><a href="shillers_page.html" target="_blank" rel="noopener noreferrer" class=''>shillers_page</a></li>
+      <li><a href="shillers_page_edit.html" target="_blank" rel="noopener noreferrer" class=''>shillers_page edit</a></li>
+      <li><a href="asset.html" target="_blank" rel="noopener noreferrer" class=''>asset.html</a></li>
+      <li><a href="bookmarks.html" target="_blank" rel="noopener noreferrer" class=''>bookmarks.html</a></li>
+      <li><a href="bookmark_empty.html" target="_blank" rel="noopener noreferrer" class=''>bookmarks_empty.html</a></li>
+      <li><a href="closed_empty.html" target="_blank" rel="noopener noreferrer" class=''>closed_empty.html</a></li>
+      <li><a href="disclaimer_1.html" target="_blank" rel="noopener noreferrer" class=''>disclaimer_1.html</a></li>
+      <li><a href="disclaimer_2.html" target="_blank" rel="noopener noreferrer" class=''>disclaimer_2.html</a></li>
+      <li><a href="drafts_empty.html" target="_blank" rel="noopener noreferrer" class=''>drafts_empty.html</a></li>
+      <li><a href="feed_empty.html" target="_blank" rel="noopener noreferrer" class=''>feed_empty.html</a></li>
+      <li><a href="feed_page.html" target="_blank" rel="noopener noreferrer" class=''>feed_page.html</a></li>
+      <li><a href="followers.html" target="_blank" rel="noopener noreferrer" class=''>followers.html</a></li>
+      <li><a href="following.html" target="_blank" rel="noopener noreferrer" class=''>following.html</a></li>
+      <li><a href="maintenance.html" target="_blank" rel="noopener noreferrer" class=''>maintenance.html</a></li>
+      <li><a href="no_results.html" target="_blank" rel="noopener noreferrer" class=''>no_results.html</a></li>
+      <li><a href="404.html" target="_blank" rel="noopener noreferrer" class=''>404.html</a></li>
+
+      <li><a href="open_empty.html" target="_blank" rel="noopener noreferrer" class=''>open_empty.html</a></li>
+      <li><a href="recommendations.html" target="_blank" rel="noopener noreferrer" class=''>recommendations.html</a></li>
+      <li><a href="recommendation_1920.html" target="_blank" rel="noopener noreferrer" class=''>recommendation_1920.html</a></li>
+    
+      
+     </ul>
+    </div><!-- /.container -->
+</main>
+
+<%= _.template(require('../includes/footer.html').default)(data) %>
