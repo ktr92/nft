@@ -314,10 +314,13 @@ $walletblock__card: get-vw-large(539px);
   font-size: get-vw -large(16px);
 }
 
-a.tableblock__link {
+.tableblock__link {
   font-size: get-vw-large(16px);
   color: #0085ff;
   font-weight: 500;
+}
+a.tableblock__row {
+  color: #212531;
 }
 .tableblock_tab {
   .tableblock__table {

@@ -14788,10 +14788,13 @@ p {
   font-weight: 500;
   font-size: get-vw -large(16px); }
 
-a.tableblock__link {
+.tableblock__link {
   font-size: 0.83333vw;
   color: #0085ff;
   font-weight: 500; }
+
+a.tableblock__row {
+  color: #212531; }
 
 .tableblock_tab .tableblock__table {
   width: 100%;
