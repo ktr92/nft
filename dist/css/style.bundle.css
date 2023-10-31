@@ -15039,7 +15039,8 @@ a.tableblock__link {
 
 @media only screen and (max-width: 600px) {
   .unavaible__wrapper {
-    height: calc(100vh - 103.125vw);
+    min-height: calc(100vh - 103.125vw);
+    height: unset;
     padding-bottom: 18.75vw;
     padding-left: 5.625vw;
     padding-right: 5.625vw; }
